@@ -17,7 +17,6 @@ It includes:
 
 
 
-![mynotebookimage](https://github.com/FaisalAwa/ML--SVM/assets/96324075/71e4f7eb-a790-497b-8014-383ad7a546ba)
 
 ## Faisal Mehmood Awan
 *Committed to harnessing data science and AI for societal advancement and human well-being.*
