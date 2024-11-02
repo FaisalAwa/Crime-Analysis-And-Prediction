@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>netwroking xample Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- First Section -->
+    <div class="row" style="border:1px solid red;height:500px;">
+        <div class="col-4 text-left" style="border:1px solid green;">
+            <button class="btn btn-primary" onclick="toggleText(this)">File 1</button>
+            <p class="d-none">Hello World</p>
+        </div>
+        <div class="col-4 text-left" style="border:1px solid green;">
+            <button class="btn btn-primary" onclick="toggleText(this)">File 2</button>
+            <p class="d-none">Hello World</p>
+        </div>
+        <div class="col-4 text-left" style="border:1px solid green;">
+            <button class="btn btn-primary" onclick="toggleText(this)">File 3</button>
+            <p class="d-none">Hello World</p>
+        </div>
+    </div>
+
+    <!-- Second Section -->
+    <div class="row" style="border:1px solid red;height:500px;">
+      <div class="col-4 text-left" style="border:1px solid green;">
+          <button class="btn btn-primary" onclick="toggleText(this)">File 4</button>
+          <p class="d-none">Hello World</p>
+      </div>
+      <div class="col-4 text-left" style="border:1px solid green;">
+          <button class="btn btn-primary" onclick="toggleText(this)">File 5</button>
+          <p class="d-none">Hello World</p>
+      </div>
+      <div class="col-4 text-left" style="border:1px solid green;">
+          <button class="btn btn-primary" onclick="toggleText(this)">File 6</button>
+          <p class="d-none">Hello World</p>
+      </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    function toggleText(button) {
+        // Toggle visibility of next sibling paragraph
+        $(button).next('p').toggleClass('d-none');
+        // Hide button
+        $(button).hide();
+    }
+</script>
+
+</body>
+</html>

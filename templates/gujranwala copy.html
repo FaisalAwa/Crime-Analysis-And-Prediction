@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Data Example</title>
+    <!-- ... (same as before) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <style>
+
+h3 {
+  color: black;
+  font-size: 2em;
+  /* margin-bottom:1em; */
+  margin-bottom:0px;
+  text-align: center;
+
+} 
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  h3 {
+    animation: blink 1s infinite;
+  }
+
+h3.end {
+  position: relative;
+  /* color: #fff; */
+  color: red;
+  
+  opacity: 0;
+  transition: 0.8s ease-in-out; 
+}
+h1{
+    margin-left: 40%;
+}
+
+.graph-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*.container {
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px #000000;
+    margin-left:7%;
+    background-color:#0a5854;
+}*/
+img{
+    margin-left:27%;
+    width: 600px;
+    height: 400px;
+}
+
+
+.ml5 {
+ 
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: #402d2d;
+    margin-top:50px;
+    margin-bottom:20px;
+    text-align: center;
+    float:left;
+
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+
+
+</style>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Function to handle button clicks and show/hide corresponding containers
+            $(".toggle-btn").click(function() {
+                var target = $(this).data('target');
+                $(target).fadeToggle("slow");
+            });
+
+            // Function to display the summary
+            $(".summary-btn").click(function() {
+                var summaryTarget = $(this).data('summary-target');
+                $(summaryTarget).fadeToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+   
+
+    <h1 class="ml5">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters letters-left">Gujranwala</span>   
+          <span class="letters letters-right">Prediction</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+
+
+    <img src="/static/karachi_image.jpg">
+
+
+    <!-- summary section-->
+    <div class="container bg-white mt-5 mb-5">
+        <div class="row  justify-content-center ">
+        <div class="col-md-10 "  style="box-shadow: inset 0 0 10px #000000; border-radius:10px 40px 10px 40px;">
+            <h3>Summary</h3>
+            <p>
+                {% for summary in Summaries %}
+                    {{ summary }}<br>
+                {% endfor %}
+             </p>
+            
+        </div>
+        </div>
+    </div>
+    <!-- summary section ends-->
+
+    
+    <div class="container bg-white mt-5">
+        <div class="row  justify-content-evenly">
+        <div class="col-md-5 "  style="box-shadow: inset 0 0 10px #000000;">
+            <h3>Locations</h3>
+            <p>
+                {% for location in Locations %}
+                    {{ location }}<br>
+                {% endfor %}
+            </p>
+        </div>
+        <div class="col-md-5 " style="box-shadow: inset 0 0 10px #000000;">
+            <h3>Dates</h3>
+            <p>
+                {% for date in Dates %}
+                {{ date }}<br>
+            {% endfor %}
+             </p>
+        </div>
+    </div>
+</div>
+
+   
+            
+
+        <!--div class="container bg-white mt-5">
+            <div class="row  justify-content-evenly ">
+            <div class="col-md-5 "  style="box-shadow: inset 0 0 10px #000000;">
+            <h3>Miscellaneous Data</h3>
+            <p>
+                {% for other in Others %}
+                {{ other }}<br>
+            {% endfor %}
+             </p>
+        </div-->
+
+        <div class="container bg-white mt-5 mb-5">
+            <div class="row  justify-content-center ">
+            <div class="col-md-5 "  style="box-shadow: inset 0 0 10px #000000; border-radius:15px;">
+             <h3>Crime Prediction</h3>
+             <p>
+                 {% for prediction in CrimePredictions %}
+                     {{ prediction }}<br>
+                 {% endfor %}
+              </p>
+            </div>
+        </div>
+    </div>    
+        
+
+
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+        anime.timeline({loop: true})
+      .add({
+        targets: '.ml5 .line',
+        opacity: [0.5,1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+      }).add({
+        targets: '.ml5 .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+      }).add({
+        targets: '.ml5 .ampersand',
+        opacity: [0,1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+      }).add({
+        targets: '.ml5 .letters-left',
+        opacity: [0,1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+      }).add({
+        targets: '.ml5 .letters-right',
+        opacity: [0,1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+      }).add({
+        targets: '.ml5',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+    </script>
+ 
+</body>
+</html>
+
+
+

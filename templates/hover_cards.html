@@ -1,0 +1,72 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Get Prediction</title>
+    <link rel="stylesheet" href="/static/css/hover_cards.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+    
+    </style>
+  </head>
+
+<body>
+
+
+  <div class="container-fluid mt-3">
+    <!-- Title -->
+    <div class="row">
+        <div class="col text-center">
+            <!--h2>Register The Crime</h2-->
+            <h4 class="text-center p-3 bg-danger text-white" style="border-radius:15px;"><strong>Crime Prediction<strong></h4>
+                  
+        </div>
+    </div>
+    <!-- Description -->
+    <div class="row justify-content-center">
+        <div class="col">
+            <p class="mt-3">
+                Provide details about the crime in your region. Your information is crucial for us to take the necessary actions and improve community safety. Please fill out all the required fields and describe the incident with as much detail as possible.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container" style="border-radius:15px;box-shadow: grey 0px 22px 70px 4px;margin-bottom:10%">
+        <div class="container-fluid">
+          
+  <div class="row mb-2 p-5">
+    {% for city in cities %}
+      <div class="card" style="--clr:#ff3e7f; margin-left:50px;">
+        <div class="imgBx" style="margin-left:20px;">
+          <img src="{{ city.image.url }}" alt="{{ city.city_name }} Image">
+        </div>
+        <div class="content">
+          <h1>{{ city.city_name }}</h1>
+          <br>
+          <p>{{ city.city_description|safe }}</p>
+          <a href="/{{ city.city_name|lower }}">{{ city.city_name }}</a>
+        </div>
+      </div>
+      {% if forloop.counter|divisibleby:3 and not forloop.last %}
+      </div>
+      <div class="row mb-5 p-5">
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row  text-center bg-dark text-white p-2">
+		<div class="col-12">
+		  <p><b>Copyright @ 2021-2024 by Faisal & Salman. All Rights Are Reserved</b></p>
+		</div>
+  </div>
+	  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html> 
+

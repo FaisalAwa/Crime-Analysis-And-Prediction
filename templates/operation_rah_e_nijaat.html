@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Rah e Nijaat</title>
+    <!-- Linking Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- Uncomment the below line for your custom CSS -->
+    <!-- <link rel="stylesheet" href="/static/css/contactform.css"> -->
+</head>
+<style>
+  body {
+    background-color:black;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s;
+    padding: 20px;
+    background-color: #87CEFA;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+</style>
+<body>
+  <br><br>
+    <div class="container mt-5 mb-5" style="border-radius:15px;box-shadow: red 0px 22px 70px 4px;">
+        <div class="row justify-content-center">
+            <div class="col-md-10 mt-5 mb-5">
+                <div class="card" style="border-radius:40px 0px 15px 0px;border: 1px solid red;">
+                    <div class="card-body">
+                        <h4 class="text-center p-3 mb-2 bg-danger text-white" style="border-radius:15px;"><strong>Operation 
+                            Rah e Nijaat<strong></h4>
+                        <p>The Operation al-Mizan (English: Operation Justice /ɒpərəɪʃən dʒʌstɪs/) was a series of strategic military campaigns conducted by the Pakistan army and 10,000 United States special operations forces from 2002 to 2006. It continued for five years in various phases eventually, several other operations including the Operation Carlosa II. Al-Mizan was the first major operation of Pakistani troops to combat foreign militant outfits in North Waziristan of North-West Frontier Province. An estimate of 70,000 to 80,000 troops were deployed in affected areas.[2][3]
+
+                            The operation al-Mizan was responsible for the first casualties listed in 2002 by the Western Front. It was conducted when Pakistan, US and NATO forces were severely targeted by the militants on the international border Durand Line. The most militancy-affected areas were Federally Administered Tribal Areas (FATA) and Provincially Administered Tribal Areas (PATA) before the operation was initiated.[4]</p>
+                            
+                            <h4 class="text-center p-3 mb-2 bg-danger text-white" style="border-radius:15px;"><strong>Objective and Backgrounds<strong></h4>
+
+                                <p>The Operation al-Mizan was conducted by the United States and Pakistan to combat Al-Qaeda, Taliban and other foreign terrorist organizations who were carrying out their activities in Waziristan after the United States invasion of Afghanistan made them fled from Afghanistan.[5] The operation was aided by 100,000 to 80,000 troops, 20 Infantry battalion, six combat engineer battalion, one Special Service Group, two Signal corps, and 39 Frontier Corps. All units were commanded under the eight brigade headquarters stationed at two divisions.[6][7] It did not achieve predetermined level of success due to lack of significant information about the presence of the militants and their nature of escaping from the ambush. In 2006 or earlier, it was aborted after a peace deal with Baitullah Mehsud was signed in 2004 at Sararogha subdivision.[8]</p>
+
+                                <h4 class="text-center p-3 mb-2 bg-danger text-white" style="border-radius:15px;"><strong>Casualities<strong></h4>
+                                    
+                                    <p>The operation caused significant losses from the both sides with over 1,400 casualties and killed hundreds of militants, including Al Qaeda leaders. Taliban militants targeted military convoys that caused heavy losses on military. They also launched several well-planned attacks to involve the troops in direct combat.[9][2] The operation was not limited to Al-Qaeda and Taliban, more than 200 Chechens, Uzbeks, and Arabs, including their local supporter, were targeted during the military campaign.[8] It is considered one of the major operations that killed 1,000 Pakistani troops before the conflict was ended in 2006.[10]</p>
+                                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Linking Bootstrap JS and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    {% comment %} <script src="script.js"></script> {% endcomment %}
+</body>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="exampleModalLabel">Contact Form Submission</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-success">
+        Thanks! You Form has been submitted successfully!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+</html>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Show the Bootstrap modal
+    $('#successModal').modal({
+        backdrop: 'static',  // This will prevent closing modal by clicking outside
+        keyboard: false      // This will prevent closing modal using the keyboard
+    });
+
+    // When the close button of the modal is clicked, submit the form
+    $('#successModal .btn-info').on('click', function() {
+        document.getElementById('contactForm').submit();
+    });
+});
+</script>
+

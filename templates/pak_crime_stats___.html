@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pakistan Crime Stats</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    @keyframes blink {
+        0% {opacity: 1;}
+        50% {opacity: 0.5;}
+        100% {opacity: 1;}
+    }
+    
+    .blinking-text {
+        animation: blink 1s infinite;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mb-3 bg-dark mt-3 pt-3" style="border:1px solid red;border-radius:15px;">
+            <div class="col-md-12">
+    <h2 class="p-3 mb-2 bg-info text-white">Data Summary</h2>
+    <p class="text-light bg-dark blinking-text"><strong>{{ file_summary }}<strong></p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+            <div class="row justify-content-center mb-3 " style="border-radius:15px;box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;">
+                <div class="col-md-12">
+<h1 class="p-3 mb-2 bg-success text-white pt-3 mt-3"> Yearly Crime Trend</h1>
+<div id="plotly-div1" ></div>
+<h3 style="background:green;color:white;"><strong>Summary<strong></h3>
+<p class="text-light bg-dark blinking-text"><strong>{{ analysis1 }}<strong></p> 
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row justify-content-center mb-3 bg-dark" style="border:1px solid red;border-radius:15px;">
+                <div class="col-md-12">
+<h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3">Most Common Crimes</h1>
+<div id="plotly-div2"></div>
+<h3 style="background:red;color:white;"><strong>Summary<strong></h3>
+<p class="text-light bg-dark blinking-text"><strong>{{ analysis2 }}<strong></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row justify-content-center mb-3 bg-dark" style="border-radius:15px;box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;">
+                <div class="col-md-12">
+<h1 class="p-3 mb-2 bg-warning text-dark pt-3 mt-3">Districts with Highest Crimes</h1>
+<div id="plotly-div3" ></div>
+<h3 style="background:#ffbf00;color:black;"><strong>Summary<strong></h3>
+<p  class="text-light bg-dark blinking-text"><strong>{{ analysis3 }}<strong></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row justify-content-center mb-3 bg-dark" style="border:1px solid red;border-radius:15px;">
+                <div class="col-md-12">
+<h1  class="p-3 mb-2 bg-primary text-white pt-3 mt-3"> Crime Rate per Capita</h1>
+<div id="plotly-div4"></div>
+<h3 style="background:#0080ff;color:white;"><strong>Summary<strong></h3>
+<p class="text-light bg-dark blinking-text"><strong>{{ analysis4 }}<strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center mb-3 bg-dark" style="border:1px solid red;border-radius:15px;">
+                <div class="col-md-12">
+<h1  class="p-3 mb-2 bg-success text-white pt-3 mt-3">  Number of Crimes by Crime Type and Year</h1>
+<div id="plotly-div5"></div>
+<div style="background:green;color:white;"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" style="box-shadow:5px 10px;">
+            <div class="row justify-content-center mb-3 bg-dark" style="border:1px solid red;border-radius:15px;">
+                <div class="col-md-12">
+<h1  class="p-3 mb-2 bg-danger text-white pt-3 mt-3">  Number of Crimes by District and Year</h1>
+<div id="plotly-div6"></div>
+<h3 style="background:red;color:white;"><strong>Summary<strong></h3>
+<p class="text-light bg-dark blinking-text"><strong>{{ analysis6 }}<strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center mb-3 bg-dark" style="border:1px solid red;border-radius:15px;">
+                <div class="col-md-12">
+<h1  class="p-3 mb-2 bg-warning text-black pt-3 mt-3"> Year, Crime Type, and Number of Cases.</h1>
+<div id="plotly-div7"></div>
+<h3 style="background:#ffbf00;color:black;"><strong>Summary<strong></h3>
+<p class="text-light bg-dark blinking-text"><strong>{{ analysis7 }}<strong></p>
+                </div>
+            </div>
+        </div>
+
+
+<script type="text/javascript">
+    var figure = {{ figure1|safe }};
+    Plotly.newPlot('plotly-div1', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ figure2|safe }};
+    Plotly.newPlot('plotly-div2', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure3|safe }};
+    Plotly.newPlot('plotly-div3', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure4|safe }};
+    Plotly.newPlot('plotly-div4', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ figure5|safe }};
+    Plotly.newPlot('plotly-div5', figure.data, figure.layout);
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure6|safe }};
+    Plotly.newPlot('plotly-div6', figure.data, figure.layout);
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure7|safe }};
+    Plotly.newPlot('plotly-div7', figure.data, figure.layout);
+</script>
+
+</body>
+</html> 

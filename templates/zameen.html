@@ -1,0 +1,144 @@
+<html>
+<head>
+<style>
+* {
+  border: 1px solid red;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: white;
+}
+
+.header {
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius:10px 40px 10px 40px;
+  
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.tab {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+.tab:hover {
+  background-color: green;
+  color: white;
+}
+
+.tab.active {
+  background-color: green;
+  color: white;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.search-field {
+  border: 1px solid red;
+  margin: 5px;
+  padding: 5px;
+}
+
+.search-button {
+  background-color: blue;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.search-button:hover {
+  background-color: green;
+  color: white;
+}
+
+.search-options {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.search-option {
+  color: green;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.search-option:hover {
+  text-decoration: underline;
+}
+
+.background {
+  background-image: url("city.jpg");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="header">Search Location To View the Stats and Prediction</div>
+<!--div class="tabs">
+  <div class="tab active">BUY</div>
+  <div class="tab">RENT</div>
+  <div class="tab">PROJECTS</div>
+</div-->  
+<div class="search-form">
+  <!--input class="search-field" type="text" placeholder="CITY" /-->
+  <input class="search-field" type="text" placeholder="LOCATION" />
+  <select class="search-field" name="city">
+    <option value="" disabled selected>City</option>
+    <option value="Karachi">Karachi</option>
+    <option value="Islamabad">Islamabad</option>
+    <option value="Lahore">Lahore</option>
+
+  </select>
+  <select class="search-field" name="provice">
+    <option value="" disabled selected>Province</option>
+    <option value="Punjab">Punjab</option>
+    <option value="KPK">KPK</option>
+    <option value="Sindh">Sindh</option>
+    <option value="Balochistan">Balochistan</option>
+    
+
+  </select>
+  <input class="search-field" type="number" placeholder="Latitude" />
+  <input class="search-field" type="number" placeholder="Longitude" />
+ 
+  <button class="search-button" type="submit">SEARCH</button>
+</div>
+<div class="search-options">
+  <div class="search-option">Change Currency</div>
+  <div class="search-option">Change Area Unit</div>
+  <div class="search-option">Reset Search</div>
+</div>
+<div class="background"></div>
+</body>
+</html>

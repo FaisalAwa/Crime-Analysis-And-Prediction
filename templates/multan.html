@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+	<title>Multan Prediction</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/slider-wheel.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<style>
+	html {
+  scroll-behavior: smooth;
+}
+.dvd_fixed_slider { font-family: sans-serif; font-style: normal; }
+.slide_text .title { font-size: 36px; color: #fff; line-height: 2.8125rem; font-weight: 700; }
+.slide_text .description { font-size: 1rem; color: #fff; line-height: 1.75; font-weight: 300; margin-bottom: 20px; }
+.slide_text .button { font-size: 1rem; color: #333; line-height: 1; font-weight: 700; background: hsla(0,0%,100%,.82); }
+.slide_text .button { text-align: center; padding: 14px 40px 12px; display: inline-block; }
+.slide_dots_wheel a { font-size: .875rem; color: #fff; line-height: 1.2em; }
+
+.slide_dots_wheel a:first-child .slide_dot,
+.slide_dots_wheel a:hover       .slide_dot { background-color: #0078d4; }
+.slide_dots_wheel .slide_dot { background-color: #fff; }
+
+
+
+
+
+h3 {
+	color: black;
+	font-size: 2em;
+	/* margin-bottom:1em; */
+	margin-bottom:0px;
+	text-align: center;
+  
+  } 
+  @keyframes blink {
+	  0% { opacity: 1; }
+	  50% { opacity: 0; }
+	  100% { opacity: 1; }
+	}
+	
+	h3 {
+	  animation: blink 1s infinite;
+	}
+  
+  h3.end {
+	position: relative;
+	/* color: #fff; */
+	color: red;
+	
+	opacity: 0;
+	transition: 0.8s ease-in-out; 
+  }
+  h1{
+	  margin-left: 40%;
+  }
+  
+  .graph-container img {
+	  display: block;
+	  max-width: 100%;
+	  height: auto;
+  }
+
+
+</style>
+</head>
+
+<body>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+<!-- Slider - BEGIN -->
+	<div class="dvd_fixed_slider">
+		<div class="slides_bg">
+			<div id="slide_01" style="background-image: url('/static/images/k1.jpg')"></div>
+			<div id="slide_02" style="background-image: url('/static/images/k2.jpg')"></div>
+			<div id="slide_03" style="background-image: url('/static/images/k5.jpg')"></div>
+			<div id="slide_04" style="background-image: url('/static/images/k3.jpg')"></div>
+			<div id="slide_05" style="background-image: url('/static/images/k4.jpg')"></div>
+		</div>
+		<div class="slides_fg">
+			<ul class="nav navbar-nav">
+			<!-- Slide 01 -->
+			<li id="slide-01" class="row slide_nth active">
+				<a class="d-none" href="#slide_01"></a>
+				<div class="col-md-7 col-xl-6 mw-100">
+					<div class="slide_imag mx-auto ml-md-0 ml-lg-auto mr-lg-0">
+						<div class="slide_dial">
+							<img src="/static/images/dial-disk-md.png" class="d-none d-md-block" />
+							<img src="/static/images/dial-disk-sm.png" class="d-block d-md-none" />
+						</div>
+						<div class="slide_thumb_bg"
+							 style="background-image: url('/static/images/thumb-agronomic.png')">
+						</div>
+						<div class="slide_dots_wheel">
+							<a href="#slide_01"><i class="slide_dot"></i><span>Target Killing</span></a>
+							<a href="#slide_05"><i class="slide_dot"></i><span>Car Snatching</span></a>
+							<a href="#slide_04"><i class="slide_dot"></i><span>Murder</span></a>
+							<a href="#slide_03"><i class="slide_dot"></i><span>Bomb Blasting</span></a>
+							<a href="#slide_02"><i class="slide_dot"></i><span>Violence</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 col-xl-6 mw-100 justify-content-start justify-content-md-center">
+					<div class="slide_text mx-auto mr-md-0 ml-lg-0 text-center text-md-left">
+						<h3 class="title">Target Killing</h3>
+						<p class="description">
+              Burglars also entered the house of Chaudhry Basharat in Dhoke Kala Khan and made off with Rs250,000 cash and two tola gold ornaments.On the other hand, thieves stole Rs5,000 cash, LED and microwave oven from the house of Hafiz Mehmoodul Hassan at Tarlai Kalan
+							
+							
+						</p>
+						<a class="button" href="https://flex.com/sketch-to-scale/innovate">Learn more</a>
+					</div>
+				</div>
+			</li>
+			<!-- Slide 02 -->
+			<li id="slide-02" class="row slide_nth">
+				<a class="d-none" href="#slide_02"></a>
+				<div class="col-md-7 col-xl-6 mw-100">
+					<div class="slide_imag mx-auto ml-md-0 ml-lg-auto mr-lg-0">
+						<div class="slide_dial">
+							<img src="/static/images/dial-disk-md.png" class="d-none d-md-block" />
+							<img src="/static/images/dial-disk-sm.png" class="d-block d-md-none" />
+						</div>
+						<div class="slide_thumb_bg"
+							 style="background-image: url('/static/images/thumb-telecom.png')">
+						</div>
+						<div class="slide_dots_wheel">
+							<a href="#slide_01"><i class="slide_dot"></i><span>Target Killing</span></a>
+							<a href="#slide_05"><i class="slide_dot"></i><span>Car Snatching</span></a>
+							<a href="#slide_04"><i class="slide_dot"></i><span>Murder</span></a>
+							<a href="#slide_03"><i class="slide_dot"></i><span>Bomb Blasting</span></a>
+							<a href="#slide_02"><i class="slide_dot"></i><span>Violence</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 col-xl-6 mw-100 justify-content-start justify-content-md-center">
+					<div class="slide_text mx-auto mr-md-0 ml-lg-0 text-center text-md-left">
+						<h3 class="title">Car Snatching</h3>
+						<p class="description">
+							
+             , a motorcycle and households from the house of Ashiq Hussain in Rawat, Rs157,000 cash and six gold earrings from the house of Faiz Akbar in Ashraf Town, a motorcycle and mobile phone from Syed Nadeem Ali Shah in G-10/1, five motors from a factory in Sangjani
+						</p>
+						<a class="button" href="https://flex.com/sketch-to-scale/design-and-develop">Learn more</a>
+					</div>
+				</div>
+			</li>
+			<!-- Slide 03 -->
+			<li id="slide-03" class="row slide_nth">
+				<a class="d-none" href="#slide_03"></a>
+				<div class="col-md-7 col-xl-6 mw-100">
+					<div class="slide_imag mx-auto ml-md-0 ml-lg-auto mr-lg-0">
+						<div class="slide_dial">
+							<img src="/static/images/dial-disk-md.png" class="d-none d-md-block" />
+							<img src="/static/images/dial-disk-sm.png" class="d-block d-md-none" />
+						</div>
+						<div class="slide_thumb_bg"
+							 style="background-image: url('/static/images/thumb-electrical.png')">
+						</div>
+						<div class="slide_dots_wheel">
+							<a href="#slide_01"><i class="slide_dot"></i><span>Target Killing</span></a>
+							<a href="#slide_05"><i class="slide_dot"></i><span>Car Snatching</span></a>
+							<a href="#slide_04"><i class="slide_dot"></i><span>Murder</span></a>
+							<a href="#slide_03"><i class="slide_dot"></i><span>Bomb Blasting</span></a>
+							<a href="#slide_02"><i class="slide_dot"></i><span>Violence</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 col-xl-6 mw-100 justify-content-start justify-content-md-center">
+					<div class="slide_text mx-auto mr-md-0 ml-lg-0 text-center text-md-left">
+						<h3 class="title">Murder</h3>
+						<p class="description">
+              Rs500,000 cash from Saghir in Sangjani and Rs60,000 cash from Badarun Nisa in I-10 Markaz.In snatching incidents, culprits took away mobile phones and cash from people in various areas, including Lehtrar Road, I-15, Khanna, F-11 Markaz, Tarnol.
+						</p>
+						<a class="button" href="https://flex.com/sketch-to-scale/build">Learn more</a>
+					</div>
+				</div>
+			</li>
+			<!-- Slide 04 -->
+			<li id="slide-04" class="row slide_nth">
+				<a class="d-none" href="#slide_04"></a>
+				<div class="col-md-7 col-xl-6 mw-100">
+					<div class="slide_imag mx-auto ml-md-0 ml-lg-auto mr-lg-0">
+						<div class="slide_dial">
+							<img src="/static/images/dial-disk-md.png" class="d-none d-md-block" />
+							<img src="/static/images/dial-disk-sm.png" class="d-block d-md-none" />
+						</div>
+						<div class="slide_thumb_bg"
+							 style="background-image: url('/static/images/thumb-computer.png')">
+						</div>
+						<div class="slide_dots_wheel">
+							<a href="#slide_01"><i class="slide_dot"></i><span>Target Killing</span></a>
+							<a href="#slide_05"><i class="slide_dot"></i><span>Car Snatching</span></a>
+							<a href="#slide_04"><i class="slide_dot"></i><span>Murder</span></a>
+							<a href="#slide_03"><i class="slide_dot"></i><span>Bomb Blasting</span></a>
+							<a href="#slide_02"><i class="slide_dot"></i><span>Violence</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 col-xl-6 mw-100 justify-content-start justify-content-md-center">
+					<div class="slide_text mx-auto mr-md-0 ml-lg-0 text-center text-md-left">
+						<h3 class="title">Bomb Blasting</h3>
+						<p class="description">
+
+              Shaheed-i-Millat Road, Srinagar Highway near Police Lines, Chungi No 26 and Faizabad.Likewise, mobile phones were also snatched from people in Dhoke Paracha, Gangal Stop, Dhoke Kala Khan, Sohan, Khanna, Ghauri Town and Rawat.Meanwhile, vehicles were stolen from Faisal Mosque parking area and H-9, motorcycles from F-6, Dhoke Paracha, Sangjani
+							
+						</p>
+						<a class="button" href="https://flex.com/sketch-to-scale/deliver">Learn more</a>
+					</div>
+				</div>
+			</li>
+			<!-- Slide 05 -->
+			<li id="slide-05" class="row slide_nth">
+				<a class="d-none" href="#slide_05"></a>
+				<div class="col-md-7 col-xl-6 mw-100">
+					<div class="slide_imag mx-auto ml-md-0 ml-lg-auto mr-lg-0">
+						<div class="slide_dial">
+							<img src="/static/images/dial-disk-md.png" class="d-none d-md-block" />
+							<img src="/static/images/dial-disk-sm.png" class="d-block d-md-none" />
+						</div>
+						<div class="slide_thumb_bg"
+							 style="background-image: url('/static/images/thumb-business.png')">
+						</div>
+						<div class="slide_dots_wheel">
+							<a href="#slide_01"><i class="slide_dot"></i><span>Target Killing</span></a>
+							<a href="#slide_05"><i class="slide_dot"></i><span>Car Snatching</span></a>
+							<a href="#slide_04"><i class="slide_dot"></i><span>Murder</span></a>
+							<a href="#slide_03"><i class="slide_dot"></i><span>Bomb Blasting</span></a>
+							<a href="#slide_02"><i class="slide_dot"></i><span>Violence</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 col-xl-6 mw-100 justify-content-start justify-content-md-center">
+					<div class="slide_text mx-auto mr-md-0 ml-lg-0 text-center text-md-left">
+						<h3 class="title">Violence</h3>
+						<p class="description">
+
+              Sarai Mor and Korang Town, F-9 Markaz, G-12, F-8 Markaz, Golra Shrine, Sharifabad, Jinnah Garden, Soan Garden and PWD.The government had spent over Rs13 billion under the Islamabad Safe City Project installing 1800 surveillance cameras throughout the city.
+							
+						</p>
+						<a class="button" href="https://flex.com/sketch-to-scale/manage">Learn more</a>
+					</div>
+				</div>
+			</li>
+			<!-- Slide - END -->
+			</ul>
+		</div>
+	</div>
+<!-- Slider - END -->
+
+
+
+<br><br><br>
+  
+  
+<div class="container">
+  <div class="row g-3">
+	  <div class="col-md-4" id="dha">
+		<div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+		  <div class="card-header">Karachi Area - DHA (Defence Housing Authority)</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 300,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8423, Longitude: 67.0592<br>
+			  Total Crimes Last Year: 120<br>
+			  Importance: High-end residential and commercial hub.<br>
+			  A relatively safer area with modern amenities and vigilant security.
+			</p>
+			<!--a href="#" class="btn btn-primary">Predict Safety Level</a-->
+			<p>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+  Predict Safety Level
+</button>
+</p>
+<div style="min-height: 120px;">
+<div class="collapse collapse-horizontal" id="collapseWidthExample1">
+  <div class="card card-body" style="width: 250px; color: black;">
+	  The area is safe from a residential point of view</div>
+</div>
+</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="clifton">
+		<div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+		  <div class="card-header">Karachi Area - Clifton</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 200,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8105, Longitude: 67.0304<br>
+			  Total Crimes Last Year: 90<br>
+			  Importance: Cultural and recreational center with historical significance.<br>
+			  Known for its beachfront, attracting both residents and tourists.
+			</p>
+
+
+			<button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample2">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="gulshane-iqbal">
+		<div class="card text-bg-success mb-3" style="max-width: 18rem;">
+		  <div class="card-header">Karachi Area - Gulshan-e-Iqbal</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 600,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9262, Longitude: 67.0221<br>
+			  Total Crimes Last Year: 200<br>
+			  Importance: Educational and residential area with numerous parks and institutions.<br>
+			  A densely populated area with a diverse community.
+			</p>
+
+
+			<button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample3">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Additional cards for other areas can follow the same structure. -->
+	
+
+  <div class="row g-3">
+	  <div class="col-md-4" id="korangi">
+		<div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+		  <div class="card-header">Karachi Area - Korangi</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 550,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8555, Longitude: 67.2167<br>
+			  Total Crimes Last Year: 150<br>
+			  Importance: Industrial backbone with significant manufacturing units and residential communities.<br>
+			  A dynamic mix of industrial and residential life, facing challenges but thriving with community efforts.
+			</p>
+
+
+			
+			<button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample4" aria-expanded="false" aria-controls="collapseWidthExample4">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample4">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="saddar">
+		<div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+		  <div class="card-header">Karachi Area - Saddar</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 400,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8534, Longitude: 67.0218<br>
+			  Total Crimes Last Year: 230<br>
+			  Importance: Historical heart with rich cultural landmarks and bustling markets.<br>
+			  A vital commercial district, offering a blend of old Karachi charm and modern retail experiences.
+			</p>
+
+			<button class="btn btn-warnijng" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample5" aria-expanded="false" aria-controls="collapseWidthExample5">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample5">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="north-nazimabad">
+		<div class="card text-bg-info mb-3" style="max-width: 18rem;">
+		  <div class="card-header">Karachi Area - North Nazimabad</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 450,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9120, Longitude: 67.0408<br>
+			  Total Crimes Last Year: 100<br>
+			  Importance: Known for its architectural elegance, educational institutions, and commercial areas.<br>
+			  A well-planned residential hub with a focus on quality living and educational excellence.
+			</p>
+
+			
+			<button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample6" aria-expanded="false" aria-controls="collapseWidthExample6">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample6">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="row g-3">
+	  <div class="col-md-4" id="bahria-town-karachi">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #fff3cd;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - Bahria Town Karachi</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: Estimated 200,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9264, Longitude: 67.0221<br>
+			  Total Crimes Last Year: Estimated 30<br>
+			  Importance: A symbol of luxury and peace with high security, offering a premium lifestyle with all modern amenities.<br>
+			  A self-contained community with a focus on comfort and security.
+			</p>
+			<a href="#" class="btn btn-outline-secondary">Predict Safety Level</a>
+
+			
+			<button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample7" aria-expanded="false" aria-controls="collapseWidthExample7">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample7">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="karimabad">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #d1ecf1;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - Karimabad</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 150,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9331, Longitude: 67.0583<br>
+			  Total Crimes Last Year: Estimated 100<br>
+			  Importance: Cultural hub with vibrant markets, known for its rich cultural heritage and traditional shopping experiences.<br>
+			  A bustling area attracting shoppers and tourists alike.
+			</p>
+
+			
+			<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample8" aria-expanded="false" aria-controls="collapseWidthExample8">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample8">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="pechs">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #d4edda;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - PECHS (Pakistan Employees Cooperative Housing Society)</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 300,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8674, Longitude: 67.0724<br>
+			  Total Crimes Last Year: Estimated 70<br>
+			  Importance: A residential heart of the city with a diverse community, blending traditional homes with modern living.<br>
+			  Noted for its accessibility and green spaces amidst urban settings.
+			</p>
+
+			
+			<button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample9" aria-expanded="false" aria-controls="collapseWidthExample9">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample9">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="row g-3">
+	  <div class="col-md-4" id="tariq-road">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #cfe2ff;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - Tariq Road</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 250,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8738, Longitude: 67.0334<br>
+			  Total Crimes Last Year: Estimated 80<br>
+			  Importance: A major shopping and retail hub, attracting visitors for its diverse shopping and dining options.<br>
+			  Known for its vibrant commercial activity and cultural significance.
+			</p>
+
+			
+			<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample10" aria-expanded="false" aria-controls="collapseWidthExample10">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample10">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="kemari">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #fce5cd;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - Kemari</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 150,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8074, Longitude: 66.9671<br>
+			  Total Crimes Last Year: Estimated 50<br>
+			  Importance: Essential for Karachi's maritime activities, home to the city's main fish harbor and trading ports.<br>
+			  A crucial area for the local economy, especially for seafood and shipping industries.
+			</p>
+
+			
+			<button class="btn btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample11" aria-expanded="false" aria-controls="collapseWidthExample11">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample11">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="orangi-town">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #d9ead3;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - Orangi Town</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 900,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9535, Longitude: 66.9911<br>
+			  Total Crimes Last Year: Estimated 300<br>
+			  Importance: Known for its large population and grassroots social and community development projects.<br>
+			  Faces challenges but is notable for community resilience and empowerment initiatives.
+			</p>
+
+			
+			<button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample12" aria-expanded="false" aria-controls="collapseWidthExample12">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample12">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	</div>
+	 
+	<div class="row g-3">
+	  <div class="col-md-4" id="fb-area">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #f4cccc;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - Federal B. Area</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 350,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9339, Longitude: 67.0648<br>
+			  Total Crimes Last Year: Estimated 60<br>
+			  Importance: Renowned for its orderly layout, featuring multiple parks, educational institutions, and active markets.<br>
+			  A cohesive community with emphasis on education and green spaces.
+			</p>
+
+			
+			<button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample13" aria-expanded="false" aria-controls="collapseWidthExample13">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample13">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="nazimabad">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #d0e0e3;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - Nazimabad</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 500,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9123, Longitude: 67.0334<br>
+			  Total Crimes Last Year: Estimated 150<br>
+			  Importance: A bustling residential and commercial area, balancing modern living with cultural traditions.<br>
+			  Home to diverse marketplaces and residential options.
+			</p>
+
+			
+			<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample14" aria-expanded="false" aria-controls="collapseWidthExample14">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample14">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="surjani-town">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #c9daf8;"> <!-- Custom background for distinction -->
+		  <div class="card-header">Karachi Area - Surjani Town</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 400,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9780, Longitude: 67.0642<br>
+			  Total Crimes Last Year: Estimated 120<br>
+			  Importance: Known for its affordable living options and recent infrastructural developments.<br>
+			  Attracts a wide-ranging community with its inclusivity and growth potential.
+			</p>
+
+			
+			<button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample15" aria-expanded="false" aria-controls="collapseWidthExample15">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample15">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+
+	
+  <!-- Add more rows and cards as needed for other areas -->
+
+  <div class="row g-3">
+	  <div class="col-md-4" id="jauhar-town">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #fce5cd;">
+		  <div class="card-header">Karachi Area - Johar Town</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 450,000</h5>
+			<p class="card-text">
+			  Latitude: 24.914, Longitude: 67.097<br>
+			  Total Crimes Last Year: Estimated 90<br>
+			  Importance: Known for its rapid development, offering educational excellence, shopping convenience, and leisure facilities.<br>
+			  A thriving residential community with significant growth potential.
+			</p>
+
+			
+			<button class="btn btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample16" aria-expanded="false" aria-controls="collapseWidthExample16">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample16">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="model-colony">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #d9d2e9;">
+		  <div class="card-header">Karachi Area - Model Colony</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 300,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8918, Longitude: 67.1432<br>
+			  Total Crimes Last Year: Estimated 70<br>
+			  Importance: Strategically located near the airport, it provides diverse housing options catering to various socioeconomic groups.<br>
+			  A vibrant area with a mix of urban living and community dynamics.
+			</p>
+
+			
+			<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample17" aria-expanded="false" aria-controls="collapseWidthExample17">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample17">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="site-area">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #c9daf8;">
+		  <div class="card-header">Karachi Area - S.I.T.E Area</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: Estimated 250,000 (workers and residents)</h5>
+			<p class="card-text">
+			  Latitude: 24.9056, Longitude: 66.9911<br>
+			  Total Crimes Last Year: Estimated 110<br>
+			  Importance: The industrial backbone of Karachi, hosting a wide range of factories and businesses essential to the city's economy.<br>
+			  A pivotal area for industrial activity and employment.
+			</p>
+
+			
+			<button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample18" aria-expanded="false" aria-controls="collapseWidthExample18">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample18">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="row g-3">
+	  <div class="col-md-4" id="dha">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #d0e0e3;">
+		  <div class="card-header">Karachi Area - Gulberg Town</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 400,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9272, Longitude: 67.0343<br>
+			  Total Crimes Last Year: Estimated 120<br>
+			  Importance: A vibrant commercial center with a rich diversity of markets, food streets, and residential areas.<br>
+			  Appeals to middle-income families with its affordable living and commercial vitality.
+			</p>
+			
+			
+			<button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample19" aria-expanded="false" aria-controls="collapseWidthExample19">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample19">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+		  
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="dha">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #ead1dc;">
+		  <div class="card-header">Karachi Area - Shah Faisal Colony</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 500,000</h5>
+			<p class="card-text">
+			  Latitude: 24.8915, Longitude: 67.1561<br>
+			  Total Crimes Last Year: Estimated 200<br>
+			  Importance: A densely populated district with a dynamic economy, situated strategically near Karachi's main airport.<br>
+			  Known for its hustle and vibrant community life.
+			</p>
+
+			
+			<button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample20" aria-expanded="false" aria-controls="collapseWidthExample20">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample20">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4" id="dha">
+		<div class="card mb-3" style="max-width: 18rem; background-color: #cfe2f3;">
+		  <div class="card-header">Karachi Area - Baldia Town</div>
+		  <div class="card-body">
+			<h5 class="card-title">Population: 600,000</h5>
+			<p class="card-text">
+			  Latitude: 24.9319, Longitude: 66.9371<br>
+			  Total Crimes Last Year: Estimated 250<br>
+			  Importance: Notable for its working-class spirit, small industries, and strong sense of community.<br>
+			  A neighborhood characterized by resilience and community initiatives.
+			</p>
+			
+			
+			<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample21" aria-expanded="false" aria-controls="collapseWidthExample21">
+			  Predict Safety Level
+			</button>
+		  </p>
+		  <div style="min-height: 120px;">
+			<div class="collapse collapse-horizontal" id="collapseWidthExample21">
+			  <div class="card card-body" style="width: 250px; color: black;">
+				  The area is safe from a residential point of view</div>
+			</div>
+		  </div>
+
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	
+</div>
+
+<br>
+
+	 <!-- summary section-->
+	 <div class="container bg-white mt-5 mb-5">
+        <div class="row  justify-content-center ">
+        <div class="col-md-10 "  style="box-shadow: inset 0 0 10px #000000; border-radius:10px 40px 10px 40px;">
+            <h3>Summary</h3>
+            <p>
+                {% for summary in Summaries %}
+                    {{ summary }}<br>
+                {% endfor %}
+             </p>
+            
+        </div>
+        </div>
+    </div>
+    <!-- summary section ends-->
+
+    
+    <div class="container bg-white mt-5">
+        <div class="row  justify-content-center">
+        <div class="col-md-5 "  style="box-shadow: inset 0 0 10px #000000;">
+            <h3>Locations</h3>
+            <p>
+                {% for location in Locations %}
+                    {{ location }}<br>
+                {% endfor %}
+            </p>
+        </div>
+        <div class="col-md-5 " style="box-shadow: inset 0 0 10px #000000;">
+            <h3>Dates</h3>
+            <p>
+                {% for date in Dates %}
+                {{ date }}<br>
+            {% endfor %}
+             </p>
+        </div>
+    </div>
+</div>
+
+   
+            
+
+        <!--div class="container bg-white mt-5">
+            <div class="row  justify-content-evenly ">
+            <div class="col-md-5 "  style="box-shadow: inset 0 0 10px #000000;">
+            <h3>Miscellaneous Data</h3>
+            <p>
+                {% for other in Others %}
+                {{ other }}<br>
+            {% endfor %}
+             </p>
+        </div-->
+
+        <div class="container bg-white mt-5 mb-5">
+            <div class="row  justify-content-center ">
+            <div class="col-md-5 "  style="box-shadow: inset 0 0 10px #000000; border-radius:15px;">
+             <h3>Crime Prediction</h3>
+             <p>
+                 {% for prediction in CrimePredictions %}
+                     {{ prediction }}<br>
+                 {% endfor %}
+              </p>
+            </div>
+        </div>
+    </div>    
+   
+	<div class="row text-center bg-primary text-white p-2">
+		<div class="col-12">
+		  <p><b>Copyright @ 2021-2024 by Faisal Mehmood Awan. All Rights Are Reserved</b></p>
+		</div>
+	  </div>
+	<script src="/static/js/slider-wheel.js"></script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

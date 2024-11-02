@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pakistan Drone Attacks</title>
+    <script  src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    
+    <!-- library for scrolling effect on elements-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link href="static/css/animate.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+<style>
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+    .text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+      width: 1300px;
+      left: 50%;
+      padding-left:50px;
+      height: 80px;
+      margin-top: 50px;
+    margin-bottom:50px;
+      margin-left:80px;
+      border:1px solid red;
+      color: black;
+    }
+    
+    p {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+    }
+    
+    .word {
+      position: absolute;
+      width: 800px;
+      opacity: 0;
+    }
+    
+    .letter {
+      display: inline-block;
+      position: relative;
+      float: left;
+      transform: translateZ(25px);
+      transform-origin: 50% 50% 25px;
+    }
+    
+    .letter.out {
+      transform: rotateX(90deg);
+      transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    
+    .letter.behind {
+      transform: rotateX(-90deg);
+    }
+    
+    .letter.in {
+      transform: rotateX(0deg);
+      transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .wisteria {
+      color: #8e44ad;
+    }
+    
+    .belize {
+      color: #2980b9;
+    }
+    
+    .pomegranate {
+      color: white;
+    }
+    
+    .green {
+      color: #16a085;
+    }
+    
+    .midnight {
+      color: yellow ;
+    }
+    
+h6{
+    background:black;
+    color:yellow;
+    font-size:20px;
+}
+body{
+     background-color:black;
+}
+
+</style>
+
+</head>
+
+<body>
+    
+    <!-- code for all the animations on the elements-->
+    <script>
+        new WOW().init();
+      </script>
+
+
+ <!--carousel start here-->
+ <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/drone-8.jpg" class="d-block w-100" height="600px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+         
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/drone-4.jpg" class="d-block w-100" height="600px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+     
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/drone-6.jpg" class="d-block w-100" height="600px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel ends here-->
+
+  <div class="text wow fadeInDown" style="background-color:red;border:1px solid red;border-radius:15px;border-radius:15px;box-shadow: red 0px 0px 50px 0px;">
+    <p>We will be providing you here</p>
+    <p>
+      <span class="word wisteria">DroneAttacksDetailed Analysis.</span>
+      <span class="word belize">DroneAttacksVisualization.</span>
+      <span class="word pomegranate">DroneAttacksInsights.</span>
+      <span class="word green">DroneAttacksFacts.</span>
+      <span class="word midnight">DroneAttacksTrends.</span>
+    </p>
+  </div>
+
+    <!--marquee images starts-->
+
+        
+    <div class="container-fluid wow fadeInUp" style="background-color:grey;">
+        
+        <marquee>
+
+        <div class="row justify-content-center text-white" id="blog">
+  
+            <div class="col-md-3 col-11 mt-4">
+  
+              <img src="/static/drone-2.jpg" class="img-fluid"    style="border:1px solid red;border-radius:15px;radius:15px;box-shadow: red 0px 0px 50px 0px;">
+           
+            </div>
+  
+            <div class="col-md-3 col-11 mt-4">
+  
+              <img src="/static/drone-3.jpg" class="img-fluid"    style="border:1px solid red;border-radius:15px;radius:15px;box-shadow: red 0px 0px 50px 0px;">
+             
+          </div>
+  
+          <div class="col-md-3 col-11 mt-4">
+  
+            <img src="/static/drone-4.jpg" class="img-fluid"    style="border:1px solid red;border-radius:15px;radius:15px;box-shadow: red 0px 0px 50px 0px;">
+           
+        </div>
+      
+        <div class="col-md-3 col-11 mt-4">
+  
+            <img src="/static/drone-6.jpg" class="img-fluid"    style="border:1px solid red;border-radius:15px;radius:15px;box-shadow: red 0px 0px 50px 0px;">
+           
+        </div>
+
+
+    </div>
+
+    </marquee>
+
+        </div>  
+
+        </div>
+    
+    </div>
+
+        <!-- marquee images end-->
+
+       
+        <!--blogs-->
+
+            <style>
+                #blog{
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                }
+                
+                #blog-title{
+                    font-size:50px;
+                    font-weight: bolder;
+                }
+                
+                #blog-text{
+                    font-size: 20px;
+                 
+                }
+                
+                .article-detail{
+                    padding: 15px;
+                    border: 1px solid rgb(185,185,185);
+                    border-top: 0;
+                    color: black;
+                }
+                
+                .article-date, .article-link{
+                    color:  white;
+                    font-weight: 500;
+                
+                }
+            </style>
+
+        <div class="container-fluid"  style="background-color:orange;">
+        
+        <div class="row justify-content-center text-white" id="blog">
+
+            <div class="col-12 text-center text-dark">
+             
+              <h1 class="heading wow slideInLeft" data-wow-duration="1.4s">
+                <i class="bi bi-airplane-engines"><b></i> Drone Attacks On <span style="color: rgb(115, 3, 167); font:bolder;">Pakistan</span></b>
+              </h1>
+
+              <p class="mt-4  text-black wow fadeInUp" style="padding-left:10px; padding-top:20px; padding-bottom:20px; padding-right:10px; font-weight:600; font-size:20px; text-align:center; background-color:skyblue;"><i>Drone strikes in Pakistan have sparked debate due to concerns over civilian casualties and sovereignty breaches. These strikes, primarily by the U.S., target militants but also impact civilians, creating tension between counterterrorism efforts and ethical considerations. The lack of transparency and the psychological impact on residents further complicate the issue.</i></p>
+
+            </div>
+  
+
+            <div class="col-md-3 col-11 mt-4 wow slideInLeft"  style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;">
+              
+              <img src="/static/drone-3.jpg" class="img-fluid">
+              <div class="article-detail">
+                <h4 class="article-title">Grassroots Movements Against Drone Strikes in Pakistan</h4>
+                <p class="article-date">February 8 , 2023</p>
+                <p class="article-description"> Explore the impact of drone strikes on local communities in Pakistan and the rise of grassroots movements. Discuss the socio-political dynamics that have led to protests and how these movements aim to influence policy decisions</p>
+                <p><a href="https://www.crisisgroup.org/asia/south-asia/pakistan/drones-myths-and-reality-pakistan" class="article-link">Read More</a></p>    
+              </div>
+  
+            </div>
+  
+            <div class="col-md-3 col-11 mt-4 wow fadeInDown"  style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;">
+  
+              <img src="/static/drone-2.jpg" class="img-fluid">
+              <div class="article-detail">
+                <h4 class="article-title">The Escalating Tensions and Public Outcry Over Drone Warfare</h4>
+                <p class="article-date">February 8 , 2023</p>
+                <p class="article-description">Analyze the symbolic and real repercussions of drone strikes in Pakistan, focusing on incidents that have intensified public outrage. Detail the implications for international relations and the debate over the ethical and legal aspects of drone warfare.</p>
+                <p><a href="https://fsi.stanford.edu/news/us-drone-war-pakistan-revisited" class="article-link">Read More</a></p>    
+              </div>
+  
+            </div>
+  
+            <div class="col-md-3 col-11 mt-4 wow slideInRight"  style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;">
+  
+              <img src="/static/drone-6.jpg" class="img-fluid">
+              <div class="article-detail">
+                <h4 class="article-title">The Role of UAVs in Modern Warfare: A Closer Look at Drone Operations in Pakistan</h4>
+                <p class="article-date">February 8 , 2023</p>
+                <p class="article-description">Examine the strategic use of Unmanned Aerial Vehicles (UAVs) in Pakistan's conflict zones. Provide an overview of the technological advancements in drone technology and assess the balance between operational gains and collateral damage.</p>
+                <p><a href="https://www.bbc.com/news/world-60047328" class="article-link">Read More</a></p>    
+              </div>
+  
+          </div>
+        </div>
+    
+    </div>
+ 
+ 
+    <!-- blogs end-->
+
+
+    
+        <!-- service -->
+        <style>
+            #service-text{
+                padding-top: 5%;
+                padding-bottom: 5%;
+                padding-left:4%;
+                color:white;
+            }
+            #service-btn{
+                color: white;
+                background-color: black;
+                border : 2px solid  #fcc302;
+            }
+            #service-image{
+                padding: 5%;
+            }
+        </style>
+        <div class="container-fluid" style="background-color:grey;">
+        <div class="row justify-content-evenly">
+            <div class="col-md-5 wow slideInRight" id="service-text" style="background-color:black;border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: yellow 0px 0px 50px 0px;margin-top:20px;margin-bottom:20px;" >
+                <h1 style="color:white;">"Controversies and Consequences <br> The Complex Dynamics of Drone Warfare in Pakistan</h1>
+                <p style="color:yellow;">
+                    <b>Drone attacks in Pakistan have been a contentious issue, sparking intense debate over their legality, efficacy, and humanitarian impact. The use of unmanned aerial vehicles (UAVs) by various nations, primarily the United States, to target terrorist suspects in the Federally Administered Tribal Areas (FATA) has led to political friction and public outcry within Pakistan. Reports often highlight the precision strike capabilities of drones, which are lauded for their role in degrading militant networks without risking military personnel. However, these strikes are also criticized for collateral damage, leading to civilian casualties and the disruption of ordinary life in affected regions. The secrecy surrounding the drone campaign, the challenges in obtaining accurate casualty figures, and the psychological toll on the population living under the constant presence of drones add layers of complexity to the issue. The Pakistani government's stance has fluctuated over time, reflecting the tension between strategic counterterrorism objectives and sovereign rights, as well as the need to address domestic and international legal and ethical concerns.</b></p>
+             
+            </div>
+            <div class="col-md-5 wow slideInLeft" style="margin-top:170px;" id="service-image">
+                <img src="/static/images/drone3-removebg-preview.png" class="img-fluid"  style="background-color:black;border:1px solid red;border-radius:15px;border-radius:15px;box-shadow: yellow 0px 0px 50px 0px;" >
+            </div>
+        </div>
+    </div>
+        <!-- service ends-->
+
+
+
+      <!-- plot 1 starts -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center bg-white mt-5 mb-3 pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;">
+            <div class="col-md-9">
+             
+                <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Max Strikes on which day</marquee></h1>
+
+<div id="plotly-div1"  class="wow fadeInRight"  ></div>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h6>Key Insights:</h6><hr>
+                <h6>Highest Frequency:</h6><hr>
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;padding-left:15px;">The bar representing Friday is the tallest, indicating that the highest number of drone strikes occurred on this day of the week.</p><br><br>
+                <h6>Comparison Across Days:</h6><hr>
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;padding-left:15px;">While Friday has the highest count, the number of strikes on other days seems relatively similar, with no other day showing a drastically low or high number in comparison to the rest.</p>
+        </div>
+    </div>
+
+
+      <!-- plot 1 ends -->
+
+
+
+          <!-- plot 2 starts -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8  0px 0px 50px 0px;">
+         
+      
+        <div class='col-md-3 mt-3' style="padding-left:10px;">
+
+            <h6>Key Insights:</h6><hr>
+
+            <h6>Highest Frequency:</h6><hr>
+            <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;padding-left:15px;">There's an observable trend in the number of crime cases over the years. Starting in 2011, there appears to be a fluctuation in the number of cases, not showing a simple increase or decrease over time.</p><br><br>
+
+            <h6>Lowest Frequency:</h6><hr>
+            <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;padding-left:15px;">The largest bubble represents the year with the most crime cases. In this chart, it's the year 2015, indicated by the largest, orange-colored bubble at the rightmost side of the chart.</p><br><br>
+
+            <h6>Comparison Across Months:</h6><hr> 
+            <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;padding-left:15px;">The year 2011, represented by the blue bubble, appears to have the lowest number of crime cases, whereas 2015 has the highest.</p><br><br>
+
+        </div>
+
+        <div class="col-md-9">
+
+            <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Max Strikes on which month</marquee></h1>
+                            
+            <div id="plotly-div2"  class="wow fadeInLeft"></div>
+
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <h6>Middle Years: </h6><hr>
+                    <p  class="wow fadeInRight" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;padding-left:15px;">The years in between, 2012 (red), 2013 (green), and 2014 (purple), have intermediate sizes, showing variations in crime cases from year to year.</p><br><br>
+                </div>
+                        
+        </div>
+
+        </div>
+    </div>
+
+          <!-- plot 1 ends -->
+
+
+                <!-- plot 3 starts -->
+
+
+    <div class="container-fluid">
+        <div class="row mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: black 0px 0px 50px 0px;">
+            <div class="col-md-9">
+                
+        <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee> Visuallization of Per Year Killed & Injured ( all categories compairson per year using line chart )</marquee></h1>
+                
+        <div id="plotly-div4"  class="wow fadeInRight" ></div>
+            </div>
+
+        
+            <div class="col-md-3 mt-3">
+              
+                <h6>Key Insights:</h6><hr>
+
+                <h6>Peak of Casualties:</h6><hr>
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: black 0px 0px 50px 0px;padding-left:15px;"> The pink line representing "Total Killed" peaks sharply in 2009, indicating the highest number of fatalities in that year across all categories.</p><br><br>
+
+                <h6>Injuries vs. Fatalities:</h6><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:black 0px 0px 50px 0px;padding-left:15px;"> The light blue line representing "Total Injured" shows the number of injuries over the years, with a notable peak also around 2009 but less pronounced than the fatalities.</p>
+
+                
+                <h6>Affected Groups:</h6><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:black 0px 0px 50px 0px;padding-left:15px;"> The lines for Al-Qaeda and Taliban show fluctuations over the years, with both groups experiencing a significant number of fatalities around 2009, coinciding with the peak of the "Total Killed" line</p>                
+
+            </div>
+
+            <div class="row">
+            <div class="col-md-3"><h6>Foreigners:</h6><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:black 0px 0px 50px 0px;padding-left:15px;"> The category for "Foreigners" depicted by the brown line indicates a relatively lower but consistent number of casualties over the years compared to other categories.</p></div>
+
+            <div class="col-md-3"><h6>Trend Over Time:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:black 0px 0px 50px 0px;padding-left:15px;"> Post-2009, there is a general decline in the number of fatalities and injuries across all categories, although the lines for specific groups like the Taliban and Al-Qaeda see some fluctuation.</p></div>
+            
+            <div class="col-md-3"><h6>Civilian Casualties:</h6><hr>
+            <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:black 0px 0px 50px 0px;padding-left:15px;">  The purple line for "Civilians" shows a rise in casualties peaking in 2009, which suggests a correlation with the overall increase in fatalities and injuries that year.</p></div>
+
+        </div>
+    </div>
+
+      <!-- plot 3 ends -->
+
+
+
+
+            <!-- plot 4 starts -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: teal 0px 0px 50px 0px;">
+           
+
+            <div class='col-md-3 mt-3'>
+ 
+                <h6>Key Insights:</h6><hr>
+
+                <h6>Peak Activity:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:teal 0px 0px 50px 0px;padding-left:15px;"> The chart shows a significant peak in drone attacks targeting the Taliban around 2010, which is the highest point on the red line. The same year also saw a high number of attacks targeting Al-Qaeda, as indicated by the black line.</p><br><br>
+
+                <h6>Drone Attacks Frequency:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:teal 0px 0px 50px 0px;padding-left:15px;">  The number of strikes, represented by the green line, seems to correlate with the peaks of the Taliban and Al-Qaeda lines, suggesting that when drone attack frequency increased, both groups were targeted more often.</p><br><br>
+
+                <h6>Trends Over Time:</h6><hr>
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:teal 0px 0px 50px 0px;padding-left:15px;"> There is a noticeable increase in activity targeting both groups starting from around 2007, with the peak in 2010, followed by a decline and then some fluctuations in subsequent years.</p><br>
+
+            </div>
+
+            <div class="col-md-9">
+
+                <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Number of Drone Attack, Taliban & Al-Qaeda Targeted Per Year</marquee></h1>
+                            
+                
+                <div id="plotly-div5"  class="wow fadeInLeft"></div>
+                <div class="row">
+                    <div class="col-md-9 mt-5" style="margin-left:150px;">
+                        <h6>Recent Years: </h6><hr>
+                        <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:teal 0px 0px 50px 0px;padding-left:15px;"> In the last years displayed on the graph (2016 and 2017), the frequency of targeting both Al-Qaeda and the Taliban, as well as the number of strikes, appears to have decreased significantly.</p><br>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+   
+      <!-- plot 4 ends -->
+
+
+      <!-- plot 5 starts -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #E909F8 0px 0px 50px 0px;">
+            <div class="col-md-12">
+
+<h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Number of Drone Attacks, Al-Qaeda & Taliban Targeted</marquee></h1>
+            
+
+<div id="plotly-div6"  class="wow fadeInRight" ></div>
+            </div>
+
+            <div class="row justify-content-center">
+            
+                <div class="col-12-md">
+                <h6>Key Insights:</h6><hr>
+                </div>
+
+                <div class="row justify-content-center">
+                <div class="col-md-4 mt-3">
+                <h6 style="padding-left:20px;">Peak Activity:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #E909F8 0px 0px 50px 0px;padding-left:15px;">The highest number of drone attacks occurred in 2010, shown by the red bars, which also corresponds to the highest targeting of the Taliban (blue bars) and a significant level of targeting Al-Qaeda (green bars).</p><br><br></div>
+                
+                <div class="col-md-4 mt-3">
+                <h6>Trends Over Time:</h6><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #E909F8 0px 0px 50px 0px;padding-left:15px;"> From 2004 to 2010, there was an overall increase in the number of drone attacks and the targeting of both the Taliban and Al-Qaeda. After 2010, there is a noticeable decline in the number of strikes and the targeting of these groups.</p><br><br></div>
+                
+                <div class="col-md-3 mt-3">
+                <h6>Comparison Between Groups:</h6><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #E909F8 0px 0px 50px 0px;padding-left:15px;">The Taliban were targeted more frequently than Al-Qaeda in the years shown, except for 2008 where the numbers were close.</p><br><br></div>
+            </div>
+        </div>
+    </div>
+
+          <!-- plot 5 ends -->
+
+
+                <!-- plot 6 starts -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #2E86C1 0px 0px 50px 0px;">
+           
+          
+            <div class="col-md-2 mt-3" style="padding-left:10px;">
+
+
+                <h6>Key Insights:</h6><hr>
+
+                <h6>Peak Activity:</h6><hr>
+
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#2E86C1 0px 0px 50px 0px;padding-left:15px;"> The year 2008, represented by a purple bar, saw the highest number of drone strikes, surpassing 40.
+                </p><br><br>
+
+                <h6>Yearly Trends:</h6><hr>
+
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#2E86C1 0px 0px 50px 0px;padding-left:15px;"> There was a significant increase in the number of strikes from 2006 to 2008, followed by a decrease in 2009. There was a slight increase in 2010, followed by a notable decrease in 2011.</p><br><br>
+                
+
+            </div>
+
+            <div class="col-md-10">
+
+                <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee> Number of Strikes by Year </marquee></h1>
+                            
+                <div id="plotly-div8"  class="wow fadeInLeft" ></div>
+
+            </div>
+
+        </div>
+    </div>   
+
+      <!-- plot 6 ends -->
+
+
+        <!-- plot 7 starts -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #DC7633 0px 0px 50px 0px;">
+            <div class="col-md-9">
+
+<h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Women & Children Involved ( bar chart )</marquee></h1>
+            
+
+<div id="plotly-div7"  class="wow fadeInRight" ></div>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h6>Key Insights:</h6><hr>
+
+                
+                <h6><b>Bars:<b></h6> <hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #DC7633 0px 0px 50px 0px;padding-left:15px;">There are two bars:<br>The first bar, corresponding to "0", indicates the number of drone attacks where women and children were not involved, which is 467.<br>
+                    The second bar, corresponding to "1", shows the number of drone attacks where women and children were involved, which is 54.</p><br><br>
+
+            </div>
+
+            
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-3">
+                    <h6>Frequency of Involvement</h6><hr>
+                    <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #DC7633 0px 0px 50px 0px;padding-left:15px;"> Women and children were involved in a much smaller number of drone attacks compared to those where they were not involved.</p><br><br></div>
+
+                <div class="col-md-6 mt-3">
+                <h6">Quantitative Comparison:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #DC7633 0px 0px 50px 0px;padding-left:15px;">The chart directly compares the two scenarios, providing a clear visualization of the difference in the number of cases with and without the involvement of women and children.</p><br><br></div>
+                
+              
+            </div>
+
+        </div>
+    </div>
+
+
+      <!-- plot 7 ends -->
+
+
+
+            <!-- plot 8 starts -->
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #F7DC6F  0px 0px 50px 0px;">
+         
+           
+            <div class="col-md-4 mt-3">
+                
+                <h6>Key Insights:</h6><hr>
+
+               <h6>Peak Activity:</h6><hr> 
+               
+               <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;"> There are two notable peaks in the number of drone attacks, the first one around 2008 and the second one in 2010, where the number of attacks exceeded 150.</p><br><br>
+
+                <h6>Trends Over Time:</h6><hr> 
+                
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;"> There was a significant increase in drone attacks from 2004 to 2008, followed by some fluctuations and then a gradual decline after 2010.</p><br><br>
+
+                <h6>Recent Activity:</h6><hr> 
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;"> In the last years displayed on the graph (2014 to 2016), the number of drone attacks has notably decreased, reaching numbers similar to the counts in 2004-2006.</p><br><br>
+
+               
+            </div>
+
+            <div class="col-md-8">
+
+
+                <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Drone Attacks on Timeline ( yearly trend chart )</marquee></h1>
+                            
+                
+                <div id="plotly-div9"  class="wow fadeInLeft"></div>
+            </div>
+
+        </div>
+    </div>
+
+      <!-- plot 8 ends  -->
+
+
+    
+
+      <!-- plot 9 starts -->
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #5B2C6F  0px 0px 50px 0px;">
+            <div class="col-md-8">
+
+<h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Drone Attacks in Bush & Obama Tenure - line chart comparison</marquee></h1>
+            
+
+<div id="plotly-div11"  class="wow fadeInRight"></div>
+
+            </div>
+
+                <div class="col-md-4 mt-3" style="padding-left:10px;">
+                    
+                    <h6>Key Insights:</h6><hr>
+
+                    <h6>George W. Bush's Tenure:</h6><hr>
+                    
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#5B2C6F 0px 0px 50px 0px;padding-left:15px;">The blue line representing Bush shows a lower frequency of drone attacks, with a slight increase towards the end of his presidency in 2008.</p><br><br>
+
+                    <h6>Barack Obama's Tenure:</h6><hr> 
+                    
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#5B2C6F 0px 0px 50px 0px;padding-left:15px;">The red line representing Obama shows a significant increase in drone attacks starting in 2009, with peaks occurring in 2010 and again in 2012, followed by a downward trend.</p><br><br>
+
+                </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-3">
+                <h6>Overall Trends:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #5B2C6F 0px 0px 50px 0px;padding-left:15px;">  The chart indicates an escalation in drone attacks during Obama's presidency compared to Bush's term and shows that the highest number of attacks occurred between 2009 and 2012.</p><br><br></div>
+
+                    <div class="col-md-6 mt-3">
+                    <h6>Donald Trump's Tenure:</h6><hr>
+                    <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #5B2C6F 0px 0px 50px 0px;padding-left:15px;">  The teal line for Trump begins at the end of the chart in 2016, showing a low number of drone attacks comparable to the beginning of the chart. However, as Trump's presidency started in January 2017, this data point may represent the end of Obama's term or the very beginning of Trump's term.</p><br><br></div>
+
+
+        </div>
+    </div>
+
+
+      <!-- plot 9 ends -->
+    
+    
+
+
+          <!-- plot 10 starts -->
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #F7DC6F  0px 0px 50px 0px;">
+         
+           
+            <div class="col-md-3 mt-3">
+                
+                <h6>Key Insights:</h6><hr>
+
+               <h6>George W. Bush's Tenure:</h6><hr> 
+               
+               <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;">During his last years in office (2004-2008), the number of drone attacks was relatively low, with a slight increase in 2008.</p><br><br>
+
+                <h6>Barack Obama's Tenure:</h6><hr> 
+                
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;">There is a significant increase in the number of drone attacks during Obama's presidency, with peaks in 2010 and 2012.</p><br><br>
+
+                <h6>Donald Trump's Tenure:</h6><hr> 
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;"> There is only one year (2016) shown for Trump's term, with a small number of drone attacks represented by the teal bar.</p><br><br>
+
+
+
+            </div>
+
+            <div class="col-md-9">
+
+
+                <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Number of Drone Attacks Comparison in Tenure of US Presidents - bar charts</marquee></h1>
+                            
+                
+                <div id="plotly-div10"  class="wow fadeInLeft" style="padding-left:10px;"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-3">
+                <h6>Trend Analysis:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #F7DC6F 0px 0px 50px 0px;padding-left:15px;"> The chart shows a sharp increase in drone attacks starting in the late 2000s and peaking during the early 2010s, followed by a decrease in the mid-2010s.</p><br><br></div>
+
+        </div>
+    </div>
+
+
+      <!-- plot 10 ends -->
+    
+
+
+
+          <!-- plot 11 starts -->
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #5B2C6F  0px 0px 50px 0px;">
+            <div class="col-md-9">
+
+<h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Civilians VS Terrorists killing ( bar chart w.r.t years )</marquee></h1>
+            
+
+<div id="plotly-div13"  class="wow fadeInRight"></div>
+            </div>
+
+                <div class="col-md-3 mt-3" style="padding-left:10px;">
+                    
+                    <h6>Key Insights:</h6><hr>
+
+                    <h6>Peak Year:</h6><hr>
+                    
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#5B2C6F 0px 0px 50px 0px;padding-left:15px;"> There was a significant peak in 2010 for both civilians and terrorists killed, with the number of terrorists killed being much higher than the number of civilians.</p><br><br>
+
+                    <h6>Trend Over Time:</h6><hr> 
+                    
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#5B2C6F 0px 0px 50px 0px;padding-left:15px;">While there are fluctuations, it seems that the number of terrorists killed is generally higher than the number of civilians each year. After 2010, there is a noticeable decline in the number of both civilians and terrorists killed.</p><br><br>
+
+          
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-3">
+                    <h6>Data Consistency:</h6><hr>
+                    <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #5B2C6F 0px 0px 50px 0px;padding-left:15px;">The overall pattern suggests that the highest fatalities occurred around 2010.</p><br><br></div>
+
+
+                    <div class="col-md-6 mt-3">
+                        <h6>Civilian Casualties:</h6><hr>
+                        <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #5B2C6F 0px 0px 50px 0px;padding-left:15px;">  Civilian casualties, while lower than the number of terrorists killed, still show peaks around 2010 and some other years, though the exact years are not labeled.</p><br><br></div>
+                        
+        </div>
+    </div>
+
+      <!-- plot 11 ends -->
+
+
+    
+      <!-- plot 12 starts -->
+
+    <div class="container">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: red 0px 0px 50px 0px;">
+            <div class="col-md-12">
+
+<h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3"><marquee>Max Strikes on which hour</marquee></h1>
+
+<div id="plotly-div3"  class="wow fadeInLeft" ></div>
+            </div>
+            <div class="row mt-5">
+            <div class="col-md-12" style="padding-left:70px;">
+         
+                <br>
+                <h6>Most Active Hour:</h6><br><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:red 0px 0px 50px 0px;padding-left:15px;"> The tallest bar, which is green, represents the hour with the most drone strikes. Based on the histogram, this appears to be around 3 AM.</p><br><br>
+
+                
+                <h6>Comparative Analysis:</h6><br><hr> 
+                
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:red 0px 0px 50px 0px;padding-left:15px;"> The histogram allows for a comparison of drone strike frequency by hour. It shows some hours with notably more strikes than others.</p><br><br>
+
+               
+            </div>
+        </div>
+    </div>
+
+      <!-- plot 12 ends -->
+
+
+
+
+
+    
+
+
+
+
+
+    <!-- per day killings -->
+    <script type="text/javascript">
+        var figure = {{ figure1|safe }};
+        Plotly.newPlot('plotly-div1', figure.data, figure.layout); 
+    </script>
+
+    
+    <!-- per month killings -->
+   <script type="text/javascript">
+        var figure = {{ figure2|safe }};
+        Plotly.newPlot('plotly-div2', figure.data, figure.layout); 
+    </script>
+
+       <!-- per hour killings -->
+   <script type="text/javascript">
+    var figure = {{ figure3|safe }};
+    Plotly.newPlot('plotly-div3', figure.data, figure.layout); 
+</script>
+
+     <!-- People Killed & Injured per Year In Last 12-Years -->
+     <script type="text/javascript">
+        var figure = {{ figure4|safe }};
+        Plotly.newPlot('plotly-div4', figure.data, figure.layout); 
+    </script>
+    
+
+     <!-- Number of Drone Attack, Taliban & Al-Qaeda Targeted Per Year -->
+     <script type="text/javascript">
+        var figure = {{ figure5|safe }};
+        Plotly.newPlot('plotly-div5', figure.data, figure.layout); 
+    </script>
+
+     <!-- Number of Drone Attacks, Al-Qaeda & Taliban Targeted -->
+     <script type="text/javascript">
+        var figure = {{ figure6|safe }};
+        Plotly.newPlot('plotly-div6', figure.data, figure.layout); 
+    </script>
+
+      <!-- Number of Drone Attacks, Al-Qaeda & Taliban Targeted -->
+      <script type="text/javascript">
+        var figure = {{ figure7|safe }};
+        Plotly.newPlot('plotly-div7', figure.data, figure.layout); 
+    </script>
+
+
+ <!-- Number of Strikes by Year-->
+ <script type="text/javascript">
+    var figure = {{ figure8|safe }};
+    Plotly.newPlot('plotly-div8', figure.data, figure.layout); 
+</script>
+
+ <!-- Drone Attacks on Timeline-->
+ <script type="text/javascript">
+    var figure = {{ figure9|safe }};
+    Plotly.newPlot('plotly-div9', figure.data, figure.layout); 
+</script>
+
+ <!-- Drone Attacks in Bush & Obama Tenure-->
+ <script type="text/javascript">
+    var figure = {{ figure10|safe }};
+    Plotly.newPlot('plotly-div10', figure.data, figure.layout); 
+</script>
+
+ <!-- Drone Attacks in Bush & Obama Tenure - line chart comparison-->
+ <script type="text/javascript">
+    var figure = {{ figure11|safe }};
+    Plotly.newPlot('plotly-div11', figure.data, figure.layout); 
+</script>
+
+
+<!-- Drone Attacks in Bush & Obama Tenure - line chart comparison-->
+<script type="text/javascript">
+    var figure = {{ figure12|safe }};
+    Plotly.newPlot('plotly-div12', figure.data, figure.layout); 
+</script>
+
+
+<!-- Civilians vs Terrorist-->
+<script type="text/javascript">
+    var figure = {{ figure13|safe }};
+    Plotly.newPlot('plotly-div13', figure.data, figure.layout); 
+</script>
+
+
+
+<script>
+    var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+ splitLetters(words[i]);
+}
+
+function changeWord() {
+ var cw = wordArray[currentWord];
+ var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+ for (var i = 0; i < cw.length; i++) {
+   animateLetterOut(cw, i);
+ }
+ 
+ for (var i = 0; i < nw.length; i++) {
+   nw[i].className = 'letter behind';
+   nw[0].parentElement.style.opacity = 1;
+   animateLetterIn(nw, i);
+ }
+ 
+ currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+ setTimeout(function() {
+       cw[i].className = 'letter out';
+ }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+ setTimeout(function() {
+       nw[i].className = 'letter in';
+ }, 340+(i*80));
+}
+
+function splitLetters(word) {
+ var content = word.innerHTML;
+ word.innerHTML = '';
+ var letters = [];
+ for (var i = 0; i < content.length; i++) {
+   var letter = document.createElement('span');
+   letter.className = 'letter';
+   letter.innerHTML = content.charAt(i);
+   word.appendChild(letter);
+   letters.push(letter);
+ }
+ 
+ wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+
+
+   </script>
+
+</body>
+</html> 

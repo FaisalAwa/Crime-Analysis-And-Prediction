@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KPK Crime Stats</title>
+    <script  src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Bootstrap CSS CDN -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="static/css/animate.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+
+    <!-- library for scrolling effect on elements-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <link href="static/css/animate.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+</head>
+<body>
+
+      
+    <!-- code for all the animations on the elements-->
+    <script>
+        new WOW().init();
+      </script>
+
+    <style>
+
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+        .text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+          width: 1300px;
+          left: 50%;
+          padding-left:50px;
+          height: 80px;
+          margin-top: 50px;
+        margin-bottom:50px;
+          margin-left:80px;
+          border:1px solid red;
+          color: black;
+        }
+        
+        p {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0;
+        }
+        
+        .word {
+          position: absolute;
+          width: 800px;
+          opacity: 0;
+        }
+        
+        .letter {
+          display: inline-block;
+          position: relative;
+          float: left;
+          transform: translateZ(25px);
+          transform-origin: 50% 50% 25px;
+        }
+        
+        .letter.out {
+          transform: rotateX(90deg);
+          transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+        
+        .letter.behind {
+          transform: rotateX(-90deg);
+        }
+        
+        .letter.in {
+          transform: rotateX(0deg);
+          transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .wisteria {
+          color: #8e44ad;
+        }
+        
+        .belize {
+          color: #2980b9;
+        }
+        
+        .pomegranate {
+          color: white;
+        }
+        
+        .green {
+          color: #16a085;
+        }
+        
+        .midnight {
+          color: yellow ;
+        }
+        
+
+
+@keyframes blink {
+    0% {
+  
+      visibility: hidden;
+    }
+    25%{
+      visibility: visible;
+    }
+    50% {
+      visibility: hidden;
+    }
+    75%{
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+}
+
+.blink {
+    animation: blink 3s step-start infinite;
+  }
+
+h6{
+    background:red;
+    color:white;
+    font-size:20px;
+    
+}
+
+h6.blink {
+    animation: blink 3s step-start infinite;
+  }
+
+body{
+    background-color:black;
+}
+
+      
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+    </style>
+
+
+    <!-- code for all the animations on the elements-->
+    <script>
+        new WOW().init();
+      </script>
+
+       <div class="text wow fadeInDown" style="background-color:red;border:1px solid red;border-radius:15px;border-radius:15px;box-shadow: red 0px 0px 50px 0px;">
+    <p>We will be providing you here</p>
+    <p>
+      <span class="word wisteria">KPKCrimes Analysis.</span>
+      <span class="word belize">KPKCrimesVisualization.</span>
+      <span class="word pomegranate">KPKCrimesInsights.</span>
+      <span class="word green">KPKCrimesFacts.</span>
+      <span class="word midnight">KPKCrimesTrends.</span>
+    </p>
+  </div>
+      
+
+      <div class="container" class='dataanalysistext'>
+        <div class="row justify-content-center mb-3 bg-dark mt-3 pt-3" style="border-radius:15px;box-shadow: #0066FF 0px 0px 0px 2px, #0066FF 0px 4px 6px -1px, #0066FF 0px 1px 0px inset;">
+            <div class="col-md-12">
+    <h2 class="p-3 mb-2 animate-charcter  wow bounceOutDown"style="margin-left:430px; border : 1px solid red;">Data Analysis Summary</h2>
+    <p class="text-light bg-dark blinking-text  wow fadeInUp">This data is offering a detailed insight into crime statistics from the Khyber Pakhtunkhwa (KPK) province in Pakistan, spanning a period from 2011 to 2015. It encapsulates data across 7 distinct administrative divisions and covers 25 different districts within the province, reflecting a broad spectrum of the region's demographic. This datas categorizes crimes into <b style="color:yellow;">7 types</b>, which include <b style="color:yellow;"><i> Murder, Kidnapping, Child Lifting, Abduction, Car Theft, Car Snatching, and Motorcycle Theft  </i></b>. Each entry in the dataset specifies the year, the division and district where the crime occurred, the type of crime, and the number of cases reported. This structured approach allows for a comprehensive analysis of crime trends and patterns across various regions and time periods within KPK. The dataset is a valuable resource for understanding the crime dynamics in the province and could be instrumental in developing strategies for law enforcement and public safety initiatives.</p>
+            </div>
+        </div>
+    </div>
+
+      
+    <!-- some of the useful insights of this  data section starts here-->
+
+    <div class="container">
+        <div class="row justify-content-center mb-3 bg-white mt-3 pt-3" style="border-radius:15px;box-shadow: white 0px 0px 0px 2px, white 0px 4px 6px -1px, white 0px 1px 0px inset;
+        background: linear-gradient(90deg, rgba(18,18,19,1) 0%, rgba(10,8,8,1) 54%, rgba(107,53,246,1) 100%);">
+            <div class="col-md-12">
+
+    <h2 class="p-3 mb-2 animate-charcter" class="  wow bounceOutDown" style="margin-left:300px; border : 1px solid red; margin-top:20px; margin-bottom:20px;">High Overview of Data And their Insights</h2><br>
+    
+    <p style="color:white;margin-top:20px;">
+        <strong style="font-size=29px" class="wow fadeInUp">
+     
+         To provide a high-level overview and insights from the dataset, we have analyze it further to uncover trends and patterns in the crime statistics of Khyber Pakhtunkhwa (KPK) between 2011 and 2015. Here are the key areas have explore:
+        </strong><br><hr>
+        <div class="row">
+
+         <div class="col-md-3">
+        <h3 class='blink' style="color: red;">Trends Over Time</h3><br>
+        <p  class="wow fadeInUp" style="color:white;"> The total number of crime cases showed variations from 2011 to 2015.<br>
+            There was a gradual increase in crime from 2011 (4,142 cases) to 2014 (4,785 cases), followed by a significant decrease in 2015 (4,025 cases).<br><hr></p>
+        </div>
+
+        <div class="col-md-3">
+        <h3 class='blink' style="color: red;">Regional Variations</h3><br>
+           <p  class="  wow fadeInUp" style="color:white;"> The division with the highest number of recorded cases is Peshawar, followed by Mardan and Hazara.<br>
+            Among districts, Peshawar tops the list with the highest number of cases, followed by Mardan and Charsadda.<br><hr>
+       </div>
+
+        <div class="col-md-3">
+        <h3 class='blink' style="color: red;"> Most Common Crimes</h3><br>
+        <p   class="  wow fadeInUp"  style="color:white;"> The most frequently reported crime type is 'Murder', with a total of 14,965 cases over the five years.<br>
+            This is followed by 'Abduction' (3,671 cases) and 'Motorcycle Theft' (1,235 cases).<br><hr>
+      </div>
+
+        <div class="col-md-3">
+        <h3 class='blink' style="color: red;"> Comparative Analysis</h3><br>
+        <p    class="  wow fadeInUp" style="color:white;"> A year-wise breakdown shows that 'Murder' consistently had the highest number of cases each year.<br>
+        There was an increasing trend in 'Abduction' cases from 2011 to 2014, with a slight drop in 2015.<br></p><br>
+      </div>
+    </div>
+        
+    <!--h2 class='animate-charcter' style="margin-top:10px;"style="margin-left:300px; border : 1px solid red; margin-bottom:20px;">Findings Across Regional Analysis</h2><br><br><br-->
+
+        <h3 class='blink' style="color: red;"> Potential Anomalies or Outliers</h3><br>
+        <p    class="  wow fadeInUp" style="color:white;">The year 2013 saw a significant increase in crime rate (approximately 11.76% from 2012).<br>
+        Conversely, there was a notable decrease in crime rate in 2015 (around 15.88% from 2014).<br><hr>
+
+       
+
+     
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- some of the useful insights section ends here-->
+
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;"    style="background:teal;">
+            <div class="col-md-7">
+             
+                <h1 class="p-3 mb-2 bg-success text-white pt-3 mt-3"><marquee>Bar Plot Of Different Crime Categories</marquee></h1>
+
+<div id="plotly-div1"  class="wow fadeInUp"  ></div>
+            </div>
+            <div class="col-md-5 mt-3">
+                <h6 class="blink">Division Analysis:</h6><hr>
+                <p class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;padding-left:15px;">Peshawar has the highest total number of crime cases, with a particularly high number of abduction cases.<br>
+                D.I.Khan also shows a significant number of cases, with a substantial proportion being motorcycle theft.<br>
+                Hazara, Bannu, Malakand, Kohat, and Mardan have comparatively lower crime rates, with motorcycle theft and abduction appearing to be the most common crimes.</p><br><br>
+                <h6 class="blink">Crime Types:</h6><hr>
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;padding-left:15px;">Abduction and Motorcycle Theft seem to be the most reported crimes across most divisions.<br>
+                Murder cases are relatively lower in comparison to other crimes, yet they are present in every division.<br>
+                Car Theft and Car Snatching also appear to be common but less frequent than abduction and motorcycle theft.</p><br><br>
+                <h6 class="blink">Key Takeaways:</h6><hr>
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;padding-left:15px;">Peshawar stands out as the division with the most pressing crime issues, particularly abductions.<br>
+                Efforts to reduce crime in KPK may benefit from focusing on motorcycle theft and abduction, as they are the most prevalent across several divisions.<br>
+                Some divisions like Mardan and Bannu have lower instances of murder, which may indicate different policing effectiveness or social dynamics in those areas compared to places like Peshawar or D.I.Khan.<br>
+                The chart suggests a need for targeted crime prevention strategies in each division based on the most prevalent types of crime.</p><br>
+        </div>
+    </div>
+
+
+   
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8  0px 0px 50px 0px;">
+         
+      
+        <div class='col-md-3 mt-3' style="padding-left:70px;">
+
+            <h6 class="blink">Key Insights:</h6><hr>
+
+            <h6 class="blink">Trend: </h6><hr>
+            <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;padding-left:15px;">There's an observable trend in the number of crime cases over the years. Starting in 2011, there appears to be a fluctuation in the number of cases, not showing a simple increase or decrease over time.</p><br><br>
+
+            <h6 class="blink">Peak Crime Year: </h6><hr>
+            <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;padding-left:15px;">The largest bubble represents the year with the most crime cases. In this chart, it's the year 2015, indicated by the largest, orange-colored bubble at the rightmost side of the chart.</p><br><br>
+
+            <h6 class="blink">Lowest and Highest:</h6><hr> 
+            <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;padding-left:15px;">The year 2011, represented by the blue bubble, appears to have the lowest number of crime cases, whereas 2015 has the highest.</p><br><br>
+
+            <h6 class="blink">Middle Years: </h6><hr>
+            <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #09AFF8 0px 0px 50px 0px;padding-left:15px;">The years in between, 2012 (red), 2013 (green), and 2014 (purple), have intermediate sizes, showing variations in crime cases from year to year.</p><br><br>
+        </div>
+
+        <div class="col-md-9">
+
+            <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee>crime trend over  years</marquee></h1>
+                            
+            <div id="plotly-div3"  class="wow fadeInUp" style="padding-left:20px;" ></div>
+                        
+        </div>
+
+        </div>
+    </div>
+
+    
+    <div class="container-fluid">
+        <div class="row mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: black 0px 0px 50px 0px;">
+            <div class="col-md-9">
+                
+        <h1 class="p-3 mb-2 bg-dark text-white pt-3 mt-3"><marquee>Percent of crime trend over  years</marquee></h1>
+                
+        <div id="plotly-div4"  class="wow fadeInUp" ></div>
+            </div>
+        
+            <div class="col-md-3 mt-3">
+              
+                <h6 class="blink">Key Insights:</h6><hr>
+
+                <h6 class="blink">Crime Proportionality:</h6><hr>
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: black 0px 0px 50px 0px;padding-left:15px;"> The chart shows that the years 2014 and 2015 had a slightly higher proportion of crime cases compared to the other years. This could suggest an increase in crime rates during these years, or it could simply reflect a higher number of reports.</p><br><br>
+
+                <h6 class="blink">Relative Stability:</h6><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:black 0px 0px 50px 0px;padding-left:15px;">The distribution of crime cases is relatively stable across the years, with no single year showing an overwhelmingly different proportion of crime cases.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: teal 0px 0px 50px 0px;">
+           
+
+            <div class='col-md-3 mt-3' style="padding-left:70px;">
+ 
+                <h6 class="blink">Key Insights:</h6><hr>
+
+                <h6 class="blink">Most Affected Division:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:teal 0px 0px 50px 0px;padding-left:15px;"> Peshawar, represented by the yellow bar, clearly has the highest number of crime cases, making it the most affected division according to this data.</p><br><br>
+
+                <h6 class="blink">Least Affected Divisions:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:teal 0px 0px 50px 0px;padding-left:15px;"> Bannu and D.I.Khan, shown with the shortest bars, appear to have the lowest number of cases among the divisions presented.</p><br><br>
+
+                <h6 class="blink">Middle Range:</h6><hr>
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:teal 0px 0px 50px 0px;padding-left:15px;"> Hazara, Kohat, Malakand, and Mardan have a moderate number of cases, with their bars falling in between the extremes of Peshawar and Bannu/D.I.Khan.</p><br>
+
+            </div>
+
+            <div class="col-md-9">
+
+                <h1 class="p-3 mb-2 pt-3 mt-3 text-white" style="background-color:teal;"><marquee>Most Affected Division</marquee></h1>
+                            
+                
+                <div id="plotly-div5"  class="wow fadeInUp"  style="padding-left:20px;" ></div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #E909F8 0px 0px 50px 0px;">
+            <div class="col-md-8">
+
+<h1 class="p-3 mb-2 text-white pt-3 mt-3" style="background-color: #E909F8;"><marquee>Most Affected District</marquee></h1>
+            
+
+<div id="plotly-div6"  class="wow fadeInUp" ></div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h6 class="blink">Key Insights:</h6><hr>
+
+                <h6 class="blink">Most Affected District:</h6><hr>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #E909F8 0px 0px 50px 0px;padding-left:15px;"> The district with the longest bar (colored in yellow), which appears to be Swat, has the highest total number of crime cases. It is significantly higher than any other district, indicating that it is the most affected.</p><br><br>
+                
+                <h6 class="blink">Least Affected Districts:</h6><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #E909F8 0px 0px 50px 0px;padding-left:15px;">The district with the shortest bar, Tor Ghar, has the fewest reported crime cases, making it the least affected among those listed.</p><br><br>
+                
+                <h6 class="blink">Comparison:</h6><hr> 
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #E909F8 0px 0px 50px 0px;padding-left:15px;">The chart allows for an easy comparison across the listed districts, showing a clear disparity between the districts with the highest and lowest crime counts.</p><br><br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #DC7633 0px 0px 50px 0px;">
+         
+            <div class="col-md-3 mt-3">
+                <h6 class="blink">Key Insights:</h6><hr>
+
+                <h6 class="blink">Most Common Crime:</h6><hr>
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#DC7633 0px 0px 50px 0px;padding-left:15px;"> Murder appears to be the most frequently reported crime with nearly 15,000 cases, significantly higher than any other type.</p><br><br>
+
+                <h6 class="blink">Least Common Crime:</h6><hr> 
+                
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#DC7633 0px 0px 50px 0px;padding-left:15px;">Child Lifting is the least frequently reported crime among those listed, with 144 cases.</p><br><br>
+
+                <h6 class="blink">Crime Severity vs. Frequency:</h6><hr> 
+                
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#DC7633 0px 0px 50px 0px;padding-left:15px;">While murder is the most serious crime listed, it is also the most frequent according to this data, which may indicate particular social issues or enforcement challenges.</p><br><br>
+
+                <h6 class="blink">Intermediate Crimes:</h6><hr>
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#DC7633 0px 0px 50px 0px;padding-left:15px;"> Abduction and theft-related crimes (motorcycle theft, car theft) occur with moderate frequency, with abduction being significantly higher than thefts.</p><br><br>
+            </div>
+
+            <div class="col-md-9">
+                <h1 class="p-3 mb-2 text-white pt-3 mt-3" style="background-color:#DC7633;"><marquee> Most Occuring Crime </marquee></h1>
+            
+
+                <div id="plotly-div7"  class="wow fadeInUp"  style="padding-left:20px;" ></div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #2E86C1 0px 0px 50px 0px;">
+            <div class="col-md-8">
+
+<h1 class="p-3 mb-2 text-white pt-3 mt-3"  style="background-color:#2E86C1;"><marquee> Total Number of Cases for Each Division by Year </marquee></h1>
+            
+<div id="plotly-div8"  class="wow fadeInUp" ></div>
+            </div>
+          
+            <div class="col-md-4 mt-3" style="padding-left:100px;">
+
+
+                <h6 class="blink">Key Insights:</h6><hr>
+
+                <h6 class="blink">Division Analysis:</h6><hr>
+
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#2E86C1 0px 0px 50px 0px;padding-left:15px;">Peshawar shows the highest number of cases in each year except 2011, suggesting it consistently has more crime cases than the other divisions.
+                Bannu and D.I.Khan seem to have the lowest number of cases across the years.</p><br><br>
+
+                <h6 class="blink">Yearly Trends:</h6><hr>
+
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#2E86C1 0px 0px 50px 0px;padding-left:15px;">There appears to be a variation in crime cases per year for each division. However, without exact numbers, it's hard to specify the trend precisely.
+                The year 2014 (purple bars) seems to have a higher number of cases in most divisions compared to other years.</p><br><br>
+                
+                <h6 class="blink">Comparative Analysis:</h6><hr>
+
+                
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#2E86C1 0px 0px 50px 0px;padding-left:15px;">The chart allows for easy comparison between the divisions and across the years, showing how crime trends vary by location and over time.</p><br><br>
+
+            </div>
+        </div>
+    </div>  
+    
+    
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #F7DC6F  0px 0px 50px 0px;">
+         
+           
+            <div class="col-md-4 mt-3">
+                
+                <h6 class="blink">Key Insights:</h6><hr>
+
+               <h6 class="blink"> Most Frequent Crime:</h6><hr> 
+               
+               <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;">The size and position of the red dots indicate that murder has the highest number of cases each year, with an increasing trend, as the dots are higher on the x-axis in later years.</p><br><br>
+
+                <h6 class="blink">Trends Over Time:</h6><hr> 
+                
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;">The plot suggests that the number of murder cases has increased significantly from 2011 to 2015, as indicated by the red dots positioned progressively further to the right.</p><br><br>
+
+                <h6 class="blink">Variation Among Crime Types:</h6><hr> 
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;">There seems to be less variation year-to-year in other types of crimes compared to murder. For example, abduction cases, represented by light blue dots, appear relatively consistent across the years.</p><br><br>
+
+                <h6 class="blink">Less Frequent Crimes:</h6><hr>
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#F7DC6F 0px 0px 50px 0px;padding-left:15px;"> Child Lifting and Car Snatching, represented by pink and green dots respectively, appear to be less frequent compared to other crime types, with their counts staying on the lower end of the x-axis.</p><br><br>
+            </div>
+
+            <div class="col-md-8">
+
+
+                <h1 class="p-3 mb-2 text-black pt-3 mt-3"  style="background-color:#F7DC6F;"><marquee>Crime Counts by Crime Type Over Years</marquee></h1>
+                            
+                
+                <div id="plotly-div9"  class="wow fadeInUp"  style="padding-left:10px;" ></div>
+            </div>
+
+        </div>
+    </div>
+
+        
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: #5B2C6F  0px 0px 50px 0px;">
+            <div class="col-md-8">
+
+<h1 class="p-3 mb-2 text-white pt-3 mt-3"  style="background-color: #5B2C6F;"><marquee>Crime Counts by Division Over Years</marquee></h1>
+            
+
+<div id="plotly-div10"  class="wow fadeInUp"  style="padding-left:20px;" ></div>
+            </div>
+
+                <div class="col-md-4 mt-3" style="padding-left:70px;">
+                    
+                    <h6 class="blink">Key Insights:</h6><hr>
+
+                    <h6 class="blink">Crime Trend in Peshawar:</h6><hr>
+                    
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#5B2C6F 0px 0px 50px 0px;padding-left:15px;"> The line for Peshawar (pink) shows a significant spike in crime count in 2014, reaching the peak across all divisions and years. There's a slight decline in 2015, but it still remains the highest among the divisions.</p><br><br>
+
+                    <h6 class="blink">Stability in Other Divisions:</h6><hr> 
+                    
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#5B2C6F 0px 0px 50px 0px;padding-left:15px;">Other divisions like Bannu, D.I.Khan, Hazara, Kohat, Malakand, and Mardan show relatively stable crime counts over the years, without dramatic increases or decreases.</p><br><br>
+
+                    <h6 class="blink">Comparative Analysis:</h6><hr>
+
+                   
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:#5B2C6F 0px 0px 50px 0px;padding-left:15px;"> Peshawar consistently has higher crime counts than the other divisions throughout the five-year period.
+                    Bannu, D.I.Khan, and Kohat have consistently lower crime counts in comparison to Peshawar.</p><br><br>
+
+                </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mt-5 mb-3 bg-white pb-3" style="border:1px solid red;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;">
+            <div class="col-md-12">
+
+<h1 class="p-3 mb-2 bg-success text-white pt-3 mt-3"><marquee>Crime Rates in KPK</marquee></h1>
+
+<div id="plotly-div2"  class="wow fadeInUp" ></div>
+            </div>
+            <div class="row mt-5">
+            <div class="col-md-12" style="padding-left:70px;">
+                <h6 class="blink">Center Circle (Years):</h6><hr>
+                <br>
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:green 0px 0px 50px 0px;padding-left:15px;">The innermost ring of the sunburst chart shows the years, ranging from 2011 to 2015. Each segment of the ring corresponds to a year, and it seems to be the top level of the hierarchy, suggesting that the data spans over five years.d</p><br><br>
+
+                
+                <h6 class="blink">Second Ring (Divisions)</h6><br><hr> 
+                
+                <p class="wow fadeInDown"  style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:green 0px 0px 50px 0px;padding-left:15px;">Radiating out from the years are segments representing different divisions. Each division is connected to the year in which the data was recorded. This second ring allows viewers to see how crime distribution compares across different divisions within a specific year.</p><br><br>
+
+                <h6 class="blink">Third Ring (Districts):</h6><br><hr> 
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:green 0px 0px 50px 0px;padding-left:15px;">The next layer breaks down the divisions into their constituent districts. This adds granularity to the data, showing not just the division but also providing information on which districts contribute to the crime statistics of that division.</p><br><br>
+
+                <h6 class="blink">Outermost Ring (Crime Types)</h6><br><hr>
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:green 0px 0px 50px 0px;padding-left:15px;"> The final and most colorful ring represents various types of crimes, such as murder, abduction, and car theft. The width of each segment in this ring indicates the proportion of each crime type within the district, division, and year.</p><br><br>
+<hr>
+                <h6 class="blink">Key Insights:</h6><br><hr>
+
+                <h6 class="blink">Trend Analysis:</h6><br><hr> 
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:green 0px 0px 50px 0px;padding-left:15px;">The Sunburst chart allows for the analysis of trends over time. One can look at whether certain crimes are becoming more or less common, or if there are shifts in the geographic distribution of crimes.</p><br><br>
+
+                <h6 class="blink">Geographic Distribution:</h6><br><hr> 
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:green 0px 0px 50px 0px;padding-left:15px;">The chart clearly shows which divisions and districts are most affected by certain types of crimes. This geographic specificity can inform targeted law enforcement and crime prevention strategies.</p><br><br>
+
+                <h6 class="blink">Crime Focus:</h6><br><hr>
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:green 0px 0px 50px 0px;padding-left:15px;"> By looking at the outer ring, it's immediately clear which types of crimes are most prevalent. This can help direct resources to combat the most common crimes.</p><br><br>
+
+                <h6 class="blink">Comparative Analysis:</h6><br><hr> 
+                
+                <p  class="wow fadeInDown" style="border:1px solid red;padding-bottom:10px;border-radius:15px;margin-left:20px;margin-right:10px;border-radius:15px;box-shadow:green 0px 0px 50px 0px;padding-left:15px;">The visualization enables a quick comparison between different years, divisions, and districts, highlighting areas with increasing or decreasing crime rates.</p><br><br>
+            </div>
+        </div>
+    </div>
+
+      <!-- Recommendations for a safewr tommorow starts sessoin from here-->
+
+      <div class="container">
+        <div class="row justify-content-center mb-3 mt-3 pt-3" style="border-radius:15px;box-shadow: pink 0px 0px 0px 2px, white 0px 4px 6px -1px, white 0px 1px 0px inset;">
+            <div class="col-md-12">
+    <h2 class="p-3 mb-2 animate-charcter" style="margin-left:300px; border : 1px solid white; margin-bottom:20px;"> Recommendations for a Safer Tomorrow</h2><br>
+    
+             
+        <h5 class="animate-charcter">
+            Focused Law Enforcement in High-Crime Areas
+        </h5><br><p  style="color:white;"  class="wow fadeInUp">Prioritize resources and policing efforts in divisions and districts with the highest crime rates, particularly Peshawar and Mardan.<br>
+            Implement targeted interventions in these areas, such as increased patrolling and community <br></p><br><hr>
+  
+        <h5 class="animate-charcter">
+            Addressing the Most Common Crimes
+        </h5><br><p  style="color:white;"  class="wow fadeInUp"> Given that 'Murder' is the most frequently reported crime, implement specialized task forces to investigate and prevent homicides.<br>
+            Develop community outreach programs to address factors contributing to violent crimes, such as social conflicts, economic disparities, and lack of education.<br><hr>
+        
+        <h5 class="animate-charcter">
+            Strengthening Crime Reporting and Response Mechanisms
+        </h5><br><p  style="color:white;"  class="wow fadeInUp">Enhance the crime reporting system to ensure timely and efficient reporting of crimes.<br>
+            Improve response times and investigation processes to increase public trust in law enforcement.<br><hr>
+        
+        <h5 class="animate-charcter">
+            Investing in Crime Prevention Programs
+        </h5><br> <p  style="color:white;"  class="wow fadeInUp">Implement educational and social programs to address underlying causes of crime, such as poverty, unemployment, and lack of education.<br>
+            Promote youth engagement programs to provide positive alternatives and reduce the likelihood of involvement in criminal activities.<br><hr>
+  
+        <h5 class="animate-charcter">
+            Enhancing Surveillance and Security Measures
+        </h5><br><p  style="color:white;"  class="wow fadeInUp">Increase surveillance in high-crime areas through CCTV cameras and other monitoring technologies.<br>
+            Encourage community participation in neighborhood watch programs.<br><hr>
+  
+        <h5 class="animate-charcter">
+            Data-Driven Policing and Policy Making:
+        </h5><br><p  style="color:white;" class="wow fadeInUp">Continue to analyze crime data regularly to identify trends and adjust strategies accordingly.<br>
+            Use data to allocate resources efficiently and evaluate the effectiveness of crime prevention initiatives.<br><hr>
+     
+        <h5 class="animate-charcter">
+            Inter-Agency Collaboration
+        </h5><br><p  style="color:white;"  class="wow fadeInUp">Foster collaboration between different law enforcement agencies, community organizations, and social services to address crime comprehensively.<br>
+            Establish partnerships with educational institutions, healthcare providers, and local businesses to create a holistic approach to crime prevention.<br><hr>
+  
+  
+            </div>
+        </div>
+    </div>
+  
+  
+  
+    <!-- REcommendatoins for a safer tomorrow ends session here-->
+  
+       
+
+
+<script type="text/javascript">
+    var figure = {{ figure1|safe }};
+    Plotly.newPlot('plotly-div1', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ figure2|safe }};
+    Plotly.newPlot('plotly-div2', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure3|safe }};
+    Plotly.newPlot('plotly-div3', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure4|safe }};
+    Plotly.newPlot('plotly-div4', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure5|safe }};
+    Plotly.newPlot('plotly-div5', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure6|safe }};
+    Plotly.newPlot('plotly-div6', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure7|safe }};
+    Plotly.newPlot('plotly-div7', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure8|safe }};
+    Plotly.newPlot('plotly-div8', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure9|safe }};
+    Plotly.newPlot('plotly-div9', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure10|safe }};
+    Plotly.newPlot('plotly-div10', figure.data, figure.layout); 
+</script>
+
+
+
+<script>
+    var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+ splitLetters(words[i]);
+}
+
+function changeWord() {
+ var cw = wordArray[currentWord];
+ var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+ for (var i = 0; i < cw.length; i++) {
+   animateLetterOut(cw, i);
+ }
+ 
+ for (var i = 0; i < nw.length; i++) {
+   nw[i].className = 'letter behind';
+   nw[0].parentElement.style.opacity = 1;
+   animateLetterIn(nw, i);
+ }
+ 
+ currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+ setTimeout(function() {
+       cw[i].className = 'letter out';
+ }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+ setTimeout(function() {
+       nw[i].className = 'letter in';
+ }, 340+(i*80));
+}
+
+function splitLetters(word) {
+ var content = word.innerHTML;
+ word.innerHTML = '';
+ var letters = [];
+ for (var i = 0; i < content.length; i++) {
+   var letter = document.createElement('span');
+   letter.className = 'letter';
+   letter.innerHTML = content.charAt(i);
+   word.appendChild(letter);
+   letters.push(letter);
+ }
+ 
+ wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+
+
+   </script>
+
+
+</body>
+</html> 
+
+
+

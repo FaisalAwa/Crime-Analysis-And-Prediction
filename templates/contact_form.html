@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Linking Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- Uncomment the below line for your custom CSS -->
+    <!-- <link rel="stylesheet" href="/static/css/contactform.css"> -->
+</head>
+<style>
+  body {
+    background-color:white;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s;
+    padding: 20px;
+    background-color: #87CEFA;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+</style>
+<body>
+  <br><br>
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Crime Registration Form</title>
+      <!-- Include Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+      <div class="container mt-5">
+          <!-- Title -->
+          <div class="row">
+              <div class="col text-center">
+                  <!--h2>Register The Crime</h2-->
+                  <h4 class="text-center p-3 mb-2 bg-danger text-white" style="border-radius:15px;"><strong>Register The Crime<strong></h4>
+                        
+              </div>
+          </div>
+          <!-- Description -->
+          <div class="row">
+              <div class="col">
+                  <p class="mt-3">
+                      Provide details about the crime in your region. Your information is crucial for us to take the necessary actions and improve community safety. Please fill out all the required fields and describe the incident with as much detail as possible.
+                  </p>
+              </div>
+          </div>
+          <!-- Form (You can add your form fields here) -->
+          <!-- Example: -->
+ 
+
+
+
+
+    <div class="container mt-5 mb-5" style="border-radius:15px;box-shadow: #87CEFA 0px 22px 70px 4px;">
+        <div class="row justify-content-center">
+            <div class="col-md-10 mt-5 mb-5">
+                <div class="card" style="border-radius:40px 0px 15px 0px;border: 1px solid red;">
+                    <div class="card-body">
+                        <form id="contactForm" action="{% url 'register_crime' %}" method="post">
+                          {% csrf_token %}
+                          <div class="form-group">
+                            <label for="inputDate" class="font-weight-bold text-danger">Date</label>
+                            <input type="date" class="form-control" id="inputDate" name="inputDate">
+                            
+                            <label for="inputTime" class="font-weight-bold text-danger">Time</label>
+                            <input type="time" class="form-control" id="inputTime" step="1" name="inputTime">
+                            
+                            <label for="crimeType" class="font-weight-bold text-danger">Crime Type</label>
+                            <select class="form-control" id="crimeType" name="crimeType">
+        
+                                <option>Theft</option>
+                                <option>Assault</option>
+                                <option>Robbery</option>
+                                <option>Murder</option>
+                                <option>Fraud</option>
+                                <!-- ... (Add more types as needed) ... -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="locationCity" class="font-weight-bold text-danger">Location City</label>
+                      
+                            <select class="form-control" id="locationCity" name="locationCity">
+                                <option>Karachi</option>
+                                <option>Lahore</option>
+                                <option>Islamabad</option>
+                                <option>Rawalpindi</option>
+                                <option>Faisalabad</option>
+                                <!-- ... (Add more cities as needed) ... -->
+                            </select>
+                        </div>
+                        <label for="latitude" class="font-weight-bold text-danger">Latitude</label>
+                        <input type="text" class="form-control" id="latitude" placeholder="Enter latitude" name="latitude">
+                        
+                        <label for="longitude" class="font-weight-bold text-danger">Longitude</label>
+                        <input type="text" class="form-control" id="longitude" placeholder="Enter longitude" name="longitude">
+                        
+                        <label for="crimeDescription" class="font-weight-bold text-danger">Description of Crime</label>
+                        <textarea class="form-control" id="crimeDescription" rows="3" name="crimeDescription"></textarea>
+                        
+                        <label for="reportedType" class="font-weight-bold text-danger">Reported Type</label>
+                        <input type="text" class="form-control" id="reportedType" placeholder="Enter reported type" name="reportedType">
+                        <div class="form-group">
+                          <label class="font-weight-bold text-danger">Status</label>
+                          <!-- ... (Radio buttons for status, unchanged) ... -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="status" id="statusAlone" value="alone">
+                                <label class="form-check-label" for="statusAlone">Alive</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="status" id="statusDied" value="died" name="">
+                                <label class="form-check-label" for="statusDied">Died</label>
+                            </div>
+                        </div>
+                        <label for="injuries" class="font-weight-bold text-danger">No. of Injuries</label>
+                        <input type="number" class="form-control" id="injuries" placeholder="Enter number of injuries" name="injuries">
+
+                        <label for="victims" class="font-weight-bold text-danger">No. of Victims</label>
+                        <input type="number" class="form-control" id="victims" placeholder="Enter number of victims" name="victims">
+
+                        <label for="outcome" class="font-weight-bold text-danger">Outcome of Crime</label>
+                        <textarea class="form-control" id="outcome" rows="3" name="outcome"></textarea>
+
+                        <label for="newsResources" class="font-weight-bold text-danger">News Resources (to validate the incident)</label>
+                        <textarea class="form-control" id="newsResources" rows="3" placeholder="Adding a reliable news source will help us validate the incident." name="newsResources"></textarea>
+
+                          <!-- ... (Rest of the form elements, unchanged) ... -->
+                            <button type="submit" class="btn btn-success btn-block mt-4">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+	<div class="row mb-1 text-center bg-dark text-white p-2">
+		<div class="col-12">
+		  <p><b>Copyright @ 2021-2024 by Faisal & Salman. All Rights Are Reserved</b></p>
+		</div>
+  </div>
+	  </div>
+    <!-- Linking Bootstrap JS and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    {% comment %} <script src="script.js"></script> {% endcomment %}
+</body>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="exampleModalLabel">Contact Form Submission</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-success">
+        Thanks! You Form has been submitted successfully!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+</html>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Show the Bootstrap modal
+    $('#successModal').modal({
+        backdrop: 'static',  // This will prevent closing modal by clicking outside
+        keyboard: false      // This will prevent closing modal using the keyboard
+    });
+
+    // When the close button of the modal is clicked, submit the form
+    $('#successModal .btn-info').on('click', function() {
+        document.getElementById('contactForm').submit();
+    });
+});
+</script>
+

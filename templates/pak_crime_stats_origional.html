@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pakistan Crime Stats</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+ 
+    @keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+  25%{
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75%{
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.blink {
+  animation: blink 3s step-start infinite;
+}
+
+    
+        .marquee-container {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          
+          .marquee-container div {
+            display: inline-block;
+            margin-right: 20px; /* Adjust as needed for spacing between images */
+            animation: marquee 10s linear infinite; /* Adjust duration as needed */
+          }
+          
+          @keyframes marquee {
+            0% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }      
+          
+          
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 20px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 3s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+        
+</style>
+
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center mb-3 bg-dark mt-3 pt-3" style="border:1px solid red;border-radius:15px;">
+            <div class="col-md-12">
+    <h2 class="p-3 mb-2 animate-charcter" style="margin-left:430px; border : 1px solid red;">Data Analysis Summary</h2>
+    <p class="text-light bg-dark blinking-text">Dive into the comprehensive data of crime statistics from the vibrant and diverse Punjab Province of Pakistan, spanning over a robust period of 13 years from 2002 to 2015. This dataset is a rich tapestry of information, encapsulating a grand total of 5,967 records, meticulously detailing the crime scenario across 9 administrative divisions and their 36 distinct districts.
+
+        Embark on a journey through the data, exploring:
+        
+        Year: Traverse through time, exploring the ebb and flow of crime incidents, capturing the dynamics of law and order over the years.
+        
+        Division: Navigate through the 9 administrative territories, each with its unique socio-economic landscape, contributing to the diverse crime patterns observed.
+        
+        District: Dive deeper into the 36 districts, the heart of the analysis, where the crime stories unfold, painting a vivid picture of the regional nuances.
+        
+        CrimeType: Unravel the 13 different threads of crime types, from the menacing shadows of murder to the stealthy whispers of theft, each telling its own tale of societal challenges.
+        
+        CrimeCount: Count every heartbeat of the society, quantifying the pulse of criminal activity, and providing a numerical essence to the safety and security of the region.
+        
+        Population: Anchor the analysis in reality, juxtaposing the crime counts against the backdrop of the population, providing a perceptive lens to understand the scale and impact of crime.
+        
+        This dataset is not just numbers and text; it’s a narrative of Punjab’s journey through time, a reflection of its struggles and resilience, and a map guiding us through the complex labyrinth of crime and society. So, embark on this analytical odyssey, unravel the stories hidden in the data, and uncover the secrets of Punjab's societal fabric.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- some of the useful insights of this  data section starts here-->
+
+    <div class="container">
+        <div class="row justify-content-center mb-3 bg-white mt-3 pt-3" style="border:1px solid red;border-radius:15px;background: rgb(18,18,19);
+        background: linear-gradient(90deg, rgba(18,18,19,1) 0%, rgba(10,8,8,1) 54%, rgba(107,53,246,1) 100%);">
+            <div class="col-md-12">
+    <h2 class="p-3 mb-2 animate-charcter" style="margin-left:300px; border : 1px solid red; margin-bottom:20px;">High Overview of Data And their Insights</h2><br>
+    
+    <p  style="color:white;">
+        <strong style="font-size=29px;">
+         This data covers a span of 13 years across 36 districts. A total of 1606540 crimes were reported, with an average of 123580 crimes per year.</strong><br><hr>
+
+        <h3 class='blink' style="color: red;">CrimeCount</h3><br>
+        <p  style="color:white;"> The average number of crimes reported per record is approximately 269.
+        The maximum number of crimes reported in a single record is 8,998.<br><hr></p>
+
+        <h3 class='blink' style="color: red;">Population</h3><br>
+           <p  style="color:white;"> The average population per record is approximately 2.61 million.
+        The maximum population listed is approximately 9.74 million.<br><hr>
+
+        <h3 class='blink' style="color: red;"> Crime Trends Analysis</h3><br>
+        <p  style="color:white;"> The total number of reported crimes has generally increased from 2002 to 2010, with a peak in 2010 at 143,343 reported crimes.
+        After 2010, there is a notable decrease in the total number of reported crimes, reaching 124,038 in 2015.<br><hr>
+
+        <h3 class='blink' style="color: red;"> Crime Type Analysis</h3><br>
+        <p  style="color:white;">  Ordinary Thefts are the most commonly reported crime (335,151 incidents), followed by Hurt (270,920) and Motor Vehicle Theft (183,767).<br>
+        Rioting has the lowest total number of reported incidents (1,948).<br></p><br>
+
+        <h2 class='animate-charcter' style="margin-top:10px;"style="margin-left:300px; border : 1px solid red; margin-bottom:20px;">Findings Across Regional Analysis</h2><br><br><br>
+
+        <h3 class='blink' style="color: red;"> By Division</h3><br>
+        <p  style="color:white;"> Lahore Division has the highest total number of reported crimes (425,455), followed by Gujranwala (222,215) and Faisalabad (211,085).<br>
+        Sahiwal has the lowest total number of reported crimes (86,619).<br><hr>
+
+        
+        <h3 class='blink' style="color: red;"> By District</h3><br>
+        <p  style="color:white;"> Lahore District has the highest total number of reported crimes (284,267), followed by Faisalabad (134,218) and Multan (78,333).<br>
+        Khushab has the lowest total number of reported crimes (10,148).<br><hr>
+
+     
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- some of the useful insights section ends here-->
+
+
+
+    <!-- Recommendations for a safewr tommorow starts sessoin from here-->
+
+    <div class="container">
+        <div class="row justify-content-center mb-3 mt-3 pt-3" style="background: rgb(216,10,45);
+        background: linear-gradient(90deg, rgba(216,10,45,1) 0%, rgba(236,29,75,1) 54%, rgba(53,53,60,1) 79%);border:1px solid red;border-radius:15px;">
+            <div class="col-md-12">
+    <h2 class="p-3 mb-2 animate-charcter" style="margin-left:300px; border : 1px solid white; margin-bottom:20px;"> Recommendations for a Safer Tomorrow</h2><br>
+    
+    
+        <h5 style="color: yellow;">
+            
+    <div class="waviy">
+        <span style="--i:1">T</span>
+        <span style="--i:2">a</span>
+        <span style="--i:3">r</span>
+        <span style="--i:4">g</span>
+        <span style="--i:5">e</span>
+        <span style="--i:6">t</span>
+        <span style="--i:7">e</span>
+        <span style="--i:8">d</span>
+        <span style="--i:9"></span>
+        <span style="--i:10">p</span>
+        <span style="--i:11">o</span>
+        <span style="--i:12">l</span>
+        <span style="--i:13">i</span>
+        <span style="--i:14">c</span>
+        <span style="--i:15">i</span>
+        <span style="--i:16">n</span>
+        <span style="--i:17">g</span>
+       </div>
+           
+        </h5><br> <p  style="color:white;">Focus on districts with consistently high crime rates, such as Lahore and Gujranwala, to implement targeted policing strategies and resource allocation.<br><hr>
+
+        <h5 style="color: black;">
+            
+            <div class="waviy">
+                <span style="--i:1">P</span>
+                <span style="--i:2">r</span>
+                <span style="--i:3">e</span>
+                <span style="--i:4">v</span>
+                <span style="--i:5">e</span>
+                <span style="--i:6">n</span>
+                <span style="--i:7">t</span>
+                <span style="--i:8">i</span>
+                <span style="--i:9">v</span>
+                <span style="--i:10">e</span>
+                <span style="--i:11"></span>
+                <span style="--i:12">E</span>
+                <span style="--i:13">d</span>
+                <span style="--i:14">u</span>
+                <span style="--i:15">c</span>
+                <span style="--i:16">a</span>
+                <span style="--i:17">t</span>
+                <span style="--i:18">i</span>
+                <span style="--i:19">o</span>
+                <span style="--i:20">n</span>   
+               </div>
+
+        </h5><br><p  style="color:white;"> Launch public awareness campaigns in districts with rising crime trends to educate the population about safety and crime prevention.<br><hr>
+
+        <h5 style="color: #14ecea;">
+            
+            <div class="waviy">
+                <span style="--i:1">R</span>
+                <span style="--i:2">e</span>
+                <span style="--i:3">s</span>
+                <span style="--i:4">o</span>
+                <span style="--i:5">u</span>
+                <span style="--i:6">r</span>
+                <span style="--i:7">c</span>
+                <span style="--i:8">e</span>
+                <span style="--i:9"></span>
+                <span style="--i:10">D</span>
+                <span style="--i:11">i</span>
+                <span style="--i:12">s</span>
+                <span style="--i:13">t</span>
+                <span style="--i:14">r</span>
+                <span style="--i:15">i</span>
+                <span style="--i:16">b</span>
+                <span style="--i:17">u</span>
+                <span style="--i:18">t</span>
+                <span style="--i:19">i</span>
+                <span style="--i:20">o</span>
+                <span style="--i:21">n</span>   
+               </div>    
+        </h5><br><p  style="color:white;">Shift resources and law enforcement efforts from districts with declining crime rates to those in need, ensuring efficient allocation of resources.<br><hr>
+
+        
+            
+        <h5 style="color: LightGreen;">
+            
+            <div class="waviy">
+                <span style="--i:1">C</span>
+                <span style="--i:2">r</span>
+                <span style="--i:3">i</span>
+                <span style="--i:4">m</span>
+                <span style="--i:5">e</span>
+                <span style="--i:6"></span>
+                <span style="--i:7">D</span>
+                <span style="--i:8">i</span>
+                <span style="--i:9">v</span>
+                <span style="--i:10">e</span>
+                <span style="--i:11">r</span>
+                <span style="--i:12">s</span>
+                <span style="--i:13">i</span>
+                <span style="--i:14">f</span>
+                <span style="--i:15">i</span>
+                <span style="--i:16">c</span>
+                <span style="--i:17">a</span>
+                <span style="--i:18">t</span>
+                <span style="--i:19">i</span>
+                <span style="--i:20">o</span>
+                <span style="--i:21">n</span>   
+               </div>    
+           
+        </h5><br><p  style="color:white;"> Investigate why Ordinary Thefts, Hurt, and Motor Vehicle Theft dominate the crime landscape. Tailor preventive measures accordingly.<br></p><br>
+
+        <h5 style="color: Cyan;">
+            
+            <div class="waviy">
+                <span style="--i:1">y</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">u</span>
+                <span style="--i:4">t</span>
+                <span style="--i:5">h</span>
+                <span style="--i:6"></span>
+                <span style="--i:7">e</span>
+                <span style="--i:8">n</span>
+                <span style="--i:9">g</span>
+                <span style="--i:10">a</span>
+                <span style="--i:11">g</span>
+                <span style="--i:12">e</span>
+                <span style="--i:13">m</span>
+                <span style="--i:14">e</span>
+                <span style="--i:15">n</span>
+                <span style="--i:16">t</span>
+               </div>    
+        
+        </h5><br><p  style="color:white;"> Engage the youth in districts with high crime rates through community programs, mentorship, and job opportunities to divert their energy toward positive endeavors.<br><hr>
+        
+        <h3 style="color: yellow;">
+            
+            <div class="waviy">
+                <span style="--i:1">d</span>
+                <span style="--i:2">a</span>
+                <span style="--i:3">t</span>
+                <span style="--i:4">a</span>
+                <span style="--i:5"></span>
+                <span style="--i:6">d</span>
+                <span style="--i:7">r</span>
+                <span style="--i:8">i</span>
+                <span style="--i:9">v</span>
+                <span style="--i:10">e</span>
+                <span style="--i:11">n</span>
+                <span style="--i:12"></span>
+                <span style="--i:13">p</span>
+                <span style="--i:14">o</span>
+                <span style="--i:15">l</span>
+                <span style="--i:16">i</span>
+                <span style="--i:17">c</span>
+                <span style="--i:18">i</span>
+                <span style="--i:19">n</span>
+                <span style="--i:20">g</span>
+               </div>    
+           
+        </h3><br><p  style="color:white;">Encourage police forces to harness data analytics for predictive policing, helping them anticipate and prevent future crime waves.<br><hr>
+        
+        <h3 style="color: black;">
+            
+            <div class="waviy">
+                <span style="--i:1">c</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">m</span>
+                <span style="--i:4">m</span>
+                <span style="--i:5">u</span>
+                <span style="--i:6">n</span>
+                <span style="--i:7">i</span>
+                <span style="--i:8">t</span>
+                <span style="--i:9">y</span>
+                <span style="--i:10"></span>
+                <span style="--i:11">w</span>
+                <span style="--i:12">a</span>
+                <span style="--i:13">t</span>
+                <span style="--i:14">c</span>
+                <span style="--i:15">h</span>
+                <span style="--i:16"></span>
+                <span style="--i:17">p</span>
+                <span style="--i:18">r</span>
+                <span style="--i:19">o</span>
+                <span style="--i:20">g</span>
+                <span style="--i:21">r</span>
+                <span style="--i:22">a</span>
+                <span style="--i:23">m</span>
+                <span style="--i:24">s</span>  
+               </div>    
+            
+        </h3><br> <p  style="color:white;">Promote community watch programs, especially in districts like Khushab, to enhance local security and foster a sense of shared responsibility.<br><hr>
+
+        <h3 style="color: LightGreen;">
+            <div class="waviy">
+                <span style="--i:1">e</span>
+                <span style="--i:2">c</span>
+                <span style="--i:3">o</span>
+                <span style="--i:4">n</span>
+                <span style="--i:5">o</span>
+                <span style="--i:6">m</span>
+                <span style="--i:7">i</span>
+                <span style="--i:8">c</span>
+                <span style="--i:9"></span>
+                <span style="--i:10">e</span>
+                <span style="--i:11">m</span>
+                <span style="--i:12">p</span>
+                <span style="--i:13">o</span>
+                <span style="--i:14">w</span>
+                <span style="--i:15">e</span>
+                <span style="--i:16">r</span>
+                <span style="--i:17">m</span>
+                <span style="--i:18">e</span>
+                <span style="--i:19">n</span>
+                <span style="--i:20">t</span>
+               </div> 
+           
+        </h3><br><p  style="color:white;"> Invest in economic development initiatives in low-crime districts to further strengthen their stability and resilience.<br><hr>
+
+        <h3 style="color: #14ecea;">
+            <div class="waviy">
+                <span style="--i:1">c</span>
+                <span style="--i:2">r</span>
+                <span style="--i:3">i</span>
+                <span style="--i:4">m</span>
+                <span style="--i:5">i</span>
+                <span style="--i:6">n</span>
+                <span style="--i:7">a</span>
+                <span style="--i:8">l</span>
+                <span style="--i:9"></span>
+                <span style="--i:10">j</span>
+                <span style="--i:11">u</span>
+                <span style="--i:12">s</span>
+                <span style="--i:13">t</span>
+                <span style="--i:14">i</span>
+                <span style="--i:15">c</span>
+                <span style="--i:16">e</span>
+                <span style="--i:17"></span>
+                <span style="--i:18">r</span>
+                <span style="--i:19">e</span>
+                <span style="--i:20">f</span>
+                <span style="--i:18">o</span>
+                <span style="--i:19">r</span>
+                <span style="--i:20">m</span>
+            </div> 
+
+        </h3><br><p  style="color:white;">Evaluate the criminal justice system and explore opportunities for reform, ensuring efficient and timely resolution of cases.<br><hr>
+     
+        <h3 style="color: yellow;">
+            <div class="waviy">
+                <span style="--i:1">c</span>
+                <span style="--i:2">r</span>
+                <span style="--i:3">o</span>
+                <span style="--i:4">s</span>
+                <span style="--i:5">s</span>
+                <span style="--i:6"></span>
+                <span style="--i:7">d</span>
+                <span style="--i:8">i</span>
+                <span style="--i:9">s</span>
+                <span style="--i:10">t</span>
+                <span style="--i:11">r</span>
+                <span style="--i:12">i</span>
+                <span style="--i:13">c</span>
+                <span style="--i:14">t</span>
+                <span style="--i:15"></span>
+                <span style="--i:16">c</span>
+                <span style="--i:17">o</span>
+                <span style="--i:18">l</span>
+                <span style="--i:19">l</span>
+                <span style="--i:20">a</span>
+                <span style="--i:18">b</span>
+                <span style="--i:19">o</span>
+                <span style="--i:20">r</span>
+                <span style="--i:21">a</span>
+                <span style="--i:22">t</span>
+                <span style="--i:23">i</span>
+                <span style="--i:24">o</span>
+                <span style="--i:25">n</span>
+            </div> 
+          
+        </h3><br><p  style="color:white;">Foster collaboration and information sharing between districts to combat crimes that transcend administrative boundaries.<br><hr>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- REcommendatoins for a safer tomorrow ends session here-->
+
+        <!-- all cities on one map start session-->
+
+        <div class="container-fluid">
+            <div class="row justify-content-left mt-5 mb-5 pb-5" style="margin-left:20px;margin-right:10px;box-shadow: #0066FF 0px 0px 0px 2px, #0066FF 0px 4px 6px -1px, #0066FF 0px 1px 0px inset;">
+                <div class="col-md-12">
+
+
+<h1 class="p-3 mb-2 bg-dark text-danger pt-3 mt-3"><marquee>  All Cities on One Map</marquee></h1>
+<p id="animated-text">This is all about the all the districts of punjab in a single map</p>
+<div id="plotly-div_fig_all_cities_on_map_json" ></div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- all ciites on one map end session-->
+
+        <!-- fig_crimes_years_trends start session -->
+
+        <div class="container-fluid">
+            <div class="row justify-content-left mt-5 mb-5 pb-5" style="margin-left:20px;margin-right:10px;box-shadow: rgb(192,0,0) 0px 0px 0px 2px, rgb(192,0,0) 0px 4px 6px -1px, rgb(192,0,0) 0px 1px 0px inset;">
+                <div class="col-md-12">
+        <h1 class="p-3 mb-2 bg-white text-danger pt-3 mt-3"><marquee direction='right'> Crime Trends Across Years</marquee></h1>
+        <div id="plotly-div_fig_crimes_years_trends" ></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- fig_crimes_years_trends ends session here-->
+
+
+        
+                <!-- fig_divisions_years_trends start session -->
+
+        <div class="container-fluid">
+            <div class="row justify-content-left mt-5 mb-5 pb-5" style="margin-left:20px;margin-right:10px;box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
+                <div class="col-md-12">
+        <h1 class="p-3 mb-2 bg-dark text-danger pt-3 mt-3"><marquee> Divisions Trends Across Years</marquee></h1>
+        <div id="plotly-div_fig_divisions_years_trends" ></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fig_divisions_years_trends ends session here-->
+
+        
+            <!-- fig_crimetype_years_trend start session -->
+
+            <div class="container-fluid">
+                <div class="row justify-content-left mt-5 mb-5 pb-5" style="margin-left:20px;margin-right:10px;box-shadow: #FFCC99 0px 0px 0px 2px, #FFCC99 0px 4px 6px -1px, #FFCC99 0px 1px 0px inset;">
+                    <div class="col-md-12">
+            <h1 class="p-3 mb-2 bg-white text-danger pt-3 mt-3"><marquee direction='right'> Crime Categories Trends Across Years</marquee></h1>
+            <div id="plotly-div_fig_crimetype_years_trend" ></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fig_crimetype_years_trend ends session here-->
+
+                   <!-- most badly affected division start session -->
+
+       <div class="container-fluid">
+        <div class="row justify-content-left mt-5 mb-5 pb-5" style="margin-left:20px;margin-right:10px;box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;">
+            <div class="col-md-12">
+
+
+<h1 class="p-3 mb-2 bg-dark text-danger pt-3 mt-3"><marquee>Most Affected Division of Punjab</marquee></h1>
+
+<div id="plotly-div_fig_most_badly_effected_division" ></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- most badly effected division ends session here-->
+
+    
+                    <!-- most badly affected district start session -->
+
+                    <div class="container-fluid">
+                        <div class="row justify-content-left mt-5 mb-5 pb-5" style="margin-left:20px;margin-right:10px;box-shadow:#99FFFF 0px 0px 0px 2px, #99FFFF 0px 4px 6px -1px, #99FFFF 0px 1px 0px inset;">
+                            <div class="col-md-12">
+            <h1 class="p-3 mb-2 bg-white text-danger pt-3 mt-3"><marquee direction='right'> Most Affected District of Punjab</marquee></h1>
+            <div id="plotly-div_fig_most_badly_effected_district" ></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- most badly effected district ends session here-->
+
+
+
+                            <!-- fig_crimes_category_ranking start session -->
+
+                            <div class="container-fluid">
+                                <div class="row justify-content-left mt-5 mb-5 pb-5" style="margin-left:20px;margin-right:10px;box-shadow: #0066FF 0px 0px 0px 2px, #0066FF 0px 4px 6px -1px, #0066FF 0px 1px 0px inset;">
+                                    <div class="col-md-12">
+                <h1 class="p-3 mb-2 bg-dark text-danger pt-3 mt-3"><marquee> Crime Category Ranking in Overall  Punjab</marquee></h1>      
+                    <div id="plotly-div_fig_crimes_category_ranking" ></div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- fig_crimes_category_ranking ends session here-->
+
+                    <!-- one complete Bahawalpur section including plot, description , map starts here-->
+
+    <div class="container-fluid" style="background:transparent;">
+        <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;">
+            
+            <!-- First Plot (Bahawalpur ka data) occupying 5 columns -->
+            <div class="col-md-5">
+                <h1 class="p-3 mb-2 bg-success text-white pt-3 mt-3 blink"> Division Bahwalapur</h1>
+               <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                                
+                                <!-- images sections starts here-->
+               <div class="row justify-content-center">
+                <div class="marquee-container">
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalpurjpeg.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalnagar.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Rahim-Yar-Khan.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalpurjpeg.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalnagar.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Rahim-Yar-Khan.jpg" style="width:100px;height:100px;"></div>
+               
+               </div>
+            </div>
+               
+                                  <!-- images sections ends here-->
+ 
+            </div>
+          <!-- Second Plot occupying 6 columns -->
+          <div class="col-md-7">
+            <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee direction='right'>Total CrimeCount in Bahawalpur Division by District Segmented by Year</marquee></h1>
+            <div id="plotly-div001" ></div>
+        </div>
+        <!-- map area starts here-->
+            <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: green 0px 8px 24px,green 0px 8px 24px;">
+                        <div id="plotly-div001_map"></div>     
+         </div>  
+         <!-- map area ends here-->
+        </div> 
+        </div>
+    </div>
+      
+                        <!-- one complete bahawalpur section including plot, description , map ends here-->
+    
+      
+
+                                           <!-- one complete Dera Ghazi Khan section including plot, description , map starts here-->
+
+    <div class="container-fluid" style="background:transparent;">
+        <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: red 0px 0px 50px 0px;">
+            
+              <!-- Second Plot occupying 6 columns -->
+              <div class="col-md-7">
+                <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee direction='right'>Total CrimeCount in Dera Ghazi Khan Division by District Segmented by Year</marquee></h1>
+                <div id="plotly-div002" ></div>
+            </div>
+
+            <!-- First Plot (Bahawalpur ka data) occupying 5 columns -->
+            <div class="col-md-5">
+                <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3 blink"> Division Dera Ghazi Khan </h1>
+               <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                                
+                                <!-- images sections starts here-->
+               <div class="row justify-content-center">
+                <div class="marquee-container">
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/dera-ghazi-khan.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/layyahjpg.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Muzaffargarh.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/rajanpur.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/dera-ghazi-khan.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/layyahjpg.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Muzaffargarh.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/rajanpur.jpg" style="width:100px;height:100px;"></div>
+               </div>
+            </div>
+               
+                                  <!-- images sections ends here-->
+ 
+            </div>
+          
+            <!-- map area starts here-->
+                <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: red 0px 8px 24px,red 0px 8px 24px;">
+                            <div id="plotly-div002_map"></div>     
+             </div>  
+             <!-- map area ends here-->
+        </div> 
+        </div>
+    </div>
+      
+                        <!-- one complete Dera Ghazi Khan section including plot, description , map ends here-->
+    
+
+                        <!-- one complete Faisalabad section including plot, description , map starts here-->
+
+    <div class="container-fluid" style="background:transparent;">
+        <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: rgb(255, 215, 0) 0px 0px 50px 0px;">
+            
+            <!-- First Plot (Bahawalpur ka data) occupying 5 columns -->
+            <div class="col-md-5">
+                <h1 class="p-3 mb-2 bg-warning text-white pt-3 mt-3 blink"> Division Faisalabad</h1>
+               <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                                
+                                <!-- images sections starts here-->
+               <div class="row justify-content-center">
+                <div class="marquee-container">
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/faisalabad.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/toba_teik_singh.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/jhang.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/chiniot.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/faisalabad.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/toba_teik_singh.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/jhang.jpg" style="width:100px;height:100px;"></div>
+                    <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/chiniot.jpg" style="width:100px;height:100px;"></div>
+               </div>
+            </div>
+                                  <!-- images sections ends here-->
+ 
+            </div>
+            <!-- Second Plot occupying 6 columns -->
+            <div class="col-md-7">
+                <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee direction='right'>Total CrimeCount in Faisalabad Division by District Segmented by Year</marquee></h1>
+                <div id="plotly-div003" ></div>
+            </div>
+            <!-- map area starts here-->
+                <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: rgb(255, 215, 0) 0px 8px 24px,rgb(255, 215, 0) 0px 8px 24px;">
+                            <div id="plotly-div003_map"></div>     
+                    </div>  
+             <!-- map area ends here-->
+        </div> 
+        </div>
+    </div>
+      
+                        <!-- one complete Faisalabad section including plot, description , map ends here-->
+
+
+                        <!-- one complete Gujranwala section including plot, description , map starts here-->
+
+                        <div class="container-fluid" style="background:transparent;">
+                            <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: MediumBlue 0px 0px 50px 0px;">
+                                 <!-- Second Plot occupying 6 columns -->
+                                 <div class="col-md-7">
+                                    <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee direction='right'>Total CrimeCount in Gujranwala Division by District Segmented by Year</marquee></h1>
+                                    <div id="plotly-div004" ></div>
+                                </div>
+                                <!-- First Plot (Gujranwala ka data) occupying 5 columns -->
+                                <div class="col-md-5">
+                                    <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3 blink"> Division Gujranwala</h1>
+                                   <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                                                    
+                                                    <!-- images sections starts here-->
+                                   <div class="row justify-content-center">
+                                    <div class="marquee-container">
+                                        <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/gujranwalajpg.jpg" style="width:100px;height:100px;"></div>
+                                        <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Gujrat.jpg" style="width:100px;height:100px;"></div>
+                                        <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Hafizabad.jpg" style="width:100px;height:100px;"></div>
+                                        <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/mandi-bahauddin.jpg" style="width:100px;height:100px;"></div>
+                                        <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/narowaljpg.jpg" style="width:100px;height:100px;"></div>
+                                        <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/sialkotjpg.jpg" style="width:100px;height:100px;"></div>
+                                  </div>
+                                  
+
+                         
+                                  
+                                   </div>
+                                                      <!-- images sections ends here-->
+                     
+                                </div>
+                               
+                                <!-- map area starts here-->
+                                    <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: MediumBlue 0px 8px 24px,MediumBlue 0px 8px 24px;">
+                                                <div id="plotly-div004_map"></div>     
+                                        </div>  
+                                 <!-- map area ends here-->
+                            </div> 
+                            </div>
+                        </div>
+                          
+                                            <!-- one complete Gujranwala  section including plot, description , map ends here-->
+
+
+                                        <!-- one complete Lahore section including plot, description , map starts here-->
+
+ <div class="container-fluid" style="background:transparent;">
+    <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: LightSeaGreen 0px 0px 50px 0px;">
+        
+        <!-- First Plot (Lahore ka data) occupying 5 columns -->
+        <div class="col-md-5">
+            <h1 class="p-3 mb-2 bg-info text-white pt-3 mt-3 blink"> Division Lahore </h1>
+           <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                            
+                            <!-- images sections starts here-->
+           <div class="row justify-content-center">
+            <div class="marquee-container">
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/gujranwalajpg.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Gujrat.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Hafizabad.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/mandi-bahauddin.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/narowaljpg.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/sialkotjpg.jpg" style="width:100px;height:100px;"></div>
+          </div>
+        </div>
+                              <!-- images sections ends here-->
+
+        </div>
+        <!-- Second Plot occupying 6 columns -->
+        <div class="col-md-7">
+            <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee direction='right'>Total CrimeCount in Lahore Division by District Segmented by Year</marquee></h1>
+            <div id="plotly-div005" ></div>
+        </div>
+        <!-- map area starts here-->
+            <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: LightSeaGreen 0px 8px 24px,LightSeaGreen 0px 8px 24px;">
+                        <div id="plotly-div005_map"></div>     
+                </div>  
+         <!-- map area ends here-->
+    </div> 
+    </div>
+</div>
+  
+                    <!-- one complete Lahore  section including plot, description , map ends here-->
+
+
+                    
+                                       
+                    
+                                        <!-- one complete Rawalpindi section including plot, description , map starts here-->
+
+ <div class="container-fluid" style="background:transparent;">
+    <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: rgb(255, 215, 0) 0px 0px 50px 0px;">
+        
+         <!-- Second Plot occupying 6 columns -->
+         <div class="col-md-7">
+            <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee direction='right'>Total CrimeCount in Rawalpindi Division by District Segmented by Year</marquee></h1>
+            <div id="plotly-div007" ></div>
+        </div>
+        <!-- First Plot (Rawalpindi ka data) occupying 5 columns -->
+        <div class="col-md-5">
+            <h1 class="p-3 mb-2 bg-warning text-white pt-3 mt-3 blink"> Division Rawalpindi</h1>
+           <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                            
+                            <!-- images sections starts here-->
+           <div class="row justify-content-center">
+            <div class="marquee-container">
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/gujranwalajpg.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Gujrat.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Hafizabad.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/mandi-bahauddin.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/narowaljpg.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/sialkotjpg.jpg" style="width:100px;height:100px;"></div>
+          </div>
+        </div>
+               
+                              <!-- images sections ends here-->
+
+        </div>
+       
+        <!-- map area starts here-->
+            <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: rgb(255, 215, 0) 0px 8px 24px,rgb(255, 215, 0) 0px 8px 24px;">
+                        <div id="plotly-div007_map"></div>     
+                </div>  
+         <!-- map area ends here-->
+    </div> 
+    </div>
+</div>
+  
+                    <!-- one complete Rawalpindi  section including plot, description , map ends here-->
+
+
+                    
+                                        <!-- one complete Sargodha section including plot, description , map starts here-->
+
+ <div class="container-fluid" style="background:transparent;">
+    <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: red 0px 0px 50px 0px;">
+        
+        <!-- First Plot (Sargodha ka data) occupying 5 columns -->
+        <div class="col-md-5">
+            <h1 class="p-3 mb-2 bg-danger text-white pt-3 mt-3 blink"> Division Sargodha </h1>
+           <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                            
+                            <!-- images sections starts here-->
+           <div class="row justify-content-center">
+            <div class="marquee-container">
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalpurjpeg.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalnagar.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Rahim-Yar-Khan.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalpurjpeg.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalnagar.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Rahim-Yar-Khan.jpg" style="width:100px;height:100px;"></div>
+               
+               </div>
+        </div>
+               
+                              <!-- images sections ends here-->
+
+        </div>
+        <!-- Second Plot occupying 6 columns -->
+        <div class="col-md-7">
+            <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee direction='right'>Total CrimeCount in Sargodha Division by District Segmented by Year</marquee></h1>
+            <div id="plotly-div008" ></div>
+        </div>
+        <!-- map area starts here-->
+            <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: red 0px 8px 24px,red 0px 8px 24px;">
+                        <div id="plotly-div008_map"></div>     
+                </div>  
+         <!-- map area ends here-->
+    </div> 
+    </div>
+</div>
+  
+                    <!-- one complete Sargodha  section including plot, description , map ends here-->
+
+
+                    
+                                        <!-- one complete Sahiwal section including plot, description , map starts here-->
+
+ <div class="container-fluid" style="background:transparent;">
+    <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: green 0px 0px 50px 0px;">
+        
+            <!-- Second Plot occupying 6 columns -->
+            <div class="col-md-7">
+                <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"> <marquee direction='right'>Total CrimeCount in Sahiwal Division by District Segmented by Year</marquee></h1>
+                <div id="plotly-div009" ></div>
+            </div>
+
+        <!-- First Plot (Sahiwal ka data) occupying 5 columns -->
+        <div class="col-md-5">
+            <h1 class="p-3 mb-2 bg-success text-white pt-3 mt-3 blink">Divsion Sahiwal</h1>
+           <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                                     <!-- images sections starts here-->
+           <div class="row justify-content-center">
+            <div class="marquee-container">
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/gujranwalajpg.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Gujrat.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Hafizabad.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/mandi-bahauddin.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/narowaljpg.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/sialkotjpg.jpg" style="width:100px;height:100px;"></div>
+          </div>
+        </div>
+               
+                              <!-- images sections ends here-->
+
+        </div>
+    
+
+
+        <!-- map area starts here-->
+            <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: green 0px 8px 24px,green 0px 8px 24px;">
+                        <div id="plotly-div009_map"></div>     
+                </div>  
+         <!-- map area ends here-->
+    </div> 
+    </div>
+</div>
+  
+                    <!-- one complete Sahiwal  section including plot, description , map ends here-->
+
+
+ <!-- one complete Multan section including plot, description , map starts here-->
+
+ <div class="container-fluid" style="background:transparent;">
+    <div class="row justify-content-left mt-5 mb-3" style="margin-left:20px;margin-right:10px;border-radius:15px;box-shadow: MediumBlue 0px 0px 50px 0px;">
+        
+        <!-- First Plot (Multan ka data) occupying 5 columns -->
+        <div class="col-md-5">
+            <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3 blink"> Multan Division</h1>
+           <p>yo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro youyo bro you , The col-md-4 class indicates that the corresponding(containing the second plot) should occupy 4 columns on medium-sized devices (and up).The two plots will be placed side by side on the same horizontal row when viewed on medium-sized devices and larger. On smaller devices, they will stack vertically due to the responsive nature of Bootstrap's grid system. Adjust the content and styling as needed.you bro you</p>
+                            
+                            <!-- images sections starts here-->
+           <div class="row justify-content-center">
+            <div class="marquee-container">
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalpurjpeg.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalnagar.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Rahim-Yar-Khan.jpg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalpurjpeg.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Bahawalnagar.jpeg" style="width:100px;height:100px;"></div>
+                <div class="col-md-2"><img src="/static/images/crime_analysis_pics_punjab/Rahim-Yar-Khan.jpg" style="width:100px;height:100px;"></div>
+               
+               </div>
+        </div>
+               
+                              <!-- images sections ends here-->
+
+        </div>
+        <!-- Second Plot occupying 6 columns -->
+        <div class="col-md-7">
+            <h1 class="p-3 mb-2 bg-primary text-white pt-3 mt-3"><marquee direction='right'>Total CrimeCount in Multan Division by District Segmented by Year</marquee></h1>
+            <div id="plotly-div006" ></div>
+        </div>
+        <!-- map area starts here-->
+            <div class="col-md-10 mt-5 mb-5" style="margin-left:130px;box-shadow: MediumBlue 0px 8px 24px,MediumBlue 0px 8px 24px;">
+                        <div id="plotly-div006_map"></div>     
+                </div>  
+         <!-- map area ends here-->
+    </div> 
+    </div>
+</div>
+  
+                    <!-- one complete Multan  section including plot, description , map ends here-->
+
+
+             <!-- fig_crime_type_division_year_analysis start session -->
+
+             <div class="container-fluid">
+                <div class="row justify-content-left mt-5 mb-3" style="border-radius:15px;box-shadow: red 0px 0px 50px 0px;">
+                    <div class="col-md-12">
+ 
+    <h1 class="p-3 mb-2 bg-dark text-danger pt-3 mt-3"><marquee> Crime Type Vs Division Vs Year in Overall  Punjab</marquee></h1>
+
+    <div id="plotly-div_fig_crime_type_division_year_analysis" style="padding-bottom:20px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fig_crime_type_division_year_analysis ends session here-->
+
+
+     
+       
+{% comment %} code for map of figure001 bahawalpur division {% endcomment %}
+
+        <script type="text/javascript">
+            var figure = {{ figure001|safe }}; // graph 
+            Plotly.newPlot('plotly-div001', figure.data, figure.layout); 
+        </script>
+
+        <script type="text/javascript">
+            var figure = {{ figure_001_map|safe }};  // map
+            Plotly.newPlot('plotly-div001_map', figure.data, figure.layout); 
+        </script>
+
+{% comment %} end for bahwalapur map code {% endcomment %}
+
+{% comment %} dera ghazi khan start {% endcomment %}
+<script type="text/javascript">
+    var figure = {{ figure002|safe }}; // graph 
+    Plotly.newPlot('plotly-div002', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure_002_map|safe }};  // map
+    Plotly.newPlot('plotly-div002_map', figure.data, figure.layout); 
+</script>
+{% comment %}  dera ghazi khan ends {% endcomment %}
+
+{% comment %} faisalabad start {% endcomment %}
+<script type="text/javascript">
+    var figure = {{ figure003|safe }}; // graph 
+    Plotly.newPlot('plotly-div003', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure_003_map|safe }};  // map
+    Plotly.newPlot('plotly-div003_map', figure.data, figure.layout); 
+</script>
+{% comment %}  faisalabad ends {% endcomment %}
+
+{% comment %} gujranwala start {% endcomment %}
+<script type="text/javascript">
+    var figure = {{ figure004|safe }}; // graph 
+    Plotly.newPlot('plotly-div004', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure_004_map|safe }};  // map
+    Plotly.newPlot('plotly-div004_map', figure.data, figure.layout); 
+</script>
+{% comment %}  gujranwala ends {% endcomment %}
+
+{% comment %} lahore start {% endcomment %}
+<script type="text/javascript">
+    var figure = {{ figure005|safe }}; // graph 
+    Plotly.newPlot('plotly-div005', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure_005_map|safe }};  // map
+    Plotly.newPlot('plotly-div005_map', figure.data, figure.layout); 
+</script>
+{% comment %}  lahore ends {% endcomment %}
+
+
+{% comment %} multan start {% endcomment %}
+<script type="text/javascript">
+    var figure = {{ figure006|safe }}; // graph 
+    Plotly.newPlot('plotly-div006', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure_006_map|safe }};  // map
+    Plotly.newPlot('plotly-div006_map', figure.data, figure.layout); 
+</script>
+{% comment %}  multan ends {% endcomment %}
+
+{% comment %} rawalpindi start {% endcomment %}
+<script type="text/javascript">
+    var figure = {{ figure007|safe }}; // graph 
+    Plotly.newPlot('plotly-div007', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure_007_map|safe }};  // map
+    Plotly.newPlot('plotly-div007_map', figure.data, figure.layout); 
+</script>
+{% comment %}  rawalpindi ends {% endcomment %}
+
+{% comment %} sargodha start {% endcomment %}
+<script type="text/javascript">
+    var figure = {{ figure008|safe }}; // graph 
+    Plotly.newPlot('plotly-div008', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure_008_map|safe }};  // map
+    Plotly.newPlot('plotly-div008_map', figure.data, figure.layout); 
+</script>
+{% comment %}  sargodha ends {% endcomment %}
+
+
+{% comment %} sahiwal start {% endcomment %}
+<script type="text/javascript">
+    var figure = {{ figure009|safe }}; // graph 
+    Plotly.newPlot('plotly-div009', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure_009_map|safe }};  // map
+    Plotly.newPlot('plotly-div009_map', figure.data, figure.layout); 
+</script>
+{% comment %}  sahiwal ends {% endcomment %}
+
+
+       
+<script type="text/javascript">
+    var figure = {{ fig_all_cities_on_map_json|safe }};
+    Plotly.newPlot('plotly-div_fig_all_cities_on_map_json', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ fig_most_badly_effected_district|safe }};
+    Plotly.newPlot('plotly-div_fig_most_badly_effected_district', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ fig_most_badly_effected_division|safe }};
+    Plotly.newPlot('plotly-div_fig_most_badly_effected_division', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ fig_crimes_category_ranking|safe }};
+    Plotly.newPlot('plotly-div_fig_crimes_category_ranking', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ fig_crime_type_division_year_analysis|safe }};
+    Plotly.newPlot('plotly-div_fig_crime_type_division_year_analysis', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ fig_crimetype_years_trend|safe }};
+    Plotly.newPlot('plotly-div_fig_crimetype_years_trend', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ fig_divisions_years_trends|safe }};
+    Plotly.newPlot('plotly-div_fig_divisions_years_trends', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ fig_crimes_years_trends|safe }};
+    Plotly.newPlot('plotly-div_fig_crimes_years_trends', figure.data, figure.layout); 
+</script>
+
+        
+<script type="text/javascript">
+    var figure = {{ figure1|safe }};
+    Plotly.newPlot('plotly-div1', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ figure2|safe }};
+    Plotly.newPlot('plotly-div2', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure3|safe }};
+    Plotly.newPlot('plotly-div3', figure.data, figure.layout); 
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure4|safe }};
+    Plotly.newPlot('plotly-div4', figure.data, figure.layout); 
+</script>
+
+
+<script type="text/javascript">
+    var figure = {{ figure5|safe }};
+    Plotly.newPlot('plotly-div5', figure.data, figure.layout);
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure6|safe }};
+    Plotly.newPlot('plotly-div6', figure.data, figure.layout);
+</script>
+
+<script type="text/javascript">
+    var figure = {{ figure7|safe }};
+    Plotly.newPlot('plotly-div7', figure.data, figure.layout);
+</script>
+
+</body>
+</html> 

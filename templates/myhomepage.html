@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom CSS -->
+  <link href="static/css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/assets/css/style1.css">
+  <link rel="stylesheet" href="/static/assets/css/style2.css">
+  <script src="/static/assets/js/script1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link id='favicon' rel="shortcut icon" href="/static/assets/images/educat/main_image.png" type="image/x-png">
+  <title>Crime Analysis | Prediction </title>
+
+
+  <!-- Bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icon-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> 
+     <!-- links-->
+
+     <!-- for acridion item-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- library for scrolling effect on elements-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+</head>
+
+<body oncontextmenu="return false">
+
+<script>
+  new WOW().init();
+</script>
+
+  <div class="top-progress-container">
+    <div class="top-progress-bar" id="top-bar"></div>
+  </div>
+
+  <!-- navbar starts -->
+
+  <header>
+    <a href="#" class="logo">Crime Analysis and Prediction</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#skills">Skills</a></li> -->
+        <li><a href="#education">Crime Stats</a></li>
+        <li><a href="hovercards/">Get Prediction</a></li>
+        <li><a href="contactform/">Crime Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#faqs">FAQ's</a></li> 
+        <li><a href="signup">Login</a></li>
+        <!--li><a href="signup">Register</a></li-->
+        <li><a href="#">{{ user.username }}</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
+<br><br>
+
+
+  <!-- hero section starts -->
+
+  <section class="home" id="home">
+   <div id="particles-js"></div>
+
+    <div class="content">
+      <h2 class="wow fadeInUpBig">Welcome to<br /> Charting Crime, Crafting Solutions<br><span>"Let's journey together towards a safer tomorrow, informed by the patterns of today"</span></h2>
+      <p class="wow slideInRight">We will Update You With <span class="typing-text"></span></p>
+      <a href="#about" class="btn wow fadeInUpBig"><span>Our Mission</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+   
+    </div>
+    <div class="image wow fadeInDownBig">
+      <img draggable="false" class="tilt" src="/static/assets/images/educat/i2jpg.jpg" alt="">
+
+    </div>
+
+  </section>
+
+  <!-- hero section ends -->
+
+
+   
+
+    <h1 class="heading wow fadeInUp" data-wow-duration="1.4s">
+      <i class="bi bi-clock-history"></i> Pakistan's <span>Sacrifices History</span>
+    </h1>
+
+    
+    <p class="mt-4  text-black wow slideInLeft" style="padding-left:10px; padding-top:20px; padding-bottom:20px; padding-right:10px; font-weight:600; font-size:20px; text-align:center; background-color:skyblue;"><i>Pakistan, since the onset of the War on Terror, has faced the tragic loss of tens of thousands due to terrorism, encompassing civilians to security personnel. The nation has incurred immense economic setbacks, exceeding $120 billion, coupled with widespread internal displacements. This continuous strife has not only eroded its rich cultural heritage but also strained its socio-cultural fabric, despite the country's pivotal role in global counter-terrorism efforts..</i></p>
+
+  <!-- banner 1 starts here-->
+
+  <div class="container-fluid">
+
+    <!-- banner -->
+    <div class="row justify-content-center" style="background-color:grey;" id="banner">
+       <!-- for text section-->
+       <div class="col-md-6" id="banner-text">
+          <h1 class="scroll-hidden">Operation Al-Mizan<br> (2002-2006) </h1>
+          <p class="scroll-hidden">Initiated post-9/11, this operation aimed to neutralize al-Qaeda and its local affiliates in FATA and KP, marking Pakistan’s early commitment to the War on Terror.</p>
+      
+          <button type="button" class="btn btn-primary btn-lg scroll-hidden" id="banner-btn-1"><a href="operation_al_mizan/" style="text-decoration:none; color:white;">Read More</a></button>
+
+          
+          <button type="button" class="btn scroll-hidden" id="banner-btn-2">Our Services</button>
+          
+       </div>
+ 
+       <!-- for image section-->
+       <div class="col-md-4 d-none d-md-block wow flash" id="banner-image">
+          <video autoplay muted loop id="banner-image" class="scroll-hidden">
+             <source src="/static/assets/media/video03.mp4" type="video/mp4">
+          </video>
+       </div>
+
+    </div>
+
+
+
+
+
+ <!-- banner 1 ends here-->
+
+
+  <!-- banner 2 starts here -->
+  <div class="row justify-content-evenly"  style="background-color:black;" id="banner" class="banner">
+
+      <!-- for image section-->
+  
+  <div class="col-md-4 d-none d-md-block wow flash" id="banner-image">
+
+    <video autoplay muted loop id="banner-image">
+      <source src="/static/assets/media/video2.mp4" type="video/mp4">
+  </video>
+    <!--img src="images/drone3-removebg-preview.png" class="img-fluid"-->
+
+  </div>
+  <!-- for text section-->
+  <div class="col-md-6 p-5" id="banner-text">
+      <h1 class="scroll-hidden">Operation Rah-e-Haq<br> (2007-2009)</h1>
+    <p class="scroll-hidden">Undertaken in Swat Valley, the objective was to suppress the growing influence and territorial control of the TTP, restoring the state's writ.t</p>
+    <button type="button" class="btn btn-primary btn-lg scroll-hidden" id="banner-btn-1"><a href="operation_rah_e_haq/" style="text-decoration:none; color:white;">Read More</a></button>
+    <button type="button" class="btn scroll-hidden" id="banner-btn-2">Our Services</button>
+  </div>
+
+
+</div>
+
+<!-- banner 2 ends here -->
+
+
+ <!-- banner 3 starts here-->
+
+
+  <!-- banner -->
+  <div class="row justify-content-center"  style="background-color:grey;" id="banner">
+
+  <!-- for text section-->
+  <div class="col-md-6" id="banner-text">
+    <h1>Operation Sherdil <br>(2008)</h1>
+    <p>Conducted in the Bajaur Agency, its main goal was to root out militant hideouts and curtail extremist activities in the region.</p>
+    <button type="button" class="btn btn-primary btn-lg scroll-hidden" id="banner-btn-1"><a href="operation_sherdil/" style="text-decoration:none; color:white;">Read More</a></button>
+    <button type="button" class="btn scroll-hidden" id="banner-btn-2">Our Services</button>
+ </div>
+
+  <!-- for image section-->
+  
+  <div class="col-md-4 d-none d-md-block wow flash" id="banner-image">
+
+    <video autoplay muted loop id="banner-image">
+      <source src="/static/assets/media/video04.mp4" type="video/mp4">
+  </video>
+
+
+  </div>
+
+  
+</div>
+
+<!-- banner 3 ends here-->
+
+
+<!-- banner 4 starts here -->
+<div class="row justify-content-evenly"  style="background-color:black;" id="banner" class="banner">
+
+    <!-- for image section-->
+
+<div class="col-md-4 d-none d-md-block wow flash" id="banner-image">
+
+  <video autoplay muted loop id="banner-image">
+    <source src="static/assets/media/video5.mp4" type="video/mp4">
+</video>
+  <!--img src="images/drone3-removebg-preview.png" class="img-fluid"-->
+
+</div>
+<!-- for text section-->
+<div class="col-md-6 p-5" id="banner-text">
+    <h1>Operation Black Thunderstorm  <br>  (2009)</h1>
+  <p>Launched in the Malakand Division, this operation targeted extremist elements, working to re-establish state control and peace in the region.</p>
+  <button type="button" class="btn btn-primary btn-lg scroll-hidden" id="banner-btn-1"><a href="operation_black_thunderstorm/" style="text-decoration:none; color:white;">Read More</a></button>
+  <button type="button" class="btn" id="banner-btn-2">Our Services</button>
+</div>
+
+
+</div>
+
+<!-- banner 4 ends here -->
+
+
+
+ <!-- banner 5 starts here-->
+
+  <!-- banner -->
+  <div class="row justify-content-center"  style="background-color:grey;" id="banner">
+
+  <!-- for text section-->
+  <div class="col-md-6" id="banner-text">
+      <h1>Operation Rah-e-Nijat<br> (2009-2010)</h1>
+    <p>This operation in South Waziristan sought to weaken the TTP's stronghold, aiming to eradicate their presence and influence in the agency.</p>
+    <button type="button" class="btn btn-primary btn-lg scroll-hidden" id="banner-btn-1"><a href="operation_rah_e_nijaat/" style="text-decoration:none; color:white;">Read More</a></button>
+    <button type="button" class="btn" id="banner-btn-2">Our Services</button>
+  </div>
+
+  <!-- for image section-->
+  
+  <div class="col-md-4 d-none d-md-block wow flash" id="banner-image">
+
+    <video autoplay muted loop id="banner-image">
+      <source src="static/assets/media/video6.mp4" type="video/mp4">
+  </video>
+    <!--img src="images/drone3-removebg-preview.png" class="img-fluid"-->
+
+  </div>
+</div>
+
+<!-- banner 5 ends here-->
+
+
+<!-- banner 6 starts here -->
+<div class="row justify-content-evenly"  style="background-color:black;" id="banner" class="banner">
+
+    <!-- for image section-->
+
+<div class="col-md-4 d-none d-md-block wow flash" id="banner-image">
+
+  <video autoplay muted loop id="banner-image">
+    <source src="static/assets/media/video7.mp4" type="video/mp4">
+</video>
+  <!--img src="images/drone3-removebg-preview.png" class="img-fluid"-->
+
+</div>
+<!-- for text section-->
+<div class="col-md-6 p-5" id="banner-text">
+    <h1>Operation Zarb-e-Azb <br> (2014-2017)</h1>
+  <p>A large-scale military offensive in North Waziristan, it targeted both foreign and local terrorist hideouts, significantly reducing terrorism in subsequent years.</p>
+  <button type="button" class="btn btn-primary btn-lg scroll-hidden" id="banner-btn-1"><a href="operation_zarb_e_azb/" style="text-decoration:none; color:white;">Read More</a></button>
+  <button type="button" class="btn" id="banner-btn-2">Our Services</button>
+</div>
+
+
+</div>
+
+<!-- banner 6 ends here -->
+
+
+<!-- banner 7 starts here-->
+
+<!-- banner -->
+<div class="row justify-content-center"  style="background-color:grey;" id="banner">
+
+<!-- for text section-->
+<div class="col-md-6" id="banner-text">
+    <h1>Operation Radd-ul-Fasaad<br>  (2017-2022)</h1>
+  <p>A nationwide effort focusing on consolidating gains from previous operations, enhancing border security, and ensuring lasting peace across Pakistan.</p>
+  <button type="button" class="btn btn-primary btn-lg scroll-hidden" id="banner-btn-1"><a href="operation_raddul_fasaad/" style="text-decoration:none; color:white;">Read More</a></button>
+  <button type="button" class="btn" id="banner-btn-2">Our Services</button>
+</div>
+
+<!-- for image section-->
+
+<div class="col-md-4 d-none d-md-block wow flash" id="banner-image">
+
+  <video autoplay muted loop id="banner-image">
+    <source src="static/assets/media/video8.mp4" type="video/mp4">
+</video>
+  <!--img src="images/drone3-removebg-preview.png" class="img-fluid"-->
+
+</div>
+</div>
+
+<!-- banner 7 ends here-->
+
+
+<!-- banner 8 starts here -->
+<div class="row justify-content-evenly"  style="background-color:black;" id="banner" class="banner">
+
+  <!-- for image section-->
+
+<div class="col-md-4 d-none d-md-block wow flash" id="banner-image">
+
+<video autoplay muted loop id="banner-image">
+  <source src="static/assets/media/video9.mp4" type="video/mp4">
+</video>
+<!--img src="images/drone3-removebg-preview.png" class="img-fluid"-->
+
+</div>
+<!-- for text section-->
+<div class="col-md-6 p-5" id="banner-text">
+  <h1>Karachi Operation  <br> (2013-2017)</h1>
+<p>A joint operation with law enforcement agencies in Karachi, its main objective was to counteract rampant criminal activities, especially target killings, and to restore stability in the city.</p>
+<button type="button" class="btn btn-primary btn-lg scroll-hidden" id="banner-btn-1"><a href="karachi_operation/" style="text-decoration:none; color:white;">Read More</a></button>
+<button type="button" class="btn" id="banner-btn-2">Our Services</button>
+</div>
+
+</div>
+
+<!-- banner 8 ends here -->
+
+
+
+
+
+
+
+  <!-- about section starts -->
+  <section class="about" id="about">
+
+  
+    <h2 class="heading wow fadeInUpBig"><i class="bi bi-ticket-perforated-fill p-3"></i>Our Mission <span>Statement</span></h2>
+
+    <div class="row">
+     
+      <div class="image">
+        <!--img draggable="false" class="tilt" src="./assets/images/flag.jpg" alt=""-->
+
+        <video autoplay muted loop id="banner-image" class="tilt wow flash">
+          <source src="static/assets/media/pakistan_flag.mp4" type="video/mp4">
+        </video>
+
+      </div>
+      <div class="content wow fadeInDownBig">
+        <h3>Welcome to Our Platform</h3>
+        <h6><span  class="tag">We are here to update you the crime histroy and analysis that Pakistan are tackling through decades</span></h6>
+
+        <p>
+      
+
+          <i><b>O</b></i>ur mission is to harness the power of analytics to anticipate criminal trends, aiding law enforcement and communities in proactive, informed decision-making.
+          
+          Merging technology with vigilance, we aim to reshape the narrative of community safety by offering predictive insights on crime, fostering proactive responses and resilience.
+          
+        Committed to a safer tomorrow, we leverage today's data to forecast crime, ensuring that communities stay a step ahead in their quest for security and peace.
+          
+        Transforming raw data into actionable intelligence, our mission is to aid in the proactive deterrence of crime, ensuring a brighter, safer future for all.
+          
+        Championing a new era of public safety, we use advanced algorithms to predict and mitigate potential threats, striving for a world where every neighborhood thrives free of fear.
+          
+        Driven by the belief that foreknowledge is power, our platform aims to arm communities and authorities with predictive insights, catalyzing a collective stand against crime.
+          
+          In our pursuit for a safer world, we're dedicated to <i>analyzing, understanding, and predicting crime</i>, ensuring proactive measures today for a more secure tomorrow. </p>
+
+        <!--div class="box-container">
+           <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> >
+          <div class="box">
+            <p><span> email : </span> Faisal914awan@gmail.com</p>
+            <p><span> place : </span> Attock, Pakistan</p>
+          </div>
+        </div-->
+
+
+
+
+     
+
+      </div>
+    </div>
+  </section>
+  <!-- about section ends
+  <section class="Skills" id="skills">
+  <div class="skills-container">
+    <div class="row mt-5">
+      <span class="maincolor text-center mb-4">SKILLS</span>
+      <div class="row justify-content-center" id="progress-data"></div>
+    </div>
+  </div>
+</section> -->
+  <!-- skills close -->
+
+
+  <!-- education section starts -->
+  <section class="education" id="education">
+
+    <h1 class="heading wow swing"><i class="bi bi-flag-fill"></i> Pakistan's Provincial <span>Crime Stats</span></h1>
+
+    <p class="qoute wow bounceIn">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+      <div class="box wow fadeInLeft">
+        <div class="image">
+          <img draggable="false" src="static/assets/images/educat/lahore.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Punjab</h3>
+          <p >Punjab, the most populous province in Pakistan, boasts a rich tapestry of history, culture, and economic vitality. Despite its many attributes, Punjab has faced challenges related to crime and sporadic incidents of terrorism, often linked to broader national and regional issues. Larger cities like Lahore have sometimes witnessed street crimes, while extremist elements have targeted various parts of the province. The resilience of its people and ongoing efforts by law enforcement have aimed to restore peace and stability throughout the region.</p>
+          <h4><i class="bi bi-arrow-right-circle-fill p-3"></i><a href="statistics_page" style="text-decoration:none;" >Get Stats</a></h4>
+
+     
+
+        </div>
+      </div>
+
+      <div class="box wow fadeInRight">
+        <div class="image">
+          <img draggable="false" src="static/assets/images/educat/peshawar.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Khyber Pakhtunkhwa</h3>
+          <p>Khyber Pakhtunkhwa (KPK), situated in the northwest of Pakistan, is marked by its diverse cultural heritage and rugged terrains. Historically a crossroads for many civilizations, KPK has, in recent decades, been affected by terrorism and related crimes, largely due to its proximity to the Afghan border and regional geopolitical events. From targeted attacks to tribal disputes, the province has seen its share of challenges. However, the people of KPK, with the support of the government and security forces, continuously strive for peace, stability, and development in the region</p>
+          <h4><i class="bi bi-arrow-right-circle-fill p-3"></i><a href="stats/" style="text-decoration:none;" >Get Stats</a></h4>
+        </div>
+      </div>
+
+      <div class="box wow fadeInLeft">
+        <div class="image">
+          <img draggable="false" src="/static/images/drone3-removebg-preview.png">
+           
+              
+        </div>
+        <div class="content">
+          <h3>Pakistan Drone Attacks</h3>
+          <p>Sindh, encompassing the vibrant city of Karachi, is one of Pakistan's major provinces known for its historical sites and rich Sindhi culture. The province, especially its urban centers, has faced challenges related to street crimes, political violence, and occasional acts of terrorism. These incidents, intertwined with socio-economic factors and its port city's significance, have shaped the region's security dynamics. Nonetheless, the spirit of the Sindhi people, combined with law enforcement efforts, has been pivotal in navigating these challenges, fostering an environment of resilience and hope for a more peaceful future.</p>
+          <h4><i class="bi bi-arrow-right-circle-fill p-3"></i><a href="pakistan_drone_attacks/" style="text-decoration:none;" >Get Stats</a></h4>
+        </div>
+      </div>
+
+      <div class="box wow fadeInRight">
+        <div class="image">
+          <!--img draggable="false" src="static/assets/images/educat/quetta.jpg" alt=""-->
+          <img draggable="false" src="/static/images/suicide_bombings_05.png">
+           
+        </div>
+        <div class="content">
+          <h3>Pakistan Suicide Bombing Attacks</h3>
+          <p>Balochistan, Pakistan's largest province by land area, is characterized by its rugged landscapes and rich mineral resources. However, its strategic location and vastness have made it susceptible to various security challenges, including separatist movements, tribal conflicts, and acts of terrorism. These complexities, fueled in part by regional geopolitics and local grievances, have impacted its development and stability. Despite these hurdles, Balochistan's resilient inhabitants, alongside governmental efforts, continue to work towards a harmonious and prosperous future for the region.</p>
+          <h4><i class="bi bi-arrow-right-circle-fill p-3"></i><a href="Suicide_bombing_attacks/" style="text-decoration:none;" >Get Stats</a></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- education section ends -->
+
+   <!-- FAQ section starts here-->
+  
+
+<div id="faqs">
+   <div class="container wow fadeInLeft">
+   <div class="row justify-content-evenly pt-2 pb-5">
+    <div class="col-md-10 mt-5 text-center">
+      
+      <h2 class="heading"><i class="bi bi-person-raised-hand"></i><span>FAQ</span></h2>
+   <div  class="accordion accordion-flush mt-5" id="accordionFlushExample" >
+    <div class="accordion-item">
+      <h2 class="accordion-header" style=" transition: 0.5s; color: #fff; background: #2506ad;box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);">
+        <button class="accordion-button collapsed " style="font-size:15px;"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <strong>How can I Take Help From Your Platform</strong>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body" style="font-size:20px;"><code>Welcome to Our Platform</code><br>This Platform has been provided to make you update with respect to the current circumstances of Pakistan with respect to Crime, We will provide you the  crime analysis in shape of data visualization that will help you to get a quick and understandable overview of destruction and losses faced by Pakistan while during the period of Terrorism, Drone Attacks, Suicide Bombings and Other Crimes / Violences. You will be able to get the following infromation from Our Platform.<br><hr><ul>
+          <li>Crime Rates With Respect to Province</li>
+          <li>Per Year Crime Rates</li>
+          <li>Crime Ratio With Respect To Crime Categories</li>
+          <li>Affected Places By Which Type of Crime Most</li>
+          <li>People Mostly Affected By Which Crime</li>
+          <li>Highest Crime Targeted Location</li>
+        </ul>
+         </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" style=" transition: 0.5s; color: #fff; background: #2506ad;box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);">
+        <button class="accordion-button collapsed " style="font-size:15px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <strong>What is the main objective of this platform</strong>
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body" style="font-size:20px;"> <code>Our mission</code><br><hr>
+          <ul>
+            <li>To harness the power of analytics to anticipate criminal trends, aiding law enforcement and communities in proactive, informed decision-making.</li><br>
+            <li>To merge technology with vigilance, reshaping the narrative of community safety by offering predictive insights on crime, fostering proactive responses, and resilience.</li><br>
+            <li>Committed to a safer tomorrow by leveraging today's data to forecast crime, ensuring that communities stay a step ahead in their quest for security and peace.</li><br>
+            <!-- The remaining text is left unchanged -->
+            <li>Transforming raw data into actionable intelligence, our mission is to aid in the proactive deterrence of crime, ensuring a brighter, safer future for all.</li><br>
+            <li>Championing a new era of public safety by using advanced algorithms to predict and mitigate potential threats, striving for a world where every neighborhood thrives free of fear.</li><br>
+            <li>Driven by the belief that foreknowledge is power, our platform aims to arm communities and authorities with predictive insights, catalyzing a collective stand against crime.</li><br>
+          </ul>
+          <hr>
+          In our pursuit for a safer pakistan, we're dedicated to <i>analyzing, understanding, and predicting crime</i>, ensuring proactive measures today for a more secure tomorrow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item  mb-5">
+      <h2 class="accordion-header"style=" transition: 0.5s; color: #fff; background: #2506ad;box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);">
+        <button class="accordion-button collapsed " style="font-size:15px;"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <strong>What are the resources of data used in your platform</strong>
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body" style="font-size:20px;"><code>Our Data Collections Approaches</code><hr>The data that is represented here in visuals or descriptive forms containging the historical data of Pakistan regarding terrorism, suicide bombings, drone attacks and other social crimes and vilences<br>
+        Our data is not directly affiliated with any government / organzation property, it is totally based on historical and current data collected from the following resources<hr>
+        <ul>
+          <li>News Articles</li>
+          <li>Text from News Audios</li>
+          <li>Text from News Videos</li>
+          <li>Web Scrapping</li>
+        </ul>
+      
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+  <!-- contact section starts -->
+  <section class="contact" id="contact">
+
+    <h2 class="heading wow fadeInUpBig"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+    <div class="container">
+      <div class="content">
+        <div class="image-box wow fadeInLeft">
+          <img draggable="false" src="static/assets/images/educat/contact1.png" alt="">
+        </div>
+        <form id="contact-form"method="post" action="{% url 'contact_form_submission' %}">
+          {% csrf_token %}
+          <div class="form-group wow fadeInRight">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="email" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit" class="wow fadeInUpBig">
+              Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+
+  <!-- footer section starts -->
+  <section class="footer wow fadeInDownBig">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Crime Analysis And Prediction</h3>
+        <p>Thank you for visiting my platform. Connect with me over socials. <br /> <br /> Keep Safe Pakistan
+          🚀 </p>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <!-- <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a> -->
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> Crime Stats</a>
+        <a href="hovercards/"><i class="fas fa-chevron-circle-right"></i> Get Prediction</a>
+        <a href="#faqs"><i class="fas fa-chevron-circle-right"></i> FAQ</a>
+        
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-envelope"></i>Faisal914awan@gmail.com</p>
+        <p> <i class="fas fa-envelope"></i>SalmanShahid@gmail.com</p>
+        
+        <p> <i class="fas fa-map-marked-alt"></i>Attock - Pakistan </p>
+        <div class="share">
+
+          <a href="www.linkedin.com/in/faisal-mehmood-awan-4771a8233" class="fab fa-linkedin" aria-label="LinkedIn"
+            target="_blank"></a>
+          <a href="https://github.com/FaisalAwa" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+          <a href="mailto:Faisal914awan@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+          <a href="https://twitter.com/FaisalAwan" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+        href="https://www.linkedin.com/in/faisal-awan"> Faisal Mehmood Awan & MUhammad Salman Shahid</a></h1>
+
+  </section>
+  <!-- footer section ends -->
+
+
+
+  <!-- slidedown appearance starts-->
+
+  <!-- The overlay -->
+  <div id="overlay">
+    <section class="slidedown" id="contact-popup">
+      <div class="popup-header">
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content" style="border-radius:15px;box-shadow: #87CEFA 0px 22px 70px 4px;">
+              <span id="close-popup" class="popup-close-button">&times;</span>
+              <div class="image-box">
+                <div class="row">
+                <div class="col-md-4 d-none d-md-block" id="video">
+                  <video autoplay muted loop>
+                     <source src="static/assets/media/pakistan_flag.mp4" type="video/mp4">
+                  </video>
+               </div>
+              </div>
+              </div>
+              <div>
+                <div class="row justify-content-center">
+                <div class="col-md-12 d-none d-md-block">
+                  <h1 style="background-color:black;color:red; padding:30px;border-radius:15px;box-shadow: #87CEFA 0px 22px 70px 4px;">Welcome to Our Platform</h1>
+                  <br>
+                <p style="background-color:black; color:white; padding:30px;border-radius:15px;box-shadow: #87CEFA 0px 22px 70px 4px;">Pakistan has a high sacrifices in terms of terrorism, bomb blastings, drone attacks and other crimes like target killing, we are here to keep you update with the current scenarios of crimes ratio in various area of  pakistan by the help of data driven recommendations</p>
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Initially hide the contact section
+      $("#contact-popup").css({ "top": "-10%", "opacity": 0 });
+
+      // Calculate the top position to center it vertically
+      var topPosition = ($(window).height() - $("#contact-popup").height()) / 2;
+
+      // Animate the contact section to slide down and appear in the center
+      $("#contact-popup").animate({ top: topPosition, opacity: 1 }, 1000);
+
+      // Show the overlay with animation
+      $("#overlay").fadeIn(1000);
+
+      // Close the popup when the close button is clicked
+      $("#close-popup").click(function() {
+        $("#contact-popup").animate({ top: "-100%", opacity: 0 }, 1000, function() {
+          $("#overlay").fadeOut(1000);
+        });
+      });
+    });
+  </script>
+
+
+
+
+  <!-- slidedown appearance ends-->
+
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
+
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- particle.js links -->
+  <script src="static/assets/js/particles.min.js"></script>
+  <script src="static/assets/js/app.js"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+  <script src="static/assets/js/script.js"></script>
+  <script src="static/assets/js/progress.js"></script>
+
+
+
+  
+</body>
+
+</html>
