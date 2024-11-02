@@ -1,0 +1,876 @@
+year,division,district,crime type,cases
+2011,Hazara ,Abbottabad,Murder,76
+2011,Hazara ,Abbottabad,Kids:Ransom,0
+2011,Hazara ,Abbottabad,Child Lifting,3
+2011,Hazara ,Abbottabad,Abduction,127
+2011,Hazara ,Abbottabad,Car Theft,5
+2011,Hazara ,Abbottabad,Car Snatching,3
+2011,Hazara ,Abbottabad,M.Cycle Theft,8
+2011,Bannu,Bannu,Murder,177
+2011,Bannu,Bannu,Kids:Ransom,2
+2011,Bannu,Bannu,Child Lifting,4
+2011,Bannu,Bannu,Abduction,7
+2011,Bannu,Bannu,Car Theft,0
+2011,Bannu,Bannu,Car Snatching,1
+2011,Bannu,Bannu,M.Cycle Theft,2
+2011,Hazara ,Battagram,Murder,28
+2011,Hazara ,Battagram,Kids:Ransom,1
+2011,Hazara ,Battagram,Child Lifting,0
+2011,Hazara ,Battagram,Abduction,17
+2011,Hazara ,Battagram,Car Theft,2
+2011,Hazara ,Battagram,Car Snatching,0
+2011,Hazara ,Battagram,M.Cycle Theft,0
+2011,Malakand,Buner,Murder,59
+2011,Malakand,Buner,Kids:Ransom,0
+2011,Malakand,Buner,Child Lifting,0
+2011,Malakand,Buner,Abduction,6
+2011,Malakand,Buner,Car Theft,0
+2011,Malakand,Buner,Car Snatching,0
+2011,Malakand,Buner,M.Cycle Theft,1
+2011,Peshawar,Charsadda,Murder,251
+2011,Peshawar,Charsadda,Kids:Ransom,6
+2011,Peshawar,Charsadda,Child Lifting,0
+2011,Peshawar,Charsadda,Abduction,33
+2011,Peshawar,Charsadda,Car Theft,13
+2011,Peshawar,Charsadda,Car Snatching,12
+2011,Peshawar,Charsadda,M.Cycle Theft,12
+2011,Malakand,Chitral,Murder,13
+2011,Malakand,Chitral,Kids:Ransom,0
+2011,Malakand,Chitral,Child Lifting,0
+2011,Malakand,Chitral,Abduction,8
+2011,Malakand,Chitral,Car Theft,2
+2011,Malakand,Chitral,Car Snatching,0
+2011,Malakand,Chitral,M.Cycle Theft,0
+2011,D.I.Khan,D.I. Khan,Murder,148
+2011,D.I.Khan,D.I. Khan,Kids:Ransom,6
+2011,D.I.Khan,D.I. Khan,Child Lifting,0
+2011,D.I.Khan,D.I. Khan,Abduction,34
+2011,D.I.Khan,D.I. Khan,Car Theft,1
+2011,D.I.Khan,D.I. Khan,Car Snatching,3
+2011,D.I.Khan,D.I. Khan,M.Cycle Theft,10
+2011,Malakand,Dir Lower,Murder,60
+2011,Malakand,Dir Lower,Kids:Ransom,2
+2011,Malakand,Dir Lower,Child Lifting,2
+2011,Malakand,Dir Lower,Abduction,13
+2011,Malakand,Dir Lower,Car Theft,2
+2011,Malakand,Dir Lower,Car Snatching,0
+2011,Malakand,Dir Lower,M.Cycle Theft,4
+2011,Malakand,Dir Upper,Murder,76
+2011,Malakand,Dir Upper,Kids:Ransom,1
+2011,Malakand,Dir Upper,Child Lifting,0
+2011,Malakand,Dir Upper,Abduction,5
+2011,Malakand,Dir Upper,Car Theft,2
+2011,Malakand,Dir Upper,Car Snatching,0
+2011,Malakand,Dir Upper,M.Cycle Theft,2
+2011,Kohat,Hangu,Murder,123
+2011,Kohat,Hangu,Kids:Ransom,1
+2011,Kohat,Hangu,Child Lifting,0
+2011,Kohat,Hangu,Abduction,5
+2011,Kohat,Hangu,Car Theft,0
+2011,Kohat,Hangu,Car Snatching,0
+2011,Kohat,Hangu,M.Cycle Theft,0
+2011,Hazara ,Haripur,Murder,82
+2011,Hazara ,Haripur,Kids:Ransom,2
+2011,Hazara ,Haripur,Child Lifting,0
+2011,Hazara ,Haripur,Abduction,43
+2011,Hazara ,Haripur,Car Theft,5
+2011,Hazara ,Haripur,Car Snatching,0
+2011,Hazara ,Haripur,M.Cycle Theft,4
+2011,Kohat,Karak,Murder,63
+2011,Kohat,Karak,Kids:Ransom,2
+2011,Kohat,Karak,Child Lifting,0
+2011,Kohat,Karak,Abduction,32
+2011,Kohat,Karak,Car Theft,1
+2011,Kohat,Karak,Car Snatching,6
+2011,Kohat,Karak,M.Cycle Theft,1
+2011,Kohat,Kohat,Murder,140
+2011,Kohat,Kohat,Kids:Ransom,7
+2011,Kohat,Kohat,Child Lifting,1
+2011,Kohat,Kohat,Abduction,15
+2011,Kohat,Kohat,Car Theft,0
+2011,Kohat,Kohat,Car Snatching,0
+2011,Kohat,Kohat,M.Cycle Theft,15
+2011,Hazara ,Kohistan,Murder,31
+2011,Hazara ,Kohistan,Kids:Ransom,0
+2011,Hazara ,Kohistan,Child Lifting,0
+2011,Hazara ,Kohistan,Abduction,5
+2011,Hazara ,Kohistan,Car Theft,1
+2011,Hazara ,Kohistan,Car Snatching,0
+2011,Hazara ,Kohistan,M.Cycle Theft,0
+2011,Bannu,Lakki Marwat,Murder,116
+2011,Bannu,Lakki Marwat,Kids:Ransom,0
+2011,Bannu,Lakki Marwat,Child Lifting,0
+2011,Bannu,Lakki Marwat,Abduction,48
+2011,Bannu,Lakki Marwat,Car Theft,1
+2011,Bannu,Lakki Marwat,Car Snatching,0
+2011,Bannu,Lakki Marwat,M.Cycle Theft,0
+2011,Malakand,Malakand,Murder,0
+2011,Malakand,Malakand,Kids:Ransom,0
+2011,Malakand,Malakand,Child Lifting,0
+2011,Malakand,Malakand,Abduction,0
+2011,Malakand,Malakand,Car Theft,0
+2011,Malakand,Malakand,Car Snatching,0
+2011,Malakand,Malakand,M.Cycle Theft,0
+2011,Hazara ,Mansehra,Murder,82
+2011,Hazara ,Mansehra,Kids:Ransom,3
+2011,Hazara ,Mansehra,Child Lifting,0
+2011,Hazara ,Mansehra,Abduction,30
+2011,Hazara ,Mansehra,Car Theft,10
+2011,Hazara ,Mansehra,Car Snatching,8
+2011,Hazara ,Mansehra,M.Cycle Theft,1
+2011,Mardan,Mardan,Murder,299
+2011,Mardan,Mardan,Kids:Ransom,4
+2011,Mardan,Mardan,Child Lifting,5
+2011,Mardan,Mardan,Abduction,30
+2011,Mardan,Mardan,Car Theft,30
+2011,Mardan,Mardan,Car Snatching,6
+2011,Mardan,Mardan,M.Cycle Theft,12
+2011,Peshawar,Nowshera,Murder,175
+2011,Peshawar,Nowshera,Kids:Ransom,5
+2011,Peshawar,Nowshera,Child Lifting,1
+2011,Peshawar,Nowshera,Abduction,12
+2011,Peshawar,Nowshera,Car Theft,5
+2011,Peshawar,Nowshera,Car Snatching,8
+2011,Peshawar,Nowshera,M.Cycle Theft,6
+2011,Peshawar,Peshawar,Murder,579
+2011,Peshawar,Peshawar,Kids:Ransom,47
+2011,Peshawar,Peshawar,Child Lifting,4
+2011,Peshawar,Peshawar,Abduction,53
+2011,Peshawar,Peshawar,Car Theft,114
+2011,Peshawar,Peshawar,Car Snatching,24
+2011,Peshawar,Peshawar,M.Cycle Theft,119
+2011,Malakand,Shangla,Murder,31
+2011,Malakand,Shangla,Kids:Ransom,1
+2011,Malakand,Shangla,Child Lifting,0
+2011,Malakand,Shangla,Abduction,10
+2011,Malakand,Shangla,Car Theft,0
+2011,Malakand,Shangla,Car Snatching,0
+2011,Malakand,Shangla,M.Cycle Theft,0
+2011,Mardan,Swabi,Murder,212
+2011,Mardan,Swabi,Kids:Ransom,3
+2011,Mardan,Swabi,Child Lifting,1
+2011,Mardan,Swabi,Abduction,11
+2011,Mardan,Swabi,Car Theft,0
+2011,Mardan,Swabi,Car Snatching,1
+2011,Mardan,Swabi,M.Cycle Theft,5
+2011,Malakand,Swat,Murder,61
+2011,Malakand,Swat,Kids:Ransom,3
+2011,Malakand,Swat,Child Lifting,3
+2011,Malakand,Swat,Abduction,45
+2011,Malakand,Swat,Car Theft,6
+2011,Malakand,Swat,Car Snatching,2
+2011,Malakand,Swat,M.Cycle Theft,4
+2011,D.I.Khan,Tank,Murder,59
+2011,D.I.Khan,Tank,Kids:Ransom,0
+2011,D.I.Khan,Tank,Child Lifting,0
+2011,D.I.Khan,Tank,Abduction,5
+2011,D.I.Khan,Tank,Car Theft,0
+2011,D.I.Khan,Tank,Car Snatching,0
+2011,D.I.Khan,Tank,M.Cycle Theft,1
+2011,Hazara ,Tor Ghar,Murder,6
+2011,Hazara ,Tor Ghar,Kids:Ransom,0
+2011,Hazara ,Tor Ghar,Child Lifting,0
+2011,Hazara ,Tor Ghar,Abduction,0
+2011,Hazara ,Tor Ghar,Car Theft,0
+2011,Hazara ,Tor Ghar,Car Snatching,0
+2011,Hazara ,Tor Ghar,M.Cycle Theft,0
+2012,Hazara ,Abbottabad,Murder,73
+2012,Hazara ,Abbottabad,Kids:Ransom,1
+2012,Hazara ,Abbottabad,Child Lifting,3
+2012,Hazara ,Abbottabad,Abduction,103
+2012,Hazara ,Abbottabad,Car Theft,10
+2012,Hazara ,Abbottabad,Car Snatching,1
+2012,Hazara ,Abbottabad,M.Cycle Theft,3
+2012,Bannu,Bannu,Murder,170
+2012,Bannu,Bannu,Kids:Ransom,2
+2012,Bannu,Bannu,Child Lifting,4
+2012,Bannu,Bannu,Abduction,13
+2012,Bannu,Bannu,Car Theft,1
+2012,Bannu,Bannu,Car Snatching,0
+2012,Bannu,Bannu,M.Cycle Theft,12
+2012,Hazara ,Battagram,Murder,26
+2012,Hazara ,Battagram,Kids:Ransom,0
+2012,Hazara ,Battagram,Child Lifting,0
+2012,Hazara ,Battagram,Abduction,11
+2012,Hazara ,Battagram,Car Theft,0
+2012,Hazara ,Battagram,Car Snatching,0
+2012,Hazara ,Battagram,M.Cycle Theft,1
+2012,Malakand,Buner,Murder,47
+2012,Malakand,Buner,Kids:Ransom,0
+2012,Malakand,Buner,Child Lifting,0
+2012,Malakand,Buner,Abduction,6
+2012,Malakand,Buner,Car Theft,1
+2012,Malakand,Buner,Car Snatching,0
+2012,Malakand,Buner,M.Cycle Theft,1
+2012,Peshawar,Charsadda,Murder,234
+2012,Peshawar,Charsadda,Kids:Ransom,4
+2012,Peshawar,Charsadda,Child Lifting,0
+2012,Peshawar,Charsadda,Abduction,42
+2012,Peshawar,Charsadda,Car Theft,14
+2012,Peshawar,Charsadda,Car Snatching,3
+2012,Peshawar,Charsadda,M.Cycle Theft,8
+2012,Malakand,Chitral,Murder,15
+2012,Malakand,Chitral,Kids:Ransom,0
+2012,Malakand,Chitral,Child Lifting,0
+2012,Malakand,Chitral,Abduction,15
+2012,Malakand,Chitral,Car Theft,2
+2012,Malakand,Chitral,Car Snatching,0
+2012,Malakand,Chitral,M.Cycle Theft,2
+2012,D.I.Khan,D.I. Khan,Murder,126
+2012,D.I.Khan,D.I. Khan,Kids:Ransom,0
+2012,D.I.Khan,D.I. Khan,Child Lifting,0
+2012,D.I.Khan,D.I. Khan,Abduction,55
+2012,D.I.Khan,D.I. Khan,Car Theft,1
+2012,D.I.Khan,D.I. Khan,Car Snatching,1
+2012,D.I.Khan,D.I. Khan,M.Cycle Theft,42
+2012,Malakand,Dir Lower,Murder,50
+2012,Malakand,Dir Lower,Kids:Ransom,0
+2012,Malakand,Dir Lower,Child Lifting,2
+2012,Malakand,Dir Lower,Abduction,6
+2012,Malakand,Dir Lower,Car Theft,0
+2012,Malakand,Dir Lower,Car Snatching,0
+2012,Malakand,Dir Lower,M.Cycle Theft,4
+2012,Malakand,Dir Upper,Murder,87
+2012,Malakand,Dir Upper,Kids:Ransom,0
+2012,Malakand,Dir Upper,Child Lifting,0
+2012,Malakand,Dir Upper,Abduction,15
+2012,Malakand,Dir Upper,Car Theft,1
+2012,Malakand,Dir Upper,Car Snatching,0
+2012,Malakand,Dir Upper,M.Cycle Theft,0
+2012,Kohat,Hangu,Murder,119
+2012,Kohat,Hangu,Kids:Ransom,1
+2012,Kohat,Hangu,Child Lifting,0
+2012,Kohat,Hangu,Abduction,4
+2012,Kohat,Hangu,Car Theft,0
+2012,Kohat,Hangu,Car Snatching,1
+2012,Kohat,Hangu,M.Cycle Theft,1
+2012,Hazara ,Haripur,Murder,83
+2012,Hazara ,Haripur,Kids:Ransom,0
+2012,Hazara ,Haripur,Child Lifting,0
+2012,Hazara ,Haripur,Abduction,36
+2012,Hazara ,Haripur,Car Theft,6
+2012,Hazara ,Haripur,Car Snatching,0
+2012,Hazara ,Haripur,M.Cycle Theft,3
+2012,Kohat,Karak,Murder,70
+2012,Kohat,Karak,Kids:Ransom,0
+2012,Kohat,Karak,Child Lifting,0
+2012,Kohat,Karak,Abduction,30
+2012,Kohat,Karak,Car Theft,0
+2012,Kohat,Karak,Car Snatching,3
+2012,Kohat,Karak,M.Cycle Theft,5
+2012,Kohat,Kohat,Murder,148
+2012,Kohat,Kohat,Kids:Ransom,6
+2012,Kohat,Kohat,Child Lifting,1
+2012,Kohat,Kohat,Abduction,16
+2012,Kohat,Kohat,Car Theft,2
+2012,Kohat,Kohat,Car Snatching,5
+2012,Kohat,Kohat,M.Cycle Theft,7
+2012,Hazara ,Kohistan,Murder,37
+2012,Hazara ,Kohistan,Kids:Ransom,0
+2012,Hazara ,Kohistan,Child Lifting,0
+2012,Hazara ,Kohistan,Abduction,3
+2012,Hazara ,Kohistan,Car Theft,1
+2012,Hazara ,Kohistan,Car Snatching,0
+2012,Hazara ,Kohistan,M.Cycle Theft,1
+2012,Bannu,Lakki Marwat,Murder,109
+2012,Bannu,Lakki Marwat,Kids:Ransom,0
+2012,Bannu,Lakki Marwat,Child Lifting,0
+2012,Bannu,Lakki Marwat,Abduction,35
+2012,Bannu,Lakki Marwat,Car Theft,0
+2012,Bannu,Lakki Marwat,Car Snatching,4
+2012,Bannu,Lakki Marwat,M.Cycle Theft,7
+2012,Malakand,Malakand,Murder,0
+2012,Malakand,Malakand,Kids:Ransom,0
+2012,Malakand,Malakand,Child Lifting,0
+2012,Malakand,Malakand,Abduction,0
+2012,Malakand,Malakand,Car Theft,0
+2012,Malakand,Malakand,Car Snatching,0
+2012,Malakand,Malakand,M.Cycle Theft,0
+2012,Hazara ,Mansehra,Murder,88
+2012,Hazara ,Mansehra,Kids:Ransom,2
+2012,Hazara ,Mansehra,Child Lifting,0
+2012,Hazara ,Mansehra,Abduction,136
+2012,Hazara ,Mansehra,Car Theft,5
+2012,Hazara ,Mansehra,Car Snatching,2
+2012,Hazara ,Mansehra,M.Cycle Theft,2
+2012,Mardan,Mardan,Murder,326
+2012,Mardan,Mardan,Kids:Ransom,7
+2012,Mardan,Mardan,Child Lifting,5
+2012,Mardan,Mardan,Abduction,24
+2012,Mardan,Mardan,Car Theft,21
+2012,Mardan,Mardan,Car Snatching,9
+2012,Mardan,Mardan,M.Cycle Theft,15
+2012,Peshawar,Nowshera,Murder,187
+2012,Peshawar,Nowshera,Kids:Ransom,3
+2012,Peshawar,Nowshera,Child Lifting,1
+2012,Peshawar,Nowshera,Abduction,17
+2012,Peshawar,Nowshera,Car Theft,4
+2012,Peshawar,Nowshera,Car Snatching,3
+2012,Peshawar,Nowshera,M.Cycle Theft,9
+2012,Peshawar,Peshawar,Murder,601
+2012,Peshawar,Peshawar,Kids:Ransom,35
+2012,Peshawar,Peshawar,Child Lifting,4
+2012,Peshawar,Peshawar,Abduction,40
+2012,Peshawar,Peshawar,Car Theft,89
+2012,Peshawar,Peshawar,Car Snatching,26
+2012,Peshawar,Peshawar,M.Cycle Theft,81
+2012,Malakand,Shangla,Murder,22
+2012,Malakand,Shangla,Kids:Ransom,0
+2012,Malakand,Shangla,Child Lifting,0
+2012,Malakand,Shangla,Abduction,5
+2012,Malakand,Shangla,Car Theft,0
+2012,Malakand,Shangla,Car Snatching,0
+2012,Malakand,Shangla,M.Cycle Theft,0
+2012,Mardan,Swabi,Murder,209
+2012,Mardan,Swabi,Kids:Ransom,2
+2012,Mardan,Swabi,Child Lifting,1
+2012,Mardan,Swabi,Abduction,25
+2012,Mardan,Swabi,Car Theft,3
+2012,Mardan,Swabi,Car Snatching,5
+2012,Mardan,Swabi,M.Cycle Theft,3
+2012,Malakand,Swat,Murder,99
+2012,Malakand,Swat,Kids:Ransom,0
+2012,Malakand,Swat,Child Lifting,3
+2012,Malakand,Swat,Abduction,36
+2012,Malakand,Swat,Car Theft,4
+2012,Malakand,Swat,Car Snatching,2
+2012,Malakand,Swat,M.Cycle Theft,10
+2012,D.I.Khan,Tank,Murder,42
+2012,D.I.Khan,Tank,Kids:Ransom,0
+2012,D.I.Khan,Tank,Child Lifting,0
+2012,D.I.Khan,Tank,Abduction,19
+2012,D.I.Khan,Tank,Car Theft,0
+2012,D.I.Khan,Tank,Car Snatching,0
+2012,D.I.Khan,Tank,M.Cycle Theft,1
+2012,Hazara ,Tor Ghar,Murder,14
+2012,Hazara ,Tor Ghar,Kids:Ransom,0
+2012,Hazara ,Tor Ghar,Child Lifting,0
+2012,Hazara ,Tor Ghar,Abduction,1
+2012,Hazara ,Tor Ghar,Car Theft,0
+2012,Hazara ,Tor Ghar,Car Snatching,0
+2012,Hazara ,Tor Ghar,M.Cycle Theft,0
+2013,Hazara ,Abbottabad,Murder,67
+2013,Hazara ,Abbottabad,Kids:Ransom,1
+2013,Hazara ,Abbottabad,Child Lifting,2
+2013,Hazara ,Abbottabad,Abduction,102
+2013,Hazara ,Abbottabad,Car Theft,9
+2013,Hazara ,Abbottabad,Car Snatching,1
+2013,Hazara ,Abbottabad,M.Cycle Theft,7
+2013,Bannu,Bannu,Murder,208
+2013,Bannu,Bannu,Kids:Ransom,0
+2013,Bannu,Bannu,Child Lifting,2
+2013,Bannu,Bannu,Abduction,19
+2013,Bannu,Bannu,Car Theft,2
+2013,Bannu,Bannu,Car Snatching,1
+2013,Bannu,Bannu,M.Cycle Theft,29
+2013,Hazara ,Battagram,Murder,35
+2013,Hazara ,Battagram,Kids:Ransom,1
+2013,Hazara ,Battagram,Child Lifting,0
+2013,Hazara ,Battagram,Abduction,10
+2013,Hazara ,Battagram,Car Theft,0
+2013,Hazara ,Battagram,Car Snatching,1
+2013,Hazara ,Battagram,M.Cycle Theft,0
+2013,Malakand,Buner,Murder,60
+2013,Malakand,Buner,Kids:Ransom,0
+2013,Malakand,Buner,Child Lifting,0
+2013,Malakand,Buner,Abduction,15
+2013,Malakand,Buner,Car Theft,1
+2013,Malakand,Buner,Car Snatching,1
+2013,Malakand,Buner,M.Cycle Theft,5
+2013,Peshawar,Charsadda,Murder,222
+2013,Peshawar,Charsadda,Kids:Ransom,2
+2013,Peshawar,Charsadda,Child Lifting,2
+2013,Peshawar,Charsadda,Abduction,46
+2013,Peshawar,Charsadda,Car Theft,10
+2013,Peshawar,Charsadda,Car Snatching,6
+2013,Peshawar,Charsadda,M.Cycle Theft,15
+2013,Malakand,Chitral,Murder,11
+2013,Malakand,Chitral,Kids:Ransom,0
+2013,Malakand,Chitral,Child Lifting,0
+2013,Malakand,Chitral,Abduction,15
+2013,Malakand,Chitral,Car Theft,0
+2013,Malakand,Chitral,Car Snatching,0
+2013,Malakand,Chitral,M.Cycle Theft,0
+2013,D.I.Khan,D.I. Khan,Murder,113
+2013,D.I.Khan,D.I. Khan,Kids:Ransom,3
+2013,D.I.Khan,D.I. Khan,Child Lifting,1
+2013,D.I.Khan,D.I. Khan,Abduction,53
+2013,D.I.Khan,D.I. Khan,Car Theft,1
+2013,D.I.Khan,D.I. Khan,Car Snatching,3
+2013,D.I.Khan,D.I. Khan,M.Cycle Theft,40
+2013,Malakand,Dir Lower,Murder,57
+2013,Malakand,Dir Lower,Kids:Ransom,1
+2013,Malakand,Dir Lower,Child Lifting,2
+2013,Malakand,Dir Lower,Abduction,7
+2013,Malakand,Dir Lower,Car Theft,6
+2013,Malakand,Dir Lower,Car Snatching,1
+2013,Malakand,Dir Lower,M.Cycle Theft,2
+2013,Malakand,Dir Upper,Murder,64
+2013,Malakand,Dir Upper,Kids:Ransom,0
+2013,Malakand,Dir Upper,Child Lifting,0
+2013,Malakand,Dir Upper,Abduction,10
+2013,Malakand,Dir Upper,Car Theft,0
+2013,Malakand,Dir Upper,Car Snatching,0
+2013,Malakand,Dir Upper,M.Cycle Theft,0
+2013,Kohat,Hangu,Murder,121
+2013,Kohat,Hangu,Kids:Ransom,6
+2013,Kohat,Hangu,Child Lifting,0
+2013,Kohat,Hangu,Abduction,0
+2013,Kohat,Hangu,Car Theft,0
+2013,Kohat,Hangu,Car Snatching,0
+2013,Kohat,Hangu,M.Cycle Theft,1
+2013,Hazara ,Haripur,Murder,75
+2013,Hazara ,Haripur,Kids:Ransom,0
+2013,Hazara ,Haripur,Child Lifting,0
+2013,Hazara ,Haripur,Abduction,42
+2013,Hazara ,Haripur,Car Theft,1
+2013,Hazara ,Haripur,Car Snatching,3
+2013,Hazara ,Haripur,M.Cycle Theft,3
+2013,Kohat,Karak,Murder,92
+2013,Kohat,Karak,Kids:Ransom,3
+2013,Kohat,Karak,Child Lifting,0
+2013,Kohat,Karak,Abduction,27
+2013,Kohat,Karak,Car Theft,2
+2013,Kohat,Karak,Car Snatching,1
+2013,Kohat,Karak,M.Cycle Theft,9
+2013,Kohat,Kohat,Murder,160
+2013,Kohat,Kohat,Kids:Ransom,3
+2013,Kohat,Kohat,Child Lifting,0
+2013,Kohat,Kohat,Abduction,13
+2013,Kohat,Kohat,Car Theft,8
+2013,Kohat,Kohat,Car Snatching,6
+2013,Kohat,Kohat,M.Cycle Theft,10
+2013,Hazara ,Kohistan,Murder,55
+2013,Hazara ,Kohistan,Kids:Ransom,0
+2013,Hazara ,Kohistan,Child Lifting,0
+2013,Hazara ,Kohistan,Abduction,3
+2013,Hazara ,Kohistan,Car Theft,0
+2013,Hazara ,Kohistan,Car Snatching,0
+2013,Hazara ,Kohistan,M.Cycle Theft,0
+2013,Bannu,Lakki Marwat,Murder,127
+2013,Bannu,Lakki Marwat,Kids:Ransom,1
+2013,Bannu,Lakki Marwat,Child Lifting,3
+2013,Bannu,Lakki Marwat,Abduction,35
+2013,Bannu,Lakki Marwat,Car Theft,0
+2013,Bannu,Lakki Marwat,Car Snatching,0
+2013,Bannu,Lakki Marwat,M.Cycle Theft,4
+2013,Malakand,Malakand,Murder,0
+2013,Malakand,Malakand,Kids:Ransom,0
+2013,Malakand,Malakand,Child Lifting,0
+2013,Malakand,Malakand,Abduction,0
+2013,Malakand,Malakand,Car Theft,0
+2013,Malakand,Malakand,Car Snatching,0
+2013,Malakand,Malakand,M.Cycle Theft,0
+2013,Hazara ,Mansehra,Murder,135
+2013,Hazara ,Mansehra,Kids:Ransom,1
+2013,Hazara ,Mansehra,Child Lifting,0
+2013,Hazara ,Mansehra,Abduction,121
+2013,Hazara ,Mansehra,Car Theft,10
+2013,Hazara ,Mansehra,Car Snatching,3
+2013,Hazara ,Mansehra,M.Cycle Theft,2
+2013,Mardan,Mardan,Murder,332
+2013,Mardan,Mardan,Kids:Ransom,6
+2013,Mardan,Mardan,Child Lifting,3
+2013,Mardan,Mardan,Abduction,38
+2013,Mardan,Mardan,Car Theft,31
+2013,Mardan,Mardan,Car Snatching,8
+2013,Mardan,Mardan,M.Cycle Theft,27
+2013,Peshawar,Nowshera,Murder,210
+2013,Peshawar,Nowshera,Kids:Ransom,3
+2013,Peshawar,Nowshera,Child Lifting,1
+2013,Peshawar,Nowshera,Abduction,12
+2013,Peshawar,Nowshera,Car Theft,11
+2013,Peshawar,Nowshera,Car Snatching,8
+2013,Peshawar,Nowshera,M.Cycle Theft,4
+2013,Peshawar,Peshawar,Murder,623
+2013,Peshawar,Peshawar,Kids:Ransom,56
+2013,Peshawar,Peshawar,Child Lifting,6
+2013,Peshawar,Peshawar,Abduction,62
+2013,Peshawar,Peshawar,Car Theft,152
+2013,Peshawar,Peshawar,Car Snatching,30
+2013,Peshawar,Peshawar,M.Cycle Theft,113
+2013,Malakand,Shangla,Murder,32
+2013,Malakand,Shangla,Kids:Ransom,0
+2013,Malakand,Shangla,Child Lifting,0
+2013,Malakand,Shangla,Abduction,1
+2013,Malakand,Shangla,Car Theft,0
+2013,Malakand,Shangla,Car Snatching,0
+2013,Malakand,Shangla,M.Cycle Theft,2
+2013,Mardan,Swabi,Murder,247
+2013,Mardan,Swabi,Kids:Ransom,1
+2013,Mardan,Swabi,Child Lifting,1
+2013,Mardan,Swabi,Abduction,25
+2013,Mardan,Swabi,Car Theft,2
+2013,Mardan,Swabi,Car Snatching,2
+2013,Mardan,Swabi,M.Cycle Theft,6
+2013,Malakand,Swat,Murder,107
+2013,Malakand,Swat,Kids:Ransom,1
+2013,Malakand,Swat,Child Lifting,1
+2013,Malakand,Swat,Abduction,48
+2013,Malakand,Swat,Car Theft,9
+2013,Malakand,Swat,Car Snatching,2
+2013,Malakand,Swat,M.Cycle Theft,12
+2013,D.I.Khan,Tank,Murder,74
+2013,D.I.Khan,Tank,Kids:Ransom,2
+2013,D.I.Khan,Tank,Child Lifting,0
+2013,D.I.Khan,Tank,Abduction,16
+2013,D.I.Khan,Tank,Car Theft,0
+2013,D.I.Khan,Tank,Car Snatching,0
+2013,D.I.Khan,Tank,M.Cycle Theft,5
+2013,Hazara ,Tor Ghar,Murder,13
+2013,Hazara ,Tor Ghar,Kids:Ransom,0
+2013,Hazara ,Tor Ghar,Child Lifting,0
+2013,Hazara ,Tor Ghar,Abduction,2
+2013,Hazara ,Tor Ghar,Car Theft,0
+2013,Hazara ,Tor Ghar,Car Snatching,0
+2013,Hazara ,Tor Ghar,M.Cycle Theft,0
+2014,Hazara ,Abbottabad,Murder,68
+2014,Hazara ,Abbottabad,Kids:Ransom,1
+2014,Hazara ,Abbottabad,Child Lifting,4
+2014,Hazara ,Abbottabad,Abduction,117
+2014,Hazara ,Abbottabad,Car Theft,4
+2014,Hazara ,Abbottabad,Car Snatching,1
+2014,Hazara ,Abbottabad,M.Cycle Theft,3
+2014,Bannu,Bannu,Murder,272
+2014,Bannu,Bannu,Kids:Ransom,6
+2014,Bannu,Bannu,Child Lifting,2
+2014,Bannu,Bannu,Abduction,28
+2014,Bannu,Bannu,Car Theft,10
+2014,Bannu,Bannu,Car Snatching,4
+2014,Bannu,Bannu,M.Cycle Theft,12
+2014,Hazara ,Battagram,Murder,32
+2014,Hazara ,Battagram,Kids:Ransom,0
+2014,Hazara ,Battagram,Child Lifting,0
+2014,Hazara ,Battagram,Abduction,22
+2014,Hazara ,Battagram,Car Theft,0
+2014,Hazara ,Battagram,Car Snatching,0
+2014,Hazara ,Battagram,M.Cycle Theft,1
+2014,Malakand,Buner,Murder,58
+2014,Malakand,Buner,Kids:Ransom,0
+2014,Malakand,Buner,Child Lifting,0
+2014,Malakand,Buner,Abduction,14
+2014,Malakand,Buner,Car Theft,0
+2014,Malakand,Buner,Car Snatching,0
+2014,Malakand,Buner,M.Cycle Theft,1
+2014,Peshawar,Charsadda,Murder,250
+2014,Peshawar,Charsadda,Kids:Ransom,6
+2014,Peshawar,Charsadda,Child Lifting,5
+2014,Peshawar,Charsadda,Abduction,39
+2014,Peshawar,Charsadda,Car Theft,6
+2014,Peshawar,Charsadda,Car Snatching,3
+2014,Peshawar,Charsadda,M.Cycle Theft,8
+2014,Malakand,Chitral,Murder,12
+2014,Malakand,Chitral,Kids:Ransom,0
+2014,Malakand,Chitral,Child Lifting,0
+2014,Malakand,Chitral,Abduction,17
+2014,Malakand,Chitral,Car Theft,0
+2014,Malakand,Chitral,Car Snatching,0
+2014,Malakand,Chitral,M.Cycle Theft,2
+2014,D.I.Khan,D.I. Khan,Murder,134
+2014,D.I.Khan,D.I. Khan,Kids:Ransom,1
+2014,D.I.Khan,D.I. Khan,Child Lifting,1
+2014,D.I.Khan,D.I. Khan,Abduction,64
+2014,D.I.Khan,D.I. Khan,Car Theft,1
+2014,D.I.Khan,D.I. Khan,Car Snatching,2
+2014,D.I.Khan,D.I. Khan,M.Cycle Theft,42
+2014,Malakand,Dir Lower,Murder,60
+2014,Malakand,Dir Lower,Kids:Ransom,2
+2014,Malakand,Dir Lower,Child Lifting,0
+2014,Malakand,Dir Lower,Abduction,11
+2014,Malakand,Dir Lower,Car Theft,7
+2014,Malakand,Dir Lower,Car Snatching,0
+2014,Malakand,Dir Lower,M.Cycle Theft,4
+2014,Malakand,Dir Upper,Murder,76
+2014,Malakand,Dir Upper,Kids:Ransom,0
+2014,Malakand,Dir Upper,Child Lifting,1
+2014,Malakand,Dir Upper,Abduction,6
+2014,Malakand,Dir Upper,Car Theft,2
+2014,Malakand,Dir Upper,Car Snatching,0
+2014,Malakand,Dir Upper,M.Cycle Theft,0
+2014,Kohat,Hangu,Murder,66
+2014,Kohat,Hangu,Kids:Ransom,1
+2014,Kohat,Hangu,Child Lifting,0
+2014,Kohat,Hangu,Abduction,5
+2014,Kohat,Hangu,Car Theft,0
+2014,Kohat,Hangu,Car Snatching,0
+2014,Kohat,Hangu,M.Cycle Theft,1
+2014,Hazara ,Haripur,Murder,54
+2014,Hazara ,Haripur,Kids:Ransom,1
+2014,Hazara ,Haripur,Child Lifting,1
+2014,Hazara ,Haripur,Abduction,47
+2014,Hazara ,Haripur,Car Theft,2
+2014,Hazara ,Haripur,Car Snatching,0
+2014,Hazara ,Haripur,M.Cycle Theft,3
+2014,Kohat,Karak,Murder,82
+2014,Kohat,Karak,Kids:Ransom,1
+2014,Kohat,Karak,Child Lifting,0
+2014,Kohat,Karak,Abduction,49
+2014,Kohat,Karak,Car Theft,2
+2014,Kohat,Karak,Car Snatching,3
+2014,Kohat,Karak,M.Cycle Theft,5
+2014,Kohat,Kohat,Murder,146
+2014,Kohat,Kohat,Kids:Ransom,6
+2014,Kohat,Kohat,Child Lifting,1
+2014,Kohat,Kohat,Abduction,16
+2014,Kohat,Kohat,Car Theft,1
+2014,Kohat,Kohat,Car Snatching,2
+2014,Kohat,Kohat,M.Cycle Theft,7
+2014,Hazara ,Kohistan,Murder,34
+2014,Hazara ,Kohistan,Kids:Ransom,0
+2014,Hazara ,Kohistan,Child Lifting,0
+2014,Hazara ,Kohistan,Abduction,0
+2014,Hazara ,Kohistan,Car Theft,1
+2014,Hazara ,Kohistan,Car Snatching,0
+2014,Hazara ,Kohistan,M.Cycle Theft,1
+2014,Bannu,Lakki Marwat,Murder,164
+2014,Bannu,Lakki Marwat,Kids:Ransom,0
+2014,Bannu,Lakki Marwat,Child Lifting,3
+2014,Bannu,Lakki Marwat,Abduction,48
+2014,Bannu,Lakki Marwat,Car Theft,0
+2014,Bannu,Lakki Marwat,Car Snatching,2
+2014,Bannu,Lakki Marwat,M.Cycle Theft,7
+2014,Malakand,Malakand,Murder,0
+2014,Malakand,Malakand,Kids:Ransom,0
+2014,Malakand,Malakand,Child Lifting,0
+2014,Malakand,Malakand,Abduction,0
+2014,Malakand,Malakand,Car Theft,0
+2014,Malakand,Malakand,Car Snatching,0
+2014,Malakand,Malakand,M.Cycle Theft,0
+2014,Hazara ,Mansehra,Murder,119
+2014,Hazara ,Mansehra,Kids:Ransom,1
+2014,Hazara ,Mansehra,Child Lifting,2
+2014,Hazara ,Mansehra,Abduction,109
+2014,Hazara ,Mansehra,Car Theft,7
+2014,Hazara ,Mansehra,Car Snatching,1
+2014,Hazara ,Mansehra,M.Cycle Theft,2
+2014,Mardan,Mardan,Murder,327
+2014,Mardan,Mardan,Kids:Ransom,6
+2014,Mardan,Mardan,Child Lifting,3
+2014,Mardan,Mardan,Abduction,41
+2014,Mardan,Mardan,Car Theft,29
+2014,Mardan,Mardan,Car Snatching,5
+2014,Mardan,Mardan,M.Cycle Theft,15
+2014,Peshawar,Nowshera,Murder,208
+2014,Peshawar,Nowshera,Kids:Ransom,4
+2014,Peshawar,Nowshera,Child Lifting,1
+2014,Peshawar,Nowshera,Abduction,23
+2014,Peshawar,Nowshera,Car Theft,19
+2014,Peshawar,Nowshera,Car Snatching,7
+2014,Peshawar,Nowshera,M.Cycle Theft,9
+2014,Peshawar,Peshawar,Murder,643
+2014,Peshawar,Peshawar,Kids:Ransom,69
+2014,Peshawar,Peshawar,Child Lifting,3
+2014,Peshawar,Peshawar,Abduction,85
+2014,Peshawar,Peshawar,Car Theft,160
+2014,Peshawar,Peshawar,Car Snatching,28
+2014,Peshawar,Peshawar,M.Cycle Theft,81
+2014,Malakand,Shangla,Murder,31
+2014,Malakand,Shangla,Kids:Ransom,0
+2014,Malakand,Shangla,Child Lifting,0
+2014,Malakand,Shangla,Abduction,9
+2014,Malakand,Shangla,Car Theft,1
+2014,Malakand,Shangla,Car Snatching,0
+2014,Malakand,Shangla,M.Cycle Theft,0
+2014,Mardan,Swabi,Murder,228
+2014,Mardan,Swabi,Kids:Ransom,4
+2014,Mardan,Swabi,Child Lifting,1
+2014,Mardan,Swabi,Abduction,24
+2014,Mardan,Swabi,Car Theft,2
+2014,Mardan,Swabi,Car Snatching,4
+2014,Mardan,Swabi,M.Cycle Theft,3
+2014,Malakand,Swat,Murder,105
+2014,Malakand,Swat,Kids:Ransom,0
+2014,Malakand,Swat,Child Lifting,4
+2014,Malakand,Swat,Abduction,48
+2014,Malakand,Swat,Car Theft,9
+2014,Malakand,Swat,Car Snatching,3
+2014,Malakand,Swat,M.Cycle Theft,10
+2014,D.I.Khan,Tank,Murder,78
+2014,D.I.Khan,Tank,Kids:Ransom,1
+2014,D.I.Khan,Tank,Child Lifting,1
+2014,D.I.Khan,Tank,Abduction,17
+2014,D.I.Khan,Tank,Car Theft,0
+2014,D.I.Khan,Tank,Car Snatching,1
+2014,D.I.Khan,Tank,M.Cycle Theft,1
+2014,Hazara ,Tor Ghar,Murder,7
+2014,Hazara ,Tor Ghar,Kids:Ransom,0
+2014,Hazara ,Tor Ghar,Child Lifting,0
+2014,Hazara ,Tor Ghar,Abduction,2
+2014,Hazara ,Tor Ghar,Car Theft,0
+2014,Hazara ,Tor Ghar,Car Snatching,0
+2014,Hazara ,Tor Ghar,M.Cycle Theft,0
+2015,Hazara ,Abbottabad,Murder,60
+2015,Hazara ,Abbottabad,Kids:Ransom,0
+2015,Hazara ,Abbottabad,Child Lifting,2
+2015,Hazara ,Abbottabad,Abduction,109
+2015,Hazara ,Abbottabad,Car Theft,5
+2015,Hazara ,Abbottabad,Car Snatching,0
+2015,Hazara ,Abbottabad,M.Cycle Theft,7
+2015,Bannu,Bannu,Murder,221
+2015,Bannu,Bannu,Kids:Ransom,4
+2015,Bannu,Bannu,Child Lifting,2
+2015,Bannu,Bannu,Abduction,29
+2015,Bannu,Bannu,Car Theft,4
+2015,Bannu,Bannu,Car Snatching,1
+2015,Bannu,Bannu,M.Cycle Theft,29
+2015,Hazara ,Battagram,Murder,34
+2015,Hazara ,Battagram,Kids:Ransom,0
+2015,Hazara ,Battagram,Child Lifting,0
+2015,Hazara ,Battagram,Abduction,18
+2015,Hazara ,Battagram,Car Theft,0
+2015,Hazara ,Battagram,Car Snatching,0
+2015,Hazara ,Battagram,M.Cycle Theft,0
+2015,Malakand,Buner,Murder,55
+2015,Malakand,Buner,Kids:Ransom,0
+2015,Malakand,Buner,Child Lifting,0
+2015,Malakand,Buner,Abduction,15
+2015,Malakand,Buner,Car Theft,2
+2015,Malakand,Buner,Car Snatching,1
+2015,Malakand,Buner,M.Cycle Theft,5
+2015,Peshawar,Charsadda,Murder,220
+2015,Peshawar,Charsadda,Kids:Ransom,1
+2015,Peshawar,Charsadda,Child Lifting,4
+2015,Peshawar,Charsadda,Abduction,51
+2015,Peshawar,Charsadda,Car Theft,14
+2015,Peshawar,Charsadda,Car Snatching,10
+2015,Peshawar,Charsadda,M.Cycle Theft,15
+2015,Malakand,Chitral,Murder,7
+2015,Malakand,Chitral,Kids:Ransom,0
+2015,Malakand,Chitral,Child Lifting,0
+2015,Malakand,Chitral,Abduction,20
+2015,Malakand,Chitral,Car Theft,1
+2015,Malakand,Chitral,Car Snatching,0
+2015,Malakand,Chitral,M.Cycle Theft,0
+2015,D.I.Khan,D.I. Khan,Murder,100
+2015,D.I.Khan,D.I. Khan,Kids:Ransom,2
+2015,D.I.Khan,D.I. Khan,Child Lifting,7
+2015,D.I.Khan,D.I. Khan,Abduction,71
+2015,D.I.Khan,D.I. Khan,Car Theft,0
+2015,D.I.Khan,D.I. Khan,Car Snatching,0
+2015,D.I.Khan,D.I. Khan,M.Cycle Theft,40
+2015,Malakand,Dir Lower,Murder,42
+2015,Malakand,Dir Lower,Kids:Ransom,0
+2015,Malakand,Dir Lower,Child Lifting,2
+2015,Malakand,Dir Lower,Abduction,17
+2015,Malakand,Dir Lower,Car Theft,7
+2015,Malakand,Dir Lower,Car Snatching,0
+2015,Malakand,Dir Lower,M.Cycle Theft,2
+2015,Malakand,Dir Upper,Murder,69
+2015,Malakand,Dir Upper,Kids:Ransom,1
+2015,Malakand,Dir Upper,Child Lifting,0
+2015,Malakand,Dir Upper,Abduction,3
+2015,Malakand,Dir Upper,Car Theft,4
+2015,Malakand,Dir Upper,Car Snatching,0
+2015,Malakand,Dir Upper,M.Cycle Theft,0
+2015,Kohat,Hangu,Murder,44
+2015,Kohat,Hangu,Kids:Ransom,4
+2015,Kohat,Hangu,Child Lifting,1
+2015,Kohat,Hangu,Abduction,3
+2015,Kohat,Hangu,Car Theft,0
+2015,Kohat,Hangu,Car Snatching,0
+2015,Kohat,Hangu,M.Cycle Theft,1
+2015,Hazara ,Haripur,Murder,55
+2015,Hazara ,Haripur,Kids:Ransom,0
+2015,Hazara ,Haripur,Child Lifting,1
+2015,Hazara ,Haripur,Abduction,35
+2015,Hazara ,Haripur,Car Theft,3
+2015,Hazara ,Haripur,Car Snatching,0
+2015,Hazara ,Haripur,M.Cycle Theft,3
+2015,Kohat,Karak,Murder,88
+2015,Kohat,Karak,Kids:Ransom,1
+2015,Kohat,Karak,Child Lifting,0
+2015,Kohat,Karak,Abduction,36
+2015,Kohat,Karak,Car Theft,1
+2015,Kohat,Karak,Car Snatching,1
+2015,Kohat,Karak,M.Cycle Theft,9
+2015,Kohat,Kohat,Murder,134
+2015,Kohat,Kohat,Kids:Ransom,2
+2015,Kohat,Kohat,Child Lifting,2
+2015,Kohat,Kohat,Abduction,16
+2015,Kohat,Kohat,Car Theft,2
+2015,Kohat,Kohat,Car Snatching,3
+2015,Kohat,Kohat,M.Cycle Theft,10
+2015,Hazara ,Kohistan,Murder,33
+2015,Hazara ,Kohistan,Kids:Ransom,0
+2015,Hazara ,Kohistan,Child Lifting,0
+2015,Hazara ,Kohistan,Abduction,2
+2015,Hazara ,Kohistan,Car Theft,0
+2015,Hazara ,Kohistan,Car Snatching,0
+2015,Hazara ,Kohistan,M.Cycle Theft,0
+2015,Bannu,Lakki Marwat,Murder,150
+2015,Bannu,Lakki Marwat,Kids:Ransom,0
+2015,Bannu,Lakki Marwat,Child Lifting,1
+2015,Bannu,Lakki Marwat,Abduction,35
+2015,Bannu,Lakki Marwat,Car Theft,2
+2015,Bannu,Lakki Marwat,Car Snatching,2
+2015,Bannu,Lakki Marwat,M.Cycle Theft,4
+2015,Malakand,Malakand,Murder,0
+2015,Malakand,Malakand,Kids:Ransom,0
+2015,Malakand,Malakand,Child Lifting,0
+2015,Malakand,Malakand,Abduction,0
+2015,Malakand,Malakand,Car Theft,0
+2015,Malakand,Malakand,Car Snatching,0
+2015,Malakand,Malakand,M.Cycle Theft,0
+2015,Hazara ,Mansehra,Murder,95
+2015,Hazara ,Mansehra,Kids:Ransom,1
+2015,Hazara ,Mansehra,Child Lifting,1
+2015,Hazara ,Mansehra,Abduction,110
+2015,Hazara ,Mansehra,Car Theft,5
+2015,Hazara ,Mansehra,Car Snatching,1
+2015,Hazara ,Mansehra,M.Cycle Theft,2
+2015,Mardan,Mardan,Murder,236
+2015,Mardan,Mardan,Kids:Ransom,4
+2015,Mardan,Mardan,Child Lifting,5
+2015,Mardan,Mardan,Abduction,70
+2015,Mardan,Mardan,Car Theft,37
+2015,Mardan,Mardan,Car Snatching,6
+2015,Mardan,Mardan,M.Cycle Theft,27
+2015,Peshawar,Nowshera,Murder,144
+2015,Peshawar,Nowshera,Kids:Ransom,3
+2015,Peshawar,Nowshera,Child Lifting,2
+2015,Peshawar,Nowshera,Abduction,20
+2015,Peshawar,Nowshera,Car Theft,9
+2015,Peshawar,Nowshera,Car Snatching,10
+2015,Peshawar,Nowshera,M.Cycle Theft,4
+2015,Peshawar,Peshawar,Murder,427
+2015,Peshawar,Peshawar,Kids:Ransom,28
+2015,Peshawar,Peshawar,Child Lifting,6
+2015,Peshawar,Peshawar,Abduction,67
+2015,Peshawar,Peshawar,Car Theft,106
+2015,Peshawar,Peshawar,Car Snatching,17
+2015,Peshawar,Peshawar,M.Cycle Theft,113
+2015,Malakand,Shangla,Murder,28
+2015,Malakand,Shangla,Kids:Ransom,0
+2015,Malakand,Shangla,Child Lifting,0
+2015,Malakand,Shangla,Abduction,7
+2015,Malakand,Shangla,Car Theft,0
+2015,Malakand,Shangla,Car Snatching,0
+2015,Malakand,Shangla,M.Cycle Theft,2
+2015,Mardan,Swabi,Murder,175
+2015,Mardan,Swabi,Kids:Ransom,0
+2015,Mardan,Swabi,Child Lifting,3
+2015,Mardan,Swabi,Abduction,58
+2015,Mardan,Swabi,Car Theft,4
+2015,Mardan,Swabi,Car Snatching,3
+2015,Mardan,Swabi,M.Cycle Theft,6
+2015,Malakand,Swat,Murder,64
+2015,Malakand,Swat,Kids:Ransom,2
+2015,Malakand,Swat,Child Lifting,0
+2015,Malakand,Swat,Abduction,7
+2015,Malakand,Swat,Car Theft,13
+2015,Malakand,Swat,Car Snatching,0
+2015,Malakand,Swat,M.Cycle Theft,12
+2015,D.I.Khan,Tank,Murder,55
+2015,D.I.Khan,Tank,Kids:Ransom,0
+2015,D.I.Khan,Tank,Child Lifting,0
+2015,D.I.Khan,Tank,Abduction,20
+2015,D.I.Khan,Tank,Car Theft,0
+2015,D.I.Khan,Tank,Car Snatching,0
+2015,D.I.Khan,Tank,M.Cycle Theft,5
+2015,Hazara ,Tor Ghar,Murder,6
+2015,Hazara ,Tor Ghar,Kids:Ransom,0
+2015,Hazara ,Tor Ghar,Child Lifting,0
+2015,Hazara ,Tor Ghar,Abduction,2
+2015,Hazara ,Tor Ghar,Car Theft,0
+2015,Hazara ,Tor Ghar,Car Snatching,0
+2015,Hazara ,Tor Ghar,M.Cycle Theft,0

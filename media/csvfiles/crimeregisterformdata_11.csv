@@ -1,0 +1,4 @@
+id,date,time,crime_type,location_city,latitude,longitude,crime_description,reported_type,status,injuries,victims,outcome,news_resources
+8,2023-11-01,10:29:33,Theft,Lahore,777.0,777.0,Two people murcder in karachi,777,died,5,5,dead ,not available
+9,2023-10-04,19:14:53,Assault,Islamabad,5.0,5.0,5,5,died,5,5,5,5
+6,2023-09-02,06:09:09,Murder,Faisalabad,1.0,1.0,1,1,died,1,1,1,1
